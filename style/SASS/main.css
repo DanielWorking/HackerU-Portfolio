@@ -6,80 +6,90 @@
 }
 
 nav {
+  position: sticky;
+  top: 0;
   width: 100vw;
-  height: 11vh;
+  height: 7.5vh;
+  background-color: #FFFFFF;
+  padding: 0.9375em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-top: 0.28vh solid #1AE0EC;
+  z-index: 100;
+}
+nav .profile {
+  display: flex;
+  align-items: center;
+}
+nav .profile img {
+  width: 3.3vw;
+  height: 5.75vh;
+  border-radius: 31px;
+  margin-right: 0.78125vw;
+  margin-left: 15.6vw;
 }
 nav .profile h6 {
+  width: 4.2vw;
+  height: 2.3vh;
   font-family: "Satisfy", cursive;
   font-size: 1.5rem;
   color: #444444;
+  white-space: nowrap;
 }
-nav #navbarSupportedContent .navbar-toggler-icon {
-  order: 2; /* Change order to place toggle button at the end */
-}
-nav #navbarSupportedContent .profile {
-  order: 1; /* Change order to place image and name at the beginning */
-}
-nav #navbarSupportedContent .navbar-nav {
-  width: 477px;
-  height: 37px;
-}
-nav #navbarSupportedContent .navbar-nav .nav-item {
-  margin-right: 10px; /* Added margin between nav items */
-}
-nav #navbarSupportedContent .navbar-nav .nav-item:not(:first-child) .nav-link:hover {
-  color: #1AE0EC;
-}
-nav #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+nav .links {
   width: 3.125vw;
   height: 3.5vh;
-  font: normal normal normal 1.5rem/3.7rem "Heebo", sans-serif;
-  color: #000000;
-  white-space: nowrap;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 16.15vw;
 }
-nav #navbarSupportedContent .navbar-nav .nav-item .nav-link1 {
-  font: normal normal bold 1.5rem/3.7rem "Heebo", sans-serif;
+nav .links a {
+  font: normal normal normal 1.56rem/1.5 "Heebo", sans-serif;
+  text-decoration: none;
+  color: #2C2C2C;
+  margin: 0;
+}
+nav .links a:nth-child(4) {
+  font: normal normal bold 1.56rem/1.5 "Heebo", sans-serif;
   color: #1AE0EC;
-  white-space: nowrap;
+  margin: 0;
+}
+nav .links a:not(:last-child) {
+  margin-right: 3.2vw;
+}
+nav .links a:hover {
+  color: #1AE0EC;
+}
+nav .links a:hover:nth-child(1) {
+  color: #000000;
 }
 
-/* Responsive Styles */
-@media (min-width: 768px) and (max-width: 991px) {
-  nav .profile {
-    margin-left: 1.5rem;
+@media (max-width: 992px) {
+  nav .links {
+    display: none;
   }
-  nav .profile h6 {
-    font-size: 1.5rem;
-  }
-  nav #navbarSupportedContent {
-    margin-right: 1.5rem;
-    font-size: 1.5rem;
+  nav .profile img {
+    margin-right: 0;
   }
 }
-@media (min-width: 992px) {
-  nav .profile {
-    margin-left: 2rem;
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  nav .profile h6 {
-    font-size: 1.8rem;
+  nav .profile img {
+    margin: 0 0 10px 15px;
   }
-  nav #navbarSupportedContent {
-    margin-right: 2rem;
-    font-size: 1.8rem;
+  nav .links {
+    display: flex;
+    flex-direction: column;
   }
-}
-/* Adjust styles for larger screens (desktop) */
-@media (min-width: 1200px) {
-  nav .profile {
-    margin-left: 3rem;
-  }
-  nav .profile h6 {
-    font-size: 1.5rem;
-  }
-  nav #navbarSupportedContent {
-    margin-right: 3rem;
-    font-size: 2rem;
+  nav .links a {
+    margin: 0;
+    padding: 5px 0;
   }
 }
 .header-container {

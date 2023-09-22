@@ -1,107 +1,101 @@
 nav {
+    position: sticky;
+    top: 0;
     width: 100vw;
-    height: 11vh;
+    height: 7.5vh;
+    background-color: #FFFFFF;
+    padding: 0.9375em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-top: 0.28vh solid #1AE0EC;
+    z-index: 100;
 
     .profile {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 3.3vw;
+            height: 5.75vh;
+            border-radius: 31px;
+            margin-right: 0.78125vw;
+            margin-left: 15.6vw;
+        }
+
         h6 {
+            width: 4.2vw;
+            height: 2.3vh;
             font-family: 'Satisfy', cursive;
             font-size: 1.5rem;
             color: #444444;
+            white-space: nowrap;
         }
     }
 
-    #navbarSupportedContent {
-        .navbar-toggler-icon {
-            order: 2; /* Change order to place toggle button at the end */
-        }
+    .links {
+        width: 3.125vw;
+        height: 3.5vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
+        margin-right: 16.15vw;
 
-        .profile {
-            order: 1; /* Change order to place image and name at the beginning */
-        }
+        a {
+            font: normal normal normal 1.56rem/1.5 'Heebo', sans-serif;
+            text-decoration: none;
+            color: #2C2C2C;
+            margin: 0;
 
-        .navbar-nav {
-            width: 477px;
-            height: 37px;
+            &:nth-child(4) {
+                font: normal normal bold 1.56rem/1.5 'Heebo', sans-serif;
+                color: #1AE0EC;
+                margin: 0;
+            }
 
-            .nav-item {
-                margin-right: 10px; /* Added margin between nav items */
+            &:not(:last-child) {
+                margin-right: 3.2vw; // Add a 61px right margin to all links except the last one
+            }
 
-                &:not(:first-child) {
-                    .nav-link {
-                        &:hover {
-                            color: #1AE0EC;
-                        }
-                    }
-                }
+            &:hover {
+                color: #1AE0EC;
 
-                .nav-link {
-                    width: 3.125vw;
-                    height: 3.5vh;
-                    font: normal normal normal 1.5rem/3.7rem 'Heebo', sans-serif;
+                &:nth-child(1) {
                     color: #000000;
-                    white-space: nowrap;
-                }
-
-                .nav-link1 {
-                    font: normal normal bold 1.5rem/3.7rem 'Heebo', sans-serif;
-                    color: #1AE0EC;
-                    white-space: nowrap;
                 }
             }
         }
     }
 }
 
-/* Responsive Styles */
-@media (min-width: 768px) and (max-width: 991px) {
-    nav {
-        .profile {
-            margin-left: 1.5rem;
+@media (max-width: 992px) {
+    nav .links {
+        display: none;
+    }
 
-            h6 {
-                font-size: 1.5rem;
-            }
-        }
-
-        #navbarSupportedContent {
-            margin-right: 1.5rem;
-            font-size: 1.5rem;
-        }
+    nav .profile img {
+        margin-right: 0;
     }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px) {
     nav {
-        .profile {
-            margin-left: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
 
-            h6 {
-                font-size: 1.8rem;
+        .profile img {
+            margin: 0 0 10px 15px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin: 0;
+                padding: 5px 0;
             }
-        }
-
-        #navbarSupportedContent {
-            margin-right: 2rem;
-            font-size: 1.8rem;
-        }
-    }
-}
-
-/* Adjust styles for larger screens (desktop) */
-@media (min-width: 1200px) {
-    nav {
-        .profile {
-            margin-left: 3rem;
-
-            h6 {
-                font-size: 1.5rem;
-            }
-        }
-
-        #navbarSupportedContent {
-            margin-right: 3rem;
-            font-size: 2rem;
         }
     }
 }
