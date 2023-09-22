@@ -1,0 +1,102 @@
+nav {
+    width: 100vw;
+    height: 11vh;
+    border-top: 0.28vh solid #1AE0EC;
+
+    .profile {
+        h6 {
+            font-family: 'Satisfy', cursive;
+            font-size: 1.5rem;
+            color: #444444;
+        }
+    }
+
+    #navbarSupportedContent {
+        .navbar-toggler-icon {
+            order: 2; /* Change order to place toggle button at the end */
+        }
+
+        .profile {
+            order: 1; /* Change order to place image and name at the beginning */
+        }
+
+        .navbar-nav {
+            .nav-item {
+                margin-right: 10px; /* Added margin between nav items */
+
+                &:not(:first-child) {
+                    .nav-link {
+                        &:hover {
+                            color: #1AE0EC;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-link {
+        font: normal normal normal 1.5rem/3.7rem 'Heebo, sans-serif';
+        color: #000000;
+        white-space: nowrap;
+    }
+
+    .nav-link1 {
+        font: normal normal bold 1.5rem/3.7rem 'Heebo, sans-serif';
+        color: #1AE0EC;
+        white-space: nowrap;
+    }
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    nav {
+        .profile {
+            margin-left: 1.5rem;
+
+            h6 {
+                font-size: 1.5rem;
+            }
+        }
+
+        #navbarSupportedContent {
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        .profile {
+            margin-left: 2rem;
+
+            h6 {
+                font-size: 1.8rem;
+            }
+        }
+
+        #navbarSupportedContent {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+/* Adjust styles for larger screens (desktop) */
+@media (min-width: 1200px) {
+    nav {
+        .profile {
+            margin-left: 3rem;
+
+            h6 {
+                font-size: 1.5rem;
+            }
+        }
+
+        #navbarSupportedContent {
+            margin-right: 3rem;
+            font-size: 2rem;
+        }
+    }
+}

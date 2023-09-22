@@ -1,0 +1,9 @@
+.social-container {
+  width: 1920px;
+  height: 200px;
+  background: #1AE0EC 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=socialMedia.css.map */

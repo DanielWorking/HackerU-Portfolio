@@ -1,0 +1,68 @@
+.header-container {
+    width: 100vw;
+    min-height: 300px; // Minimum height for content visibility
+    height: 40vh;
+    background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text-container {
+        width: 44vw; /* Adjusted for responsiveness */
+        max-width: 800px; /* Maximum width for larger screens */
+
+        h1 {
+            font: normal normal 900 4.2vw/1.5 'Heebo', sans-serif;
+            color: #3A3A3A;
+        }
+
+        p {
+            font: normal normal 500 1vw/1.5 'Heebo', sans-serif;
+            color: #3A3A3A;
+        }
+    }
+}
+
+// Media query for tablets (up to 768px width)
+@media (max-width: 768px) {
+    .header-container {
+        min-height: 200px; // Adjusted minimum height for tablets
+    }
+
+    .text-container {
+        width: 80vw; // Adjusted width for tablets
+        text-align: center; // Center-align text on tablets
+
+        h1 {
+            font-size: 3.5vw; // Adjusted font size for tablets
+        }
+
+        p {
+            font-size: 1.2vw; // Adjusted font size for tablets
+        }
+    }
+}
+
+// Media query for mobile devices (up to 480px width)
+@media (max-width: 480px) {
+    .header-container {
+        min-height: 150px; // Adjusted minimum height for mobile
+    }
+
+    .text-container {
+        width: 90vw; // Adjusted width for mobile
+        text-align: center; // Center-align text on mobile
+
+        h1 {
+            font-size: 5vw; // Adjusted font size for mobile
+        }
+
+        p {
+            font-size: 1.5vw; // Adjusted font size for mobile
+        }
+    }
+}
