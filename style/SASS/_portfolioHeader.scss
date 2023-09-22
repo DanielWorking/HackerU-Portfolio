@@ -25,44 +25,34 @@
             color: #3A3A3A;
         }
     }
-}
 
-// Media query for tablets (up to 768px width)
-@media (max-width: 768px) {
-    .header-container {
-        min-height: 200px; // Adjusted minimum height for tablets
-    }
-
-    .text-container {
-        width: 80vw; // Adjusted width for tablets
-        text-align: center; // Center-align text on tablets
+    @media (max-width: 991px) {
+        .text-container {
+            width: 70%; /* Adjusted width for tablets */
+            text-align: center; /* Center-align text on tablets */
+        }
 
         h1 {
-            font-size: 3.5vw; // Adjusted font size for tablets
+            font-size: 3.5rem; /* Adjusted font size for tablets */
         }
 
         p {
-            font-size: 1.2vw; // Adjusted font size for tablets
+            font-size: 1.2rem; /* Adjusted font size for tablets */
         }
     }
-}
 
-// Media query for mobile devices (up to 480px width)
-@media (max-width: 480px) {
-    .header-container {
-        min-height: 150px; // Adjusted minimum height for mobile
-    }
-
-    .text-container {
-        width: 90vw; // Adjusted width for mobile
-        text-align: center; // Center-align text on mobile
+    @media (max-width: 767px) {
+        .text-container {
+            width: 90%; /* Adjusted width for mobile */
+            text-align: center; /* Center-align text on mobile */
+        }
 
         h1 {
-            font-size: 5vw; // Adjusted font size for mobile
+            font-size: 5rem; /* Adjusted font size for mobile */
         }
 
         p {
-            font-size: 1.5vw; // Adjusted font size for mobile
+            font-size: 1.5rem; /* Adjusted font size for mobile */
         }
     }
 }

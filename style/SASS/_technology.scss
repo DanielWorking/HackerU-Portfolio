@@ -21,46 +21,24 @@
             height: 9.2vh;
         }
     }
-}
 
-// Media query for tablets (up to 768px width)
-@media (max-width: 768px) {
-    .technologies-container {
-        height: auto; // Allow the container to expand based on content
-        padding: 10px;
-    }
+    @media (max-width: 991px) {
+        .technologies {
+            width: 90%; /* Adjusted width for tablets */
 
-    .technologies {
-        width: 90vw;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; // Stack items vertically for tablets
-
-        img {
-            width: 40vw;
-            height: auto;
+            img {
+                width: 40%; /* Adjusted image size for tablets */
+            }
         }
     }
-}
 
-// Media query for mobile devices (up to 480px width)
-@media (max-width: 480px) {
-    .technologies-container {
-        height: auto;
-        padding: 10px;
-    }
+    @media (max-width: 767px) {
+        .technologies {
+            width: 90%; /* Adjusted width for mobile */
 
-    .technologies {
-        width: 90vw;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        img {
-            width: 60vw;
-            height: auto;
+            img {
+                width: 60%; /* Adjusted image size for mobile */
+            }
         }
     }
 }

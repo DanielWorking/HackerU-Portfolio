@@ -64,63 +64,48 @@
             }
         }
     }
-}
 
+    @media (max-width: 991px) {
+        .aboutme-display {
+            width: 80%; /* Adjusted width for tablets */
 
+            img {
+                width: 40%; /* Adjusted image size for tablets */
+            }
 
+            h4 {
+                font-size: 1.5rem; /* Adjusted font size for tablets */
+            }
 
+            p {
+                font-size: 1rem; /* Adjusted font size for tablets */
+            }
 
-
-// Media query for tablets (up to 768px width)
-@media (max-width: 768px) {
-    .aboutme-display {
-        width: 90%; // Adjusted width for tablets
+            .resume {
+                width: 60%; /* Adjusted width for tablets */
+            }
+        }
     }
 
-    img {
-        width: 30%; // Adjusted image size for tablets
-    }
+    @media (max-width: 767px) {
+        .aboutme-display {
+            width: 95%; /* Adjusted width for mobile */
 
-    .aboutme-section {
-        padding: 10px; // Adjusted padding for tablets
-    }
+            img {
+                width: 50%; /* Adjusted image size for mobile */
+            }
 
-    h4 {
-        font-size: 24px; // Adjusted font size for tablets
-    }
+            h4 {
+                font-size: 1.2rem; /* Adjusted font size for mobile */
+            }
 
-    p {
-        font-size: 18px; // Adjusted font size for tablets
-    }
+            p {
+                font-size: 0.9rem; /* Adjusted font size for mobile */
+            }
 
-    .resume {
-        width: 60%; // Adjusted width for tablets
-    }
-}
-
-// Media query for mobile devices (up to 480px width)
-@media (max-width: 480px) {
-    .aboutme-display {
-        width: 95%; // Adjusted width for mobile
-    }
-
-    img {
-        width: 50%; // Adjusted image size for mobile
-    }
-
-    .aboutme-section {
-        padding: 5px; // Adjusted padding for mobile
-    }
-
-    h4 {
-        font-size: 20px; // Adjusted font size for mobile
-    }
-
-    p {
-        font-size: 16px; // Adjusted font size for mobile
-    }
-
-    .resume {
-        width: 80%; // Adjusted width for mobile
+            .resume {
+                width: 80%; /* Adjusted width for mobile */
+            }
+        }
     }
 }
