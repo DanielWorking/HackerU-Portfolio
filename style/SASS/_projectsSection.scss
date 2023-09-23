@@ -3,6 +3,7 @@
     height: 170vh;
     background: #F6F6F6;
     padding-top: 100px;
+    padding-bottom: 9.26vh;
 
     .projects-grid-container {
         width: 69vw;
@@ -110,28 +111,12 @@
             }
         }
     }
+}
 
-    @media (max-width: 991px) {
-        .projects-grid-container {
-            width: 80%; /* Adjusted width for tablets */
+@media (min-width: 1024px) {
 
-            .cards-section {
-                .card {
-                    width: 30%; /* Adjusted card size for tablets */
-                }
-            }
-        }
-    }
+}
 
-    @media (max-width: 767px) {
-        .projects-grid-container {
-            width: 90%; /* Adjusted width for mobile */
+@media (max-width: 767px) {
 
-            .cards-section {
-                .card {
-                    width: 80%; /* Adjusted card size for mobile */
-                }
-            }
-        }
-    }
 }

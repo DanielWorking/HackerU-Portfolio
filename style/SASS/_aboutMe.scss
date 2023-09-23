@@ -15,12 +15,11 @@
         align-items: center;
 
         img {
-            width: 7.4vw;
-            max-width: 100%; /* Adjusted max-width */
-            height: auto; /* Maintain aspect ratio */
+            width: 7.35vw;
+            height: 15vh;
             border-radius: 50%;
             overflow: hidden;
-            margin-bottom: 24px; /* Space between image and aboutme-section */
+            margin-bottom: 24px;
         }
 
         .aboutme-section {
@@ -64,48 +63,12 @@
             }
         }
     }
+}
 
-    @media (max-width: 991px) {
-        .aboutme-display {
-            width: 80%; /* Adjusted width for tablets */
+@media (min-width: 1024px) {
 
-            img {
-                width: 40%; /* Adjusted image size for tablets */
-            }
+}
 
-            h4 {
-                font-size: 1.5rem; /* Adjusted font size for tablets */
-            }
+@media (max-width: 767px) {
 
-            p {
-                font-size: 1rem; /* Adjusted font size for tablets */
-            }
-
-            .resume {
-                width: 60%; /* Adjusted width for tablets */
-            }
-        }
-    }
-
-    @media (max-width: 767px) {
-        .aboutme-display {
-            width: 95%; /* Adjusted width for mobile */
-
-            img {
-                width: 50%; /* Adjusted image size for mobile */
-            }
-
-            h4 {
-                font-size: 1.2rem; /* Adjusted font size for mobile */
-            }
-
-            p {
-                font-size: 0.9rem; /* Adjusted font size for mobile */
-            }
-
-            .resume {
-                width: 80%; /* Adjusted width for mobile */
-            }
-        }
-    }
 }

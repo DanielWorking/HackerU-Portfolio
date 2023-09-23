@@ -16,9 +16,9 @@ nav {
         align-items: center;
 
         img {
-            width: 3.3vw;
-            height: 5.75vh;
-            border-radius: 31px;
+            width: 3.23vw;
+            height: 6.7vh;
+            border-radius: 50%;
             margin-right: 0.78125vw;
             margin-left: 15.6vw;
         }
@@ -31,6 +31,10 @@ nav {
             color: #444444;
             white-space: nowrap;
         }
+    }
+
+    .toggle-bar {
+        display: none;
     }
 
     .links {
@@ -69,32 +73,26 @@ nav {
     }
 }
 
-@media (max-width: 992px) {
-    nav .links {
+@media (min-width: 1024px) {
+    .toggle-bar {
         display: none;
-    }
-
-    nav .profile img {
-        margin-right: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     nav {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .profile img {
-            margin: 0 0 10px 15px;
-        }
-
         .links {
-            display: flex;
-            flex-direction: column;
+            display: none;
+        }
+        .toggle-bar {
+            display: block;
+            cursor: pointer;
+            margin-right: 1rem;
 
-            a {
-                margin: 0;
-                padding: 5px 0;
+            &:hover + .links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }

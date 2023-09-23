@@ -21,24 +21,12 @@
             height: 9.2vh;
         }
     }
+}
 
-    @media (max-width: 991px) {
-        .technologies {
-            width: 90%; /* Adjusted width for tablets */
+@media (min-width: 1024px) {
 
-            img {
-                width: 40%; /* Adjusted image size for tablets */
-            }
-        }
-    }
+}
 
-    @media (max-width: 767px) {
-        .technologies {
-            width: 90%; /* Adjusted width for mobile */
+@media (max-width: 767px) {
 
-            img {
-                width: 60%; /* Adjusted image size for mobile */
-            }
-        }
-    }
 }
