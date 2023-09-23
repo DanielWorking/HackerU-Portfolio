@@ -71,7 +71,7 @@ nav .links a:hover:nth-child(1) {
 }
 
 @media (min-width: 1024px) {
-  .toggle-bar {
+  nav .toggle-bar {
     display: none;
   }
 }

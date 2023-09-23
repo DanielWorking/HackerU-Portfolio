@@ -74,14 +74,16 @@ nav {
 }
 
 @media (min-width: 1024px) {
-    .toggle-bar {
-        display: none;
+    nav {
+        .toggle-bar {
+            display: none;
+        }
     }
 }
 
 @media (max-width: 767px) {
     nav {
-        .links {
+            .links {
             display: none;
         }
         .toggle-bar {
