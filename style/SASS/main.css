@@ -5,31 +5,29 @@
   text-align: center;
 }
 
-nav {
+.navbar {
   position: sticky;
   top: 0;
   width: 100vw;
-  height: 7.5vh;
-  background-color: #FFFFFF;
-  padding: 0.9375em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFFFFF;
   border-top: 0.28vh solid #1AE0EC;
   z-index: 100;
 }
-nav .profile {
+.navbar .profile {
   display: flex;
   align-items: center;
 }
-nav .profile img {
+.navbar .profile img {
   width: 3.23vw;
   height: 6.7vh;
   border-radius: 50%;
   margin-right: 0.78125vw;
   margin-left: 15.6vw;
 }
-nav .profile h6 {
+.navbar .profile h6 {
   width: 4.2vw;
   height: 2.3vh;
   font-family: "Satisfy", cursive;
@@ -37,57 +35,66 @@ nav .profile h6 {
   color: #444444;
   white-space: nowrap;
 }
-nav .toggle-bar {
+.navbar .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
 }
-nav .links {
-  width: 3.125vw;
-  height: 3.5vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-grow: 1;
+.navbar .links {
   margin-right: 16.15vw;
 }
-nav .links a {
+.navbar .links ul {
+  display: flex;
+  margin: 0;
+}
+.navbar .links ul li {
+  list-style: none;
+}
+.navbar .links ul li:not(:last-child) {
+  margin-right: 3.2vw;
+}
+.navbar .links ul li a {
   font: normal normal normal 1.56rem/1.5 "Heebo", sans-serif;
   text-decoration: none;
   color: #2C2C2C;
-  margin: 0;
+  display: block;
 }
-nav .links a:nth-child(4) {
+.navbar .links ul li a:hover {
+  color: #1AE0EC;
+}
+.navbar .links ul li:first-child a:hover {
+  color: #000;
+}
+.navbar .links ul li #main {
   font: normal normal bold 1.56rem/1.5 "Heebo", sans-serif;
   color: #1AE0EC;
-  margin: 0;
-}
-nav .links a:not(:last-child) {
-  margin-right: 3.2vw;
-}
-nav .links a:hover {
-  color: #1AE0EC;
-}
-nav .links a:hover:nth-child(1) {
-  color: #000000;
 }
 
-@media (min-width: 1024px) {
-  nav .toggle-bar {
-    display: none;
-  }
-}
 @media (max-width: 767px) {
-  nav .links {
-    display: none;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  nav .toggle-bar {
-    display: block;
-    cursor: pointer;
-    margin-right: 1rem;
-  }
-  nav .toggle-bar:hover + .links {
+  .navbar .toggle-button {
     display: flex;
+    top: 2.5vh;
+    right: 2rem;
+  }
+  .navbar .toggle-button:hover + .links {
+    display: block;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .navbar .links {
+    display: none;
+  }
+  .navbar .links ul {
+    width: 100vw;
+    flex-direction: column;
   }
 }
 .header-container {
