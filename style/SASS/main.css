@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   width: 100vw;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,15 +87,17 @@
   .navbar .toggle-button:hover + .links {
     display: block;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .navbar .links {
     display: none;
+    text-align: center;
   }
   .navbar .links ul {
     width: 100vw;
     flex-direction: column;
+  }
+  .navbar .links a {
+    display: block;
   }
 }
 .header-container {

@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     width: 100vw;
-    // height: 7.5vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,17 +92,20 @@
             &:hover + .links {
                 display: block;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
             }
         }
 
         .links {
             display: none;
+            text-align: center;
 
             ul {
                 width: 100vw;
                 flex-direction: column;
+            }
+
+            a {
+                display: block;
             }
         }
     }
