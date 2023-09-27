@@ -1,0 +1,22 @@
+.technologies-container {
+    width: 100vw;
+    height: 12.04vh;
+    box-shadow: 0 0.2em 0.4em #00000029;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .technologies {
+        width: 24.12vw;
+        height: 9.26vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 5.21vw;
+            height: 9.26vh;
+        }
+    }
+}

@@ -38,23 +38,24 @@
         <div class="toggle-button">&#9776;</div>
         <div class="links">
             <ul>
-                <li><a href="#">צור קשר</a></li>
-                <li><a href="#">שירותים</a></li>
-                <li><a href="#">אודות</a></li>
-                <li><a href="#" id="main">ראשי</a></li>
+                <li><a href="#main" id="main-btn">main</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- the header of the portfolio page -->
-    <div class="header-container">
+    <!-- the openning section -->
+    <div id="main" class="header-container">
         <div class="text-container">
-            <h1>תיק עבודות</h1>
-            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום הדפוס,
-                ההדפסה והפרסום. למשל: לורםלורם איפסום או בקיצור לי.</p>
+            <h1>portfolio</h1>
+            <p>Explore my digital portfolio—a showcase where code meets creativity, forming immersive and engaging web
+                experiences.
+            </p>
         </div>
     </div>
-    <!-- the technologies icons -->
+    <!-- the technologies knowledge part -->
     <div class="technologies-container">
         <div class="technologies">
             <img src="./images/img-HTML.png" alt="html icon">
@@ -70,30 +71,34 @@
             <img src="./images/img-NodeJS.png" alt="nodeJS icon">
         </div>
     </div>
-    <!-- the about me section of the portfolio page -->
-    <div class="aboutme-container">
+    <!-- the about section -->
+    <div id="about" class="aboutme-container">
         <div class="aboutme-display">
             <img src="./images/profilePicture.jpg" alt="daniel reifer picture">
             <section class="aboutme-section">
-                <h4>קצת עלי</h4>
-                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום הדפוס,
-                    ההדפסה והפרסום. למשל: לורםלורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות . לורם איפסום
-                    או בקיצור ליפסוםהמשמש.לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות . משמש “ממלא מקום”
-                    בעת עריכה, בתחום הדפוס, ההדפסה והפרסום. למשל: לורםלורם איפסום או בקיצור ליפסום, הוא מלל מקובל
-                    וחסר משמעות . לורם איפסום או בקיצור ליפסוםהמשמש לורם איפסום או בקיצור ליפסום, הוא מלל מקובל.</p>
+                <h4>about me</h4>
+                <p>Hello! I'm Daniel Reifer, an IDF Network Manager from Givat Shmuel. With experience in
+                    critical infrastructure
+                    and network maintenance, I'm ready to transition into web development. Proficient in Python, AWS,
+                    Google Cloud, Windows,
+                    Linux, and more, I'm eager to craft seamless web experiences. Combining military precision and
+                    technical expertise, I'm
+                    committed to enhancing web development teams and ensuring top-tier performance and quality in every
+                    project.</p>
                 <div class="resume">
                     <a href="./images/resume/קורות חיים דניאל רייפר.pdf"
-                        download="./images/resume/קורות חיים דניאל רייפר.pdf">להורדת קורות חיים</a>
+                        download="./images/resume/קורות חיים דניאל רייפר.pdf">download resume</a>
                 </div>
             </section>
         </div>
     </div>
-    <!-- the selected projects section -->
-    <div class="selected-projects-container">
+    <!-- the projects gallery section -->
+    <div id="services" class="selected-projects-container">
         <div class="projects-grid-container">
             <div class="header-section">
-                <h4>עבודות נבחרות</h4>
-                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</p>
+                <h4>projects gallery</h4>
+                <p>Discover my web development prowess through an array of diverse and innovative projects showcased in
+                    this gallery.</p>
             </div>
             <!-- projects cards -->
             <div class="cards-section">
@@ -112,10 +117,10 @@
                                     <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
                                     <img src="./images/img-SASS.png" alt="SASS icon">
                                 </div>
-                                <a href="./projects/projectName1/index.html" class="btn btn-primary">
-                                    &#8810; לעמוד הפרויקט
+                                <a href="./projects/projectName1/index.html"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto">
+                                    project page &#8811;
                                 </a>
-
                             </div>
                         </div>
                     </div>
@@ -133,8 +138,10 @@
                                     <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
                                     <img src="./images/img-SASS.png" alt="SASS icon">
                                 </div>
-                                <a href="./projects/projectName2/index.html" class="btn btn-primary">&#8810; לעמוד
-                                    הפרויקט</a>
+                                <a href="./projects/projectName2/index.html"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto">project
+                                    page
+                                    &#8811;</a>
                             </div>
                         </div>
                     </div>
@@ -152,8 +159,10 @@
                                     <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
                                     <img src="./images/img-SASS.png" alt="SASS icon">
                                 </div>
-                                <a href="./projects/projectName3/index.html" class="btn btn-primary">&#8810; לעמוד
-                                    הפרויקט</a>
+                                <a href="./projects/projectName3/index.html"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto">project
+                                    page
+                                    &#8811;</a>
                             </div>
                         </div>
                     </div>
@@ -173,8 +182,10 @@
                                     <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
                                     <img src="./images/img-SASS.png" alt="SASS icon">
                                 </div>
-                                <a href="./projects/projectName4/index.html" class="btn btn-primary">&#8810; לעמוד
-                                    הפרויקט</a>
+                                <a href="./projects/projectName4/index.html"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto">project
+                                    page
+                                    &#8811;</a>
                             </div>
                         </div>
                     </div>
@@ -192,8 +203,10 @@
                                     <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
                                     <img src="./images/img-SASS.png" alt="SASS icon">
                                 </div>
-                                <a href="./projects/projectName5/index.html" class="btn btn-primary">&#8810; לעמוד
-                                    הפרויקט</a>
+                                <a href="./projects/projectName5/index.html"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto">project
+                                    page
+                                    &#8811;</a>
                             </div>
                         </div>
                     </div>
@@ -211,8 +224,10 @@
                                     <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
                                     <img src="./images/img-SASS.png" alt="SASS icon">
                                 </div>
-                                <a href="./projects/projectName6/index.html" class="btn btn-primary">&#8810; לעמוד
-                                    הפרויקט</a>
+                                <a href="./projects/projectName6/index.html"
+                                    class="btn btn-primary d-flex justify-content-center align-items-center mx-auto">project
+                                    page
+                                    &#8811;</a>
                             </div>
                         </div>
                     </div>
@@ -221,47 +236,49 @@
         </div>
     </div>
 
-    <!-- contact us section -->
-    <div class="contact-us-container">
+    <!-- the contact section -->
+    <div id="contact" class="contact-us-container">
         <form>
-            <h4>צור קשר</h4>
-            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+            <h4>contact</h4>
+            <p>Feel free to reach out to me with any inquiries, opportunities, or collaboration proposals. I'm excited
+                to connect and
+                discuss how we can work together to create exceptional web solutions.</p>
             <div class="field-section">
-                <label for="full_name" class="headline">שם מלא</label>
+                <label for="full_name" class="headline">full name</label>
                 <input type="text" id="full_name" name="full_name" class="text">
-                <label for="email" class="headline">דוא״ל</label>
+                <label for="email" class="headline">email</label>
                 <input type="email" id="email" name="email" class="text">
-                <label for="phone_number" class="headline">טלפון</label>
+                <label for="phone_number" class="headline">phone</label>
                 <input type="tel" id="phone_number" name="phone_number" class="text">
-                <label for="text" class="headline">תוכן ההודעה</label>
+                <label for="text" class="headline">message content</label>
                 <textarea id="text" name="text" class="text"></textarea>
             </div>
-            <input type="submit" value="שׁליחה" id="submit">
+            <input type="submit" value="submit" id="submit">
         </form>
         <img src="./images/letter.png" alt="image of envelope">
     </div>
 
-    <!-- the social cplications -->
+    <!-- the footer section -->
     <div class="social-container">
         <div class="content-box">
             <img src="./images/Icon material-location-on.svg" alt="location icon">
-            <p>שנקין 5, ת״א</p>
+            <p>yoni netanyahu 26, givat shmuel</p>
         </div>
         <div class="content-box">
             <img src="./images/Icon simple-email.svg" alt="email icon">
-            <p>israeli@gmail.com</p>
+            <p>daniel.reifer17@gmail.com</p>
         </div>
         <div class="content-box">
             <img src="./images/Icon simple-whatsapp.svg" alt="whatsup icon">
-            <p>050.111.1111</p>
+            <p>058.434.1233</p>
         </div>
         <div class="content-box">
             <img src="./images/Icon simple-whatsapp (1).svg" alt="phone icon">
-            <p class="helFont">050.111.1111</p>
+            <p class="helFont">058.434.1233</p>
         </div>
         <div class="content-box">
             <img src="./images/Icon awesome-linkedin-in.svg" alt="linkedin icon">
-            <p>ישראל ישראלי</p>
+            <p>danielreifer</p>
         </div>
         <div class="content-box">
             <img src="./images/Icon awesome-facebook-f.svg" alt="facebook icon">
@@ -271,8 +288,8 @@
 
     <!-- the copyrights section -->
     <div class="copyright-section">
+        <p id="copy">Crafted with Passion</p>
         <p id="name">Daniel Reifer</p>
-        <p id="copy">כל הזכויות שמורות</p>
     </div>
 
     <!-- bootstrap script -->

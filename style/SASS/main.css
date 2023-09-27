@@ -10,6 +10,7 @@
   top: 0;
   width: 100vw;
   height: auto;
+  max-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +19,8 @@
   z-index: 100;
 }
 .navbar .profile {
+  width: 7.43vw;
+  height: 6.7vh;
   display: flex;
   align-items: center;
 }
@@ -66,10 +69,10 @@
 .navbar .links ul li a:hover {
   color: #1AE0EC;
 }
-.navbar .links ul li:first-child a:hover {
+.navbar .links ul li:last-child a:hover {
   color: #000;
 }
-.navbar .links ul li #main {
+.navbar .links ul li #main-btn {
   font: normal normal bold 1.56rem/1.5 "Heebo", sans-serif;
   color: #1AE0EC;
 }
@@ -102,7 +105,6 @@
 }
 .header-container {
   width: 100vw;
-  min-height: 300px;
   height: 40vh;
   background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg");
   background-size: cover;
@@ -114,14 +116,18 @@
   align-items: center;
 }
 .header-container .text-container {
-  width: 44vw; /* Adjusted for responsiveness */
-  max-width: 800px; /* Maximum width for larger screens */
+  width: 44vw;
+  height: 21.9vh;
 }
 .header-container .text-container h1 {
+  width: 44vw;
+  height: 14.0989vh;
   font: normal normal 900 4.2vw/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
 }
 .header-container .text-container p {
+  width: 40vw;
+  height: 6.714vh;
   font: normal normal 500 1vw/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
 }
@@ -129,8 +135,7 @@
 .technologies-container {
   width: 100vw;
   height: 12vh;
-  min-height: 80px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1607843137);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -138,7 +143,6 @@
 .technologies-container .technologies {
   width: 68vw;
   height: 9.2vh;
-  min-height: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -152,15 +156,14 @@
 .aboutme-container {
   width: 100vw;
   height: 66.2vh;
-  min-height: 400px; /* Minimum height for content visibility */
   display: flex;
-  flex-direction: column; /* Change to column layout */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .aboutme-container .aboutme-display {
   width: 42vw;
-  max-width: 100%; /* Adjusted max-width */
+  height: 52vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,33 +173,36 @@
   height: 15vh;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 2.6vh;
 }
 .aboutme-container .aboutme-display .aboutme-section {
-  width: 100%; /* Full width */
+  width: 100%;
+  height: 32.5vh;
 }
 .aboutme-container .aboutme-display .aboutme-section h4 {
+  width: 42vw;
+  height: 6.715vh;
   font: normal normal 900 2vw/1.5 "Heebo", sans-serif;
-  margin-bottom: 13px;
-  margin-top: 0; /* Space between h1 and aboutme-section */
+  margin-bottom: 1.4vh;
+  margin-top: 0;
 }
 .aboutme-container .aboutme-display .aboutme-section p {
-  width: 100%; /* Full width */
+  width: 100%;
   height: 21.5vh;
   font: normal normal normal 1vw/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
   text-align: center;
-  margin-bottom: 13px;
+  margin-bottom: 1.4vh;
 }
 .aboutme-container .aboutme-display .aboutme-section .resume {
   width: 14vw;
   height: 3.8vh;
   background-color: #1AE0EC;
-  border-radius: 25px;
+  border-radius: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 13px auto 0; /* Auto margin on left and right, 13px top margin */
+  margin: 1.21vh auto 0;
 }
 .aboutme-container .aboutme-display .aboutme-section .resume a {
   width: 8.7vw;
@@ -204,18 +210,19 @@
   font: normal normal bold 1vw/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
   text-decoration: none;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.015625vw;
 }
 
 .selected-projects-container {
   width: 100vw;
   height: 170vh;
   background: #F6F6F6;
-  padding-top: 100px;
+  padding-top: 10.8vh;
   padding-bottom: 9.26vh;
 }
 .selected-projects-container .projects-grid-container {
   width: 69vw;
+  height: 118.15vh;
   margin: 0 auto;
   padding-top: 0;
   display: flex;
@@ -224,58 +231,62 @@
 }
 .selected-projects-container .projects-grid-container .header-section {
   text-align: center;
-  margin-bottom: 68px;
+  margin-bottom: 7.32vh;
   color: #3A3A3A;
 }
 .selected-projects-container .projects-grid-container .header-section h4 {
-  font: normal normal 900 36px/53px "Heebo", sans-serif;
+  width: 30vw;
+  height: 6.295vh;
+  font: normal normal 900 2.25rem/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
 }
 .selected-projects-container .projects-grid-container .header-section p {
   width: 30vw;
   height: 6vh;
-  font: normal normal normal 20px/29px "Heebo", sans-serif;
+  font: normal normal normal 1.25rem/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
-  margin-top: 11px;
+  margin-top: 1.1vh;
 }
 .selected-projects-container .projects-grid-container .cards-section {
+  width: 69vw;
+  height: 120.59vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 5.4vh;
 }
 .selected-projects-container .projects-grid-container .cards-section .row + .row {
-  margin-top: -25px;
+  margin-top: -2.7vh;
 }
 .selected-projects-container .projects-grid-container .cards-section .card {
   width: 20vw;
   height: auto;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
-  border-radius: 10px;
+  box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.1607843137);
+  border-radius: 2.5%;
 }
 .selected-projects-container .projects-grid-container .cards-section .card .card-img-top {
   width: 100%;
   height: 21vh;
   background: transparent 0% 0% no-repeat padding-box;
-  border-radius: 10px 10px 0px 0px;
-}
-.selected-projects-container .projects-grid-container .cards-section .card:nth-child(5) .card-img-top {
-  height: 1vh;
+  border-radius: 0.6em 0.6em 0 0;
 }
 .selected-projects-container .projects-grid-container .cards-section .card .card-body {
-  width: 19vw;
-  margin-bottom: 57.5px;
+  width: 20vw;
+  height: 29.528vh;
+  margin-bottom: 6.2vh;
 }
 .selected-projects-container .projects-grid-container .cards-section .card .card-body .card-title {
-  font: normal normal 500 23px/34px "Heebo", sans-serif;
+  width: 18.334vw;
+  height: 4.057vh;
+  font: normal normal 500 1.45rem/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
   margin-top: 3.45vh;
-  margin-bottom: 21px;
+  margin-bottom: 2.3vh;
 }
 .selected-projects-container .projects-grid-container .cards-section .card .card-body p {
   width: 18.5vw;
   height: 6.2vh;
-  font: normal normal normal 16px/24px "Heebo", sans-serif;
+  font: normal normal normal 0.8rem/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
   margin-bottom: 0;
 }
@@ -286,7 +297,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 24.5px;
+  margin-bottom: 2.65vh;
   margin-top: 1vh;
 }
 .selected-projects-container .projects-grid-container .cards-section .card .card-body .project-technology-container img {
@@ -294,15 +305,17 @@
   height: 100%;
 }
 .selected-projects-container .projects-grid-container .cards-section .card .card-body .btn {
-  font: normal normal medium 14px/26px "Heebo", sans-serif;
+  width: 10vw;
+  height: 3vh;
+  font: normal normal 500 1rem/1.5 "Heebo", sans-serif;
   color: #2C2C2C;
   background: #1AE0EC 0% 0% no-repeat padding-box;
-  border: 1px #1AE0EC solid;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  padding: 0 19px 0 19px;
+  border: 0.1em #1AE0EC solid;
+  border-top-left-radius: 0.8em;
+  border-bottom-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+  padding: 0 1.2em 0 1.2em;
 }
 
 .contact-us-container {
@@ -314,40 +327,40 @@
 }
 .contact-us-container form {
   width: 29vw;
-  height: 62vh;
+  height: 59vh;
   color: #FFFFFF;
   order: 2;
-  margin: 161px 304.5px 151.67px 220px;
+  margin: 17.3vh 15.85vw 0.5vh 11.5vw;
 }
 .contact-us-container form h4 {
   width: 7.1vw;
   height: 5vh;
   font: normal normal 900 1.875vw/1.5 "Heebo", sans-serif;
-  margin: 0 0 6px 414px;
-  text-align: right;
+  margin: 0 25vw 0.65vh 0;
+  text-align: left;
   margin-inline-start: auto;
 }
 .contact-us-container form p {
   width: 28.6vw;
-  height: 5.4vh;
+  height: 13vh;
   font: normal normal normal 1rem/1.5 "Heebo", sans-serif;
-  margin-bottom: 47px;
-  text-align: right;
-  margin-inline-start: auto;
+  margin-bottom: 4vh;
+  text-align: left;
+  margin-inline-end: auto;
 }
 .contact-us-container form .field-section {
   width: 29vw;
   height: 37vh;
-  margin-bottom: 33px;
-  text-align: right;
+  margin-bottom: 3.4vh;
+  text-align: left;
 }
 .contact-us-container form .field-section .headline {
-  width: 3.1vw;
+  width: 4.8vw;
   height: 2.3vh;
   font: normal normal bold 0.7rem/1.5 "Heebo", sans-serif;
-  text-align: right;
-  margin-bottom: -20px;
-  margin-top: 15.53px;
+  text-align: left;
+  margin-bottom: -1.3vh;
+  margin-top: 1.7vh;
   white-space: nowrap;
 }
 .contact-us-container form .field-section .headline:nth-child(1) {
@@ -372,13 +385,13 @@
   font: normal normal bold 1.2vw/1.5 "Heebo", sans-serif;
   letter-spacing: 0.0171875vw;
   color: #2C2C2C;
-  margin: 0 0 0 383px;
+  margin: 0 20vw 0 0;
 }
 .contact-us-container img {
   width: 40.2vw;
   height: 62.2vh;
   order: 1;
-  margin: 0 0 287.67px 76.5px;
+  margin: 0 0 19vh 4vw;
 }
 
 .social-container {
@@ -388,35 +401,39 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 300px;
+  padding: 0 15.625vw;
 }
 .social-container .content-box {
-  width: 120px;
-  height: 78.31px;
+  width: 9.9vw;
+  height: 7.26vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .social-container .content-box img {
-  width: 21.96px;
-  height: 41px;
+  width: 2.14vw;
+  height: 3.8vh;
   background: transparent 0% 0% no-repeat padding-box;
 }
 .social-container .content-box p {
-  width: 120px;
-  height: 16px;
-  font: normal normal normal 14px/21px "Heebo", sans-serif;
-  letter-spacing: 0px;
+  width: 9.9vw;
+  height: 1.95vh;
+  font: normal normal normal 1rem/1.5 "Heebo", sans-serif;
+  letter-spacing: 0;
   color: #2C2C2C;
+  margin-top: 1.95vh;
 }
 .social-container .content-box .helFont {
-  font: normal normal normal 14px/16px "Inter", sans-serif;
+  width: 6.25vw;
+  height: 1.5vh;
+  font: normal normal normal 0.9rem/1.5 "Inter", sans-serif;
+  margin-top: 1.95vh;
 }
 
 .copyright-section {
   width: 100vw;
-  height: 51px;
+  height: 4.75vh;
   background: #000000 0% 0% no-repeat padding-box;
   display: flex;
   justify-content: space-between;
@@ -424,20 +441,17 @@
   border-bottom: 0.6vh solid #1AE0EC;
 }
 .copyright-section p {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.027vw;
   color: #1AE0EC;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 1rem;
 }
 .copyright-section p #name {
   width: 3.9vw;
   height: 4.8vh;
   font: normal normal normal 1rem/1.5 "Heebo", sans-serif;
-  margin-left: 21.5px;
 }
 .copyright-section p #copy {
   width: 7.7vw;
   height: 2.7vh;
   font: normal normal 300 1rem/1.5 "Heebo", sans-serif;
-  margin-right: 21.5px;
 }/*# sourceMappingURL=main.css.map */

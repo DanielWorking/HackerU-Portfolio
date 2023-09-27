@@ -1,0 +1,72 @@
+.social-container {
+    width: 100vw;
+    height: 19vh;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15.625vw;
+
+    .content-box {
+        width: 9.9vw;
+        height: 7.26vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 2.14vw;
+            height: 3.8vh;
+            background: transparent 0% 0% no-repeat padding-box;
+        }
+
+        p {
+            width: 9.9vw;
+            height: 1.95vh;
+            font: normal normal normal 1rem/1.5 'Heebo', sans-serif;
+            letter-spacing: 0;
+            color: #2C2C2C;
+            margin-top: 1.95vh;
+        }
+
+        .helFont {
+            width: 6.25vw;
+            height: 1.5vh;
+            font: normal normal normal .9rem/1.5 'Inter', sans-serif;
+            margin-top: 1.95vh;
+        }
+    }
+}
+
+.copyright-section {
+    width: 100vw;
+    height: 4.75vh;
+    background: #000000 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.6vh solid #1AE0EC;
+
+    p {
+        letter-spacing: 0.027vw;
+        color: #1AE0EC;
+        margin: auto 1rem;
+
+        #name {
+            width: 3.9vw;
+            height: 4.8vh;
+            font: normal normal normal 1rem/1.5 'Heebo', sans-serif;
+        }
+
+        #copy {
+            width: 7.7vw;
+            height: 2.7vh;
+            font: normal normal 300 1rem/1.5 'Heebo', sans-serif;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+}
