@@ -35,13 +35,18 @@
         }
     }
 
+    input {
+        visibility: hidden;
+    }
+
     .toggle-button {
         position: absolute;
-        top: .75rem;
-        right: 1rem;
         display: none;
         flex-direction: column;
         justify-content: space-between;
+        color: #1AE0EC;
+        background: 0% 0% no-repeat padding-box;
+        font-size: 2rem;
     }
 
     .links {
@@ -89,13 +94,12 @@
 
         .toggle-button {
             display: flex;
-            top: 2.5vh;
-            right: 2rem;
+            top: 1vh;
+            right: 6vw;
+        }
 
-            &:hover + .links {
-                display: block;
-                flex-direction: column;
-            }
+        #toggle:checked ~ .links {
+            display: block;
         }
 
         .links {

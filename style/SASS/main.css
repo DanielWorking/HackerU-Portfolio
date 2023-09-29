@@ -39,13 +39,17 @@
   color: #444444;
   white-space: nowrap;
 }
+.navbar input {
+  visibility: hidden;
+}
 .navbar .toggle-button {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  color: #1AE0EC;
+  background: 0% 0% no-repeat padding-box;
+  font-size: 2rem;
 }
 .navbar .links {
   margin-right: 16.15vw;
@@ -84,12 +88,11 @@
   }
   .navbar .toggle-button {
     display: flex;
-    top: 2.5vh;
-    right: 2rem;
+    top: 1vh;
+    right: 6vw;
   }
-  .navbar .toggle-button:hover + .links {
+  .navbar #toggle:checked ~ .links {
     display: block;
-    flex-direction: column;
   }
   .navbar .links {
     display: none;
