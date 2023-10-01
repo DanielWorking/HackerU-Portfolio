@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/purpleBackground.png");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container form {
+  width: 30%;
+  height: 60%;
+  background: rgba(26, 26, 26, 0.831372549) 0% 0% no-repeat padding-box;
+  margin: 20% 15.4% 26% 55%;
+}
+.project-container form .content {
+  width: 73.47%;
+  height: 66.57%;
+  margin: 11.78% 13.29% 21.63% 13.19%;
+}
+.project-container form .content h4 {
+  width: 100%;
+  height: 12.39%;
+  text-align: right;
+  font: normal normal 900 1.8em/1.5 "Heebo", sans-serif;
+  color: #FFFFFF;
+  margin: 0 0 4.91% 0;
+  text-align: center;
+}
+.project-container form .content p {
+  width: 100%;
+  height: 13.56%;
+  font: normal normal normal 1em/1.5 "Heebo", sans-serif;
+  color: #F9F9F9;
+  margin: 0 0 10.29% 0;
+  text-align: right;
+}
+.project-container form .content .field-section {
+  width: 100%;
+  height: 39.1%;
+  margin: 0 0 8.08% 0;
+  text-align: right;
+}
+.project-container form .content .field-section .headline {
+  width: 100%;
+  height: 14.38%;
+  font: normal normal bold 0.8em/1.5 "Heebo", sans-serif;
+  color: #FFFFFF;
+  margin: 0 0 0 86.01%;
+  white-space: nowrap;
+}
+.project-container form .content .field-section .text {
+  width: 100%;
+  height: 30%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 0.1em solid #D31C75;
+  margin: 0 0 4.2% 0;
+}
+.project-container form .content #submit {
+  width: 39.8%;
+  height: 14%;
+  background: #D31C75 0% 0% no-repeat padding-box;
+  font: normal normal bold 1.2em/1.5 "Heebo", sans-serif;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin: 0 0.24% 0 60.05%;
+}/*# sourceMappingURL=main.css.map */

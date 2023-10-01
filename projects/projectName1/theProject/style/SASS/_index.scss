@@ -1,0 +1,106 @@
+.project-container {
+    // width: 1920px;
+    // height: 1080px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/purpleBackground.png");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        // width: 569px;
+        // height: 643px;
+        // margin: 157.27px 295.39px 279.93px 1056px;
+        width: 30%;
+        height: 60%;
+        background: #1A1A1AD4 0% 0% no-repeat padding-box;
+        margin: 20% 15.4% 26% 55%;
+
+        .content {
+            // width: 418px;
+            // height: 428px;
+            // margin: 75.73px 75.61px 139.07px 75px;
+            width: 73.47%;
+            height: 66.57%;
+            margin: 11.78% 13.29% 21.63% 13.19%;
+
+            h4 {
+                // width: 413px;
+                // height: 53px;
+                // font: normal normal 900 36px/53px 'Heebo', sans-serif;
+                // margin: 0 0 21px 0;
+                width: 100%;
+                height: 12.39%;
+                text-align: right;
+                font: normal normal 900 1.8em/1.5 'Heebo', sans-serif;
+                color: #FFFFFF;
+                margin: 0 0 4.91% 0;
+                text-align: center;
+            }
+
+            p {
+                // width: 417px;
+                // height: 58px;
+                // font: normal normal normal 20px/29px 'Heebo', sans-serif;
+                // margin: 0 0 44px 0;
+                width: 100%;
+                height: 13.56%;
+                font: normal normal normal 1em/1.5 'Heebo', sans-serif;
+                color: #F9F9F9;
+                margin: 0 0 10.29% 0;
+                text-align: right;
+            }
+
+            .field-section {
+                // width: 418px;
+                // height: 167px;
+                // margin: 0 0 34.54px 0;
+                width: 100%;
+                height: 39.1%;
+                margin: 0 0 8.08% 0;
+                text-align: right;
+
+                .headline {
+                    // width: 58px;
+                    // height: 24px;
+                    // font: normal normal bold 16px/24px 'Heebo', sans-serif;
+                    // margin: 0 0 0 359.5px;
+                    width: 100%;
+                    height: 14.38%;
+                    font: normal normal bold .8em/1.5 'Heebo', sans-serif;
+                    color: #FFFFFF;
+                    margin: 0 0 0 86.01%;
+                    white-space: nowrap;
+                }
+
+                .text {
+                    // width: 418px;
+                    // height: 50px;
+                    // margin: 1 0 17.97px 0;
+                    width: 100%;
+                    height: 30%;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: .1em solid #D31C75;
+                    margin: 0 0 4.2% 0;
+                }
+            }
+
+            #submit {
+                // width: 166px;
+                // height: 50px;
+                // font: normal normal bold 22px/30px 'Heebo', sans-serif;
+                // margin: 0 1 0 251px;
+                width: 39.8%;
+                height: 14%;
+                background: #D31C75 0% 0% no-repeat padding-box;
+                font: normal normal bold 1.2em/1.5 'Heebo', sans-serif;
+                letter-spacing: 0.02em;
+                color: #FFFFFF;
+                margin: 0 0.24% 0 60.05%;
+            }
+        }
+    }
+}

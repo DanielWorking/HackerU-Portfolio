@@ -1,0 +1,65 @@
+.header-container {
+    width: 100%;
+    height: 42.69%;
+    background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../../../projectName1/overview/images/headerBackgroundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text-container {
+        width: 44%;
+        height: 21.9%;
+        margin: 5% auto 2%;
+
+        h1 {
+            width: 56.0.5%;
+            height: 65.2%;
+            font: normal normal 900 5em/1.5 'Heebo', sans-serif;
+            color: #3A3A3A;
+            text-align: center;
+            margin-bottom: 2.21%;
+        }
+
+        p {
+            width: 100%;
+            height: 34.8%;
+            font: normal normal 500 1em/1.5 'Heebo', sans-serif;
+            color: #3A3A3A;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    .links-container {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6%;
+        gap: 0.74%;
+
+        .overview {
+            width: 7.97%;
+            height: 100%;
+            background-color: #1AE0EC;
+            border-radius: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                width: 95%;
+                height: 70%;
+                font: normal normal 500 .8em/1.5 'Heebo', sans-serif;
+                color: #3A3A3A;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+}
