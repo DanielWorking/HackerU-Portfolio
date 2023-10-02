@@ -1,6 +1,6 @@
 .header-container {
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 42.69%;
     background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,21 +11,26 @@
     align-items: center;
 
     .text-container {
-        width: 44vw;
-        height: 21.9vh;
+        width: 44%;
+        height: 21.9%;
+        margin: 5% auto 2%;
 
         h1 {
-            width: 44vw;
-            height: 14.0989vh;
-            font: normal normal 900 4.2vw/1.5 'Heebo', sans-serif;
+            width: 56.0.5%;
+            height: 65.2%;
+            font: normal normal 900 5em/1.5 'Heebo', sans-serif;
             color: #3A3A3A;
+            text-align: center;
+            margin-bottom: 2.21%;
         }
 
         p {
-            width: 40vw;
-            height: 6.714vh;
-            font: normal normal 500 1vw/1.5 'Heebo', sans-serif;
+            width: 100%;
+            height: 34.8%;
+            font: normal normal 500 1em/1.5 'Heebo', sans-serif;
             color: #3A3A3A;
+            text-align: center;
+            margin: 0;
         }
     }
 }

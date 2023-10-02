@@ -107,8 +107,8 @@
   }
 }
 .header-container {
-  width: 100vw;
-  height: 40vh;
+  width: 100%;
+  height: 42.69%;
   background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,41 +119,47 @@
   align-items: center;
 }
 .header-container .text-container {
-  width: 44vw;
-  height: 21.9vh;
+  width: 44%;
+  height: 21.9%;
+  margin: 5% auto 2%;
 }
 .header-container .text-container h1 {
-  width: 44vw;
-  height: 14.0989vh;
-  font: normal normal 900 4.2vw/1.5 "Heebo", sans-serif;
+  width: 56 0.5%;
+  height: 65.2%;
+  font: normal normal 900 5em/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
+  text-align: center;
+  margin-bottom: 2.21%;
 }
 .header-container .text-container p {
-  width: 40vw;
-  height: 6.714vh;
-  font: normal normal 500 1vw/1.5 "Heebo", sans-serif;
+  width: 100%;
+  height: 34.8%;
+  font: normal normal 500 1em/1.5 "Heebo", sans-serif;
   color: #3A3A3A;
+  text-align: center;
+  margin: 0;
 }
 
 .technologies-container {
-  width: 100vw;
-  height: 12vh;
-  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1607843137);
+  width: 100%;
+  height: 12.04%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0em 0.1875em 0.375em rgba(0, 0, 0, 0.1607843137);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .technologies-container .technologies {
-  width: 68vw;
-  height: 9.2vh;
+  width: 75%;
+  height: 9.26%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
 .technologies-container .technologies img {
-  width: 5.2vw;
-  height: 9.2vh;
+  width: 21.51%;
+  height: 100%;
 }
 
 .aboutme-container {
@@ -435,26 +441,26 @@
 }
 
 .copyright-section {
-  width: 100vw;
-  height: 4.75vh;
+  width: 100%;
+  height: 4.75%;
   background: #000000 0% 0% no-repeat padding-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.6vh solid #1AE0EC;
+  border-bottom: 0.375em solid #1AE0EC;
 }
 .copyright-section p {
-  letter-spacing: 0.027vw;
   color: #1AE0EC;
-  margin: auto 1rem;
+  margin: auto 1.594rem;
 }
 .copyright-section p #name {
-  width: 3.9vw;
-  height: 4.8vh;
+  width: 3.9%;
+  height: 2.7%;
   font: normal normal normal 1rem/1.5 "Heebo", sans-serif;
+  letter-spacing: 0.03125em;
 }
 .copyright-section p #copy {
-  width: 7.7vw;
-  height: 2.7vh;
+  width: 7.8%;
+  height: 2.7%;
   font: normal normal 300 1rem/1.5 "Heebo", sans-serif;
 }/*# sourceMappingURL=main.css.map */
