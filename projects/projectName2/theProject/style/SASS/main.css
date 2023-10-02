@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.project-container {
+  width: 100%;
+  height: 100.56%;
+  background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container .content {
+  width: 57.3%;
+  height: 37.48%;
+}
+.project-container .content h1 {
+  width: 68.64%;
+  height: 50.13%;
+  text-align: left;
+  font: normal normal normal 7em/1.5 "Satisfy", cursive;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 0.3em rgba(0, 0, 0, 0.5294117647);
+  margin: 0 auto 0.089em;
+}
+.project-container .content h5 {
+  width: 48.091%;
+  height: 9.34%;
+  text-align: center;
+  font: normal normal normal 1.1em/1.5 Varela Round;
+  color: #FFFFFF;
+  margin: 0 auto 0.75em;
+}
+.project-container .content p {
+  width: 93.46%;
+  height: 14.75%;
+  text-align: center;
+  font: normal normal normal 0.8em/1.5 Varela Round;
+  color: #F9F9F9;
+  margin: 0 auto 0.3em;
+}
+.project-container .content form {
+  width: 100%;
+  height: 17.94%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.project-container .content form .field-section {
+  width: 79.37%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project-container .content form .field-section .wrapper {
+  width: 47.89%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.project-container .content form .field-section .wrapper .headline {
+  width: 11%;
+  height: 27.4%;
+  text-align: left;
+  font: normal normal normal 0.8em/1 Varela Round;
+  color: #F9F9F9;
+  margin-bottom: 0.3em;
+}
+.project-container .content form .field-section .wrapper .text {
+  width: 100%;
+  height: 68.5%;
+  background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
+  border: 0.15em solid #FFFFFF;
+}
+.project-container .content form #submit {
+  width: 18.73%;
+  height: 68.5%;
+  text-align: center;
+  font: normal normal normal 0.85em/1.5 Varela Round;
+  border: #FFFFFF;
+  color: #1C1C1C;
+  margin: auto 0 0 auto;
+}/*# sourceMappingURL=main.css.map */
