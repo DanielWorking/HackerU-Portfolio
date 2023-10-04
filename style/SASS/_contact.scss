@@ -1,49 +1,49 @@
 .contact-us-container {
-    width: 100vw;
-    height: 89vh;
+    width: 100%;
+    height: 88.8vh;
     background: #3A3A3A 0% 0% no-repeat padding-box;
     display: flex;
-    justify-content: center;
 
     form {
-        width: 29vw;
-        height: 59vh;
+        width: 28.6%;
+        height: 67.37%;
         color: #FFFFFF;
         order: 2;
-        margin: 17.3vh 15.85vw .5vh 11.5vw;
+        margin: auto 19.03125em auto 13.75em;
+
 
         h4{
-            width: 7.1vw;
-            height: 5vh;
-            font: normal normal 900 1.875vw/1.5 'Heebo', sans-serif;
-            margin: 0 25vw .65vh 0;
+            width: 33%;
+            height: 8.21%;
+            font: normal normal 900 1.8em/1em 'Heebo', sans-serif;
             text-align: left;
-            margin-inline-start: auto;
+            margin: 0 auto 0.28em 0;
         }
 
         p{
-            width: 28.6vw;
-            height: 13vh;
-            font: normal normal normal 1rem/1.5 'Heebo', sans-serif;
-            margin-bottom: 4vh;
+            width: 99.82%;
+            height: 8.98%;
+            font: normal normal normal 1em/1.3em 'Heebo', sans-serif;
             text-align: left;
-            margin-inline-end: auto;
+            margin: 0 auto 2em 0;
         }
 
         .field-section {
-            width: 29vw;
-            height: 37vh;
-            margin-bottom: 3.4vh;
+            width: 99.82%;
+            height: 61.77%;
             text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
             .headline {
-                width: 4.8vw;
-                height: 2.3vh;
-                font: normal normal bold 0.7rem/1.5 'Heebo', sans-serif;
+                width: 26%;
+                height: 6.02%;
+                font: normal normal bold .8em/1em 'Heebo', sans-serif;
                 text-align: left;
-                margin-bottom: -1.3vh;
-                margin-top: 1.7vh;
                 white-space: nowrap;
+                margin: 1.22em auto .12em 0;
 
                 &:nth-child(1) {
                     margin-top: 0;
@@ -51,35 +51,38 @@
             }
 
             .text {
-                width: 29vw;
-                height: 4.7vh;
+                width: 100%;
+                height: 12.54%;
                 background: #FFFFFF 0% 0% no-repeat padding-box;
                 border-bottom-color: #1AE0EC;
                 resize: none;
-                margin: 0;
             }
 
             textarea.text {
-                height: 9.3vh;
+                height: 25.07%;
             }
         }
 
         #submit {
-            width: 8.7vw;
-            height: 4.7vh;
-            background: #1AE0EC 0% 0% no-repeat padding-box;
-            border-radius: 1.4vw;
-            font: normal normal bold 1.2vw/1.5 'Heebo', sans-serif;
-            letter-spacing: 0.0171875vw;
+            width: 30.24%;
+            height: 7.74%;
+            background: #1AE0EC 0% 0% no-repeat; // according to the design, it doesnt really have padding-box
+            border-radius: 1em;
+            font: normal normal bold 1.1em/1em 'Heebo', sans-serif;
+            letter-spacing: .02em;
             color: #2C2C2C;
-            margin: 0 20vw 0 0;
+            margin: 1em auto 0 0;
+            border: #1AE0EC; // there is a black border appear and its not in the design
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
         }
     }
 
     img {
-        width: 40.2vw;
-        height: 62.2vh;
+        width: 40.11%;
+        height: 69.97%;
         order: 1;
-        margin: 0 0 19vh 4vw;
+        margin: 0 0 auto 4.78em;
     }
 }

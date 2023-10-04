@@ -1,36 +1,34 @@
 .header-container {
     width: 100%;
-    height: 42.69%;
+    height: 42.69vh;
     background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .text-container {
-        width: 44%;
-        height: 21.9%;
-        margin: 5% auto 2%;
+        width: 43.96%;
+        height: 39.27%;
 
         h1 {
-            width: 56.0.5%;
+            width: 47.87%;
             height: 65.2%;
-            font: normal normal 900 5em/1.5 'Heebo', sans-serif;
+            font: normal normal 900 5em/.9em 'Heebo', sans-serif;
             color: #3A3A3A;
             text-align: center;
-            margin-bottom: 2.21%;
+            margin: 0 auto .1em;
         }
 
         p {
             width: 100%;
-            height: 34.8%;
-            font: normal normal 500 1em/1.5 'Heebo', sans-serif;
+            height: 32.6%;
+            font: normal normal 500 1em/1.3em 'Heebo', sans-serif;
             color: #3A3A3A;
             text-align: center;
-            margin: 0;
+            margin: 0 auto;
         }
     }
 }
