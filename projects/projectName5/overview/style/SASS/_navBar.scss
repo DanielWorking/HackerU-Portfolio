@@ -1,72 +1,77 @@
 .navbar {
+    width: 100%;
+    height: 7.41vh;
+    max-height: 80px;
+    background-color: #FFFFFF;
+    border-top: .1em solid #1AE0EC;
     position: sticky;
     top: 0;
-    width: 100%;
-    height: 7.41%;
-    max-height: 100px;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFFFF;
-    border-top: 0.1875em solid #1AE0EC;
-    z-index: 100;
 
     .profile {
         width: 8.23%;
-        height: 77.5%;
+        height: 5.75vh;
         display: flex;
         align-items: center;
-        margin-right: 0;
-        margin-left: 15.6%;
+        margin-left: 11em;
 
         img {
-            width: 43.48%;
+            width: 39.25%;
             height: 100%;
             border-radius: 50%;
+            margin-right: .8em;
         }
 
         h6 {
-            width: 56.52%;
-            height: 34.33%;
+            width: 50.07%;
+            height: 56.53%;
             font-family: 'Satisfy', cursive;
-            font-size: 1.5625em;
+            font-size: 1.563em;
             color: #444444;
             white-space: nowrap;
-            margin-left: 10.76%;
+            margin: 0 auto;
         }
     }
 
+    input {
+        visibility: hidden;
+    }
+
     .toggle-button {
-        position: absolute;
-        top: .75rem;
-        right: 1rem;
         display: none;
+        position: absolute;
         flex-direction: column;
         justify-content: space-between;
+        color: #1AE0EC;
+        background: 0% 0% no-repeat padding-box;
+        font-size: 1.5em;
     }
 
     .links {
         width: 27.87%;
-        height: 46.25%;
-        margin-right: 13%;
+        height: auto;
+        margin-right: 13em;
 
         ul {
-            display: flex;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
+            display: flex;
+            justify-content: center;
 
             li {
                 list-style: none;
-
                 &:not(:last-child) {
-                    margin-right: 11.41%;
+                        margin-right: 2.5em;
                 }
 
                 a {
-                    font: normal normal 400 1.56rem/1.5 'Heebo', sans-serif;
+                    font: normal normal normal 1.563em/1em 'Heebo', sans-serif;
                     text-decoration: none;
                     color: #2C2C2C;
-                    display: block;
+                    text-transform: capitalize;
 
                     &:hover {
                         color: #1AE0EC;
@@ -78,7 +83,7 @@
                 }
 
                 #main-btn {
-                    font: normal normal bold 1.56rem/1.5 'Heebo', sans-serif;
+                    font: normal normal bold 1.563em/1em 'Heebo', sans-serif;
                     color: #1AE0EC;
                 }
             }
@@ -91,15 +96,34 @@
         flex-direction: column;
         align-items: flex-start;
 
+        .profile {
+            width: 6vw;
+            height: 5vh;
+            margin-left: 1em;
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin-right: 0;
+            }
+
+            h6 {
+                display: none;
+            }
+        }
+
         .toggle-button {
             display: flex;
-            top: 2.5vh;
-            right: 2rem;
+            top: .3em;
+            right: .8em;
+        }
 
-            &:hover + .links {
-                display: block;
-                flex-direction: column;
-            }
+        #toggle:checked ~ .links {
+            display: block;
+            width: 100%;
+            position: absolute;
+            background-color: #FFFFFF;
+            margin-top: 6vh;
         }
 
         .links {
@@ -107,13 +131,20 @@
             text-align: center;
 
             ul {
-                width: 100vw;
                 flex-direction: column;
-            }
 
-            a {
-                display: block;
+                li {
+                    width: 100%;
+
+                    a {
+                        display: block;
+                    }
+                }
             }
         }
     }
+}
+
+@media (max-width: 1023px) {
+    
 }

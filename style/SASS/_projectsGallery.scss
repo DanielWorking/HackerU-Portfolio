@@ -27,6 +27,7 @@
                 display: flex;
                 justify-content: center;
                 margin: 0 auto .35em;
+                text-transform: uppercase;
             }
 
             p {
@@ -43,8 +44,6 @@
             height: 85.11%;
 
             .row {
-                // width: 100%; // there is logic to it, probably need to fix the rest of the messures in the elements
-                // height: auto;
                 justify-content: center;
                 gap: 2.61vw;
                 margin-bottom: 2em;
@@ -79,8 +78,8 @@
                             height: 23.45%;
                             font: normal normal 500 1.4375em/1em 'Heebo', sans-serif;
                             color: #3A3A3A;
-                            margin-top: 4vh;
-                            margin-bottom: 3vh;
+                            margin: 4vh auto 3vh;
+                            text-transform: uppercase;
                             }
 
                             p {
@@ -106,17 +105,18 @@
                             }
                         }
 
-                    .btn {
-                        width: 50%;
-                        height: 15%;
-                        font: normal normal 500 .9em/1em 'Heebo', sans-serif;
-                        color: #2C2C2C;
-                        background: #1AE0EC 0% 0% no-repeat padding-box;
-                        border: .1em #1AE0EC solid;
-                        border-top-left-radius: 1em;
-                        border-bottom-left-radius: 1em;
-                        border-top-right-radius: 1em;
-                        border-bottom-right-radius: 1em;
+                        .btn {
+                            width: 50%;
+                            height: 15%;
+                            font: normal normal 500 .9em/1em 'Heebo', sans-serif;
+                            color: #2C2C2C;
+                            background: #1AE0EC 0% 0% no-repeat padding-box;
+                            border: .1em #1AE0EC solid;
+                            border-top-left-radius: 1em;
+                            border-bottom-left-radius: 1em;
+                            border-top-right-radius: 1em;
+                            border-bottom-right-radius: 1em;
+                            text-transform: capitalize;
                         }
                     }
                 }

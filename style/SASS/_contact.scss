@@ -18,6 +18,7 @@
             font: normal normal 900 1.8em/1em 'Heebo', sans-serif;
             text-align: left;
             margin: 0 auto 0.28em 0;
+            text-transform: uppercase;
         }
 
         p{
@@ -44,6 +45,7 @@
                 text-align: left;
                 white-space: nowrap;
                 margin: 1.22em auto .12em 0;
+                text-transform: capitalize;
 
                 &:nth-child(1) {
                     margin-top: 0;
@@ -76,6 +78,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            text-transform: capitalize;
         }
     }
 
