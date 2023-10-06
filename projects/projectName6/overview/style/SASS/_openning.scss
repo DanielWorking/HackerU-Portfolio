@@ -46,7 +46,7 @@
 
         .overview {
             width: 7.97%;
-            height: 100%;
+            height: 80%;
             background-color: #1AE0EC;
             border-radius: 1.1rem;
             display: flex;
@@ -54,12 +54,15 @@
             justify-content: center;
 
             a {
-                width: 95%;
+                width: 100%;
                 height: 70%;
                 font: normal normal 500 .8em/1.5 'Heebo', sans-serif;
                 color: #3A3A3A;
                 text-decoration: none;
-                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: capitalize;
             }
         }
     }
