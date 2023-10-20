@@ -1,0 +1,217 @@
+.project-container {
+    // width: 1920px;
+    // height: 2288px;
+    width: 100%;
+    height: 233vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+
+    .content-container {
+        // width: 1246px;
+        // height: 1724px;
+        width: 64.9%;
+        height: 90.6%;
+        display: grid;
+        gap: 2.08vh 1.17vw;
+        margin: 0 auto;
+        padding-top: 23vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        .layout {
+            // width: 613px;
+            // height: 562px;
+            background: #020253 0% 0% no-repeat padding-box;
+            grid-row: 1 / 3;
+            grid-column: 3 / 5;
+
+            h1 {
+                // width: 394px;
+                // height: 80px;
+                width: 64.28%;
+                height: 14.24%;
+                text-align: center;
+                font: normal normal bold 2.5em/1.5em 'Assistant', sans-serif;
+                color: #0EE1DA;
+                margin: 18vh auto 3.39vh;
+            }
+
+            h6 {
+                // width: 475px;
+                // height: 52px;
+                width: 77.49%;
+                height: 10%;
+                text-align: center;
+                font: normal normal normal 1em/1.5em 'Assistant', sans-serif;
+                color: #F9F9F9;
+                margin: 0 auto;
+            }
+        }
+
+        img {
+            // width: 296px;
+            // height: 271px;
+            width: 100%;
+            height: 100%;
+            background: transparent 0% 0% no-repeat padding-box;
+        }
+
+        img[alt="iland trees"] {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+
+        img[alt="sunset"] {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+
+        img[alt="beach"] {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        img[alt="cow"] {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        img[alt="far tree"] {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+
+        img[alt="surfe"] {
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+        }
+
+        img[alt="beach sunset"] {
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+        }
+
+        img[alt="orest"] {
+            grid-row: 3 / 4;
+            grid-column: 4 / 5;
+        }
+
+        img[alt="monkey"] {
+            grid-row: 4 / 5;
+            grid-column: 3 / 4;
+        }
+
+        img[alt="homeless"] {
+            grid-row: 4 / 5;
+            grid-column: 4 / 5;
+        }
+
+        img[alt="tree maze"] {
+            grid-row: 5 / 6;
+            grid-column: 3 / 4;
+        }
+
+        img[alt="moving train"] {
+            grid-row: 5 / 6;
+            grid-column: 4 / 5;
+        }
+
+        img[alt="templae"] {
+            grid-row: 6 / 7;
+            grid-column: 3 / 4;
+        }
+
+        img[alt="canoe"] {
+            grid-row: 6 / 7;
+            grid-column: 4 / 5;
+        }
+
+        form {
+            // width: 613px;
+            // height: 852px;
+            background: #8E097C 0% 0% no-repeat padding-box;
+            grid-row: 4 / 7;
+            grid-column: 1 / 3;
+
+            h1 {
+                // width: 340px;
+                // height: 46px;
+                width: 55.47%;
+                height: 5.4%;
+                text-align: center;
+                font: normal normal bold 1.7em/1.5em 'Assistant', sans-serif;
+                color: #FFFFFF;
+                margin: 6.77vh auto 2.47vh;
+            }
+
+            h6 {
+                // width: 475px;
+                // height: 52px;
+                width: 77.49%;
+                height: 6.11%;
+                text-align: center;
+                font: normal normal normal 1em/1.5em 'Assistant', sans-serif;
+                color: #F9F9F9;
+                margin: 0 auto 7.6vh;
+            }
+
+            .form-content {
+                // width: 501px;
+                // height: 509px;
+                width: 81.73%;
+                height: 59.75%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                .field-section {
+                    // width: 500px;
+                    // height: 429px;
+                    width: 100%;
+                    height: 84.29%;
+
+                    .headline {
+                        // width: 92px;
+                        // height: 24px;
+                        width: 18.37%;
+                        height: 5.6%;
+                        font: normal normal bold 1em/1.5em 'Heebo', sans-serif;
+                        color: #0EE1DA;
+                    }
+
+                    .text {
+                        // width: 500px;
+                        // height: 60px;
+                        width: 100%;
+                        height: 13.99%;
+                        background: #E5EEFF 0% 0% no-repeat padding-box;
+                        border-bottom: .6vh solid #0EE1DA;
+                        margin-bottom: 4vh;
+
+                        &:nth-child(4) {
+                            margin-bottom: 2.5vh;
+                        }
+
+                        &:nth-child(6) {
+                            height: 35%;
+                            resize: none;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                #submit {
+                    // width: 501px;
+                    // height: 60px;
+                    width: 100%;
+                    height: 13.99%;
+                    background: #0EE1DA 0% 0% no-repeat padding-box;
+                    font: normal normal bold 1.3em/1.5em 'Heebo', sans-serif;
+                    letter-spacing: 0.01em;
+                    color: #011560;
+                    border: #0EE1DA;
+                }
+            }
+        }
+    }
+}
