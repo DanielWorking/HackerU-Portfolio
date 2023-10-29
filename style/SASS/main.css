@@ -227,7 +227,7 @@ body {
   margin: 0 auto 0.85em;
 }
 .aboutme-container .aboutme-display .aboutme-section .resume {
-  width: 32.59%;
+  width: 31%;
   height: 11.69%;
   background-color: #1AE0EC;
   border-radius: 1.1rem;
@@ -421,7 +421,7 @@ body {
   width: 30.24%;
   height: 7.74%;
   background: #1AE0EC 0% 0% no-repeat;
-  border-radius: 1em;
+  border-radius: 1.2em;
   font: normal normal bold 1.1em/1em "Heebo", sans-serif;
   letter-spacing: 0.02em;
   color: #2C2C2C;

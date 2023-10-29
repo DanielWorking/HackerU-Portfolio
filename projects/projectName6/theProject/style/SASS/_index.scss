@@ -1,0 +1,129 @@
+.project-container { // to create a img[alt attribute for including every image with icon text inside the alt for the background style
+    // width: 1920px;
+    // height: 1265px;
+    width: 100%;
+    height: 117.13vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    .top-right-page-style {
+        // width: 434px;
+        // height: 18px;
+        width: 22.61%;
+        height: 1.43%;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        margin: 0 0 auto auto;
+    }
+
+    .bg-icon {
+        // width: 95px;
+        // height: 95px;
+        width: 4.95%;
+        height: 7.51%;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        border-radius: 50%; // need to adjust
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img[alt="whatsapp icon"] {
+            // width: 54px;
+            // height: 54px;
+            width: 56.85%;
+            height: 56.85%;
+        }
+    }
+
+    h1 {
+        // width: 308px;
+        // height: 97px;
+        width: 16.05%;
+        height: 8.67%;
+        text-align: right;
+        // font: normal normal 900 66px/97px 'Heebo', sans-serif;
+        font: normal normal 900 66px/97px 'Heebo', sans-serif;
+        color: #FDBD03;
+    }
+
+    h6 {
+        // width: 385px;
+        // height: 58px;
+        width: 20.06%;
+        height: 4.59%;
+        text-align: right;
+        // font: normal normal normal 20px/29px 'Heebo', sans-serif;
+        font: normal normal normal 20px/29px 'Heebo', sans-serif;
+        color: #020253;
+    }
+
+    form {
+        // width: 855px;
+        // height: 381px;
+        width: 44.54%;
+        height: 30.12%;
+    }
+
+    img[alt="SMS chat"] {
+        // width: 535px;
+        // height: 804px;
+        width: 27.87%;
+        height: 63.56%;
+        background: transparent 0% 0% no-repeat padding-box;
+    }
+
+    .iconsSet {
+        // width: 494px;
+        // height: 95px;
+        width: 25.73%;
+        height: 7.51%;
+        display: flex;
+
+        .bg-icon{
+            // width: 95px;
+            // height: 95px; // probably need to use vh and vw insted of %
+            width: 19.24%;
+            height: 100%;
+            background: #FDBD03 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+
+            img[alt="facebook icon"] {
+                // width: 19px;
+                // height: 36px;
+                width: 20%;
+                height: 37.9%;
+            }
+
+            img[alt="instagram icon"] {
+                // width: 32px;
+                // height: 32px;
+                width: 33.69%;
+                height: 33.69%;
+                background: #000000 0% 0% no-repeat padding-box;
+            }
+
+            img[alt="linkedin icon"] {
+                // width: 32px;
+                // height: 31px;
+                width: 33.69%;
+                height: 32.64%;
+                background: #000000 0% 0% no-repeat padding-box;
+            }
+
+            img[alt="phone icon"] {
+                // width: 27px;
+                // height: 27px;
+                width: 28.43%;
+                height: 28.43%;
+                background: #000000 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+
+    .bottom-left-page-style {
+        // width: 1038px;
+        // height: 18px;
+        width: 54.0625%;
+        height: 1.43%;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        margin: auto auto 0 0;
+    }
+}
