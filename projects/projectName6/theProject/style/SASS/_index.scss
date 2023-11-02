@@ -1,4 +1,4 @@
-.project-container { // to create a img[alt attribute for including every image with icon text inside the alt for the background style
+.project-container { // need to fix the solo whatsapp icon bg, maybe need to create a seperate element for it 02/11
     // width: 1920px;
     // height: 1265px;
     width: 100%;
@@ -11,7 +11,7 @@
         width: 22.61%;
         height: 1.43%;
         background: #FDBD03 0% 0% no-repeat padding-box;
-        margin: 0 0 auto auto;
+        margin: 0 0 auto auto; // not exactly working
     }
 
     .bg-icon {
@@ -20,7 +20,7 @@
         width: 4.95%;
         height: 7.51%;
         background: #FDBD03 0% 0% no-repeat padding-box;
-        border-radius: 50%; // need to adjust
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -40,7 +40,7 @@
         height: 8.67%;
         text-align: right;
         // font: normal normal 900 66px/97px 'Heebo', sans-serif;
-        font: normal normal 900 66px/97px 'Heebo', sans-serif;
+        font: normal normal 900 3.5em/1.5em 'Heebo', sans-serif; // maybe not good
         color: #FDBD03;
     }
 
@@ -51,7 +51,7 @@
         height: 4.59%;
         text-align: right;
         // font: normal normal normal 20px/29px 'Heebo', sans-serif;
-        font: normal normal normal 20px/29px 'Heebo', sans-serif;
+        font: normal normal normal 1.2em/1.5em 'Heebo', sans-serif; // need to adjust
         color: #020253;
     }
 
@@ -60,6 +60,42 @@
         // height: 381px;
         width: 44.54%;
         height: 30.12%;
+
+        .field-section {
+            // width: 855px;
+            // height: 258px;
+            width: 100%;
+            height: 67.72%;
+
+            .headline {
+                // width: 58px;
+                // height: 24px;
+                width: 6.79%;
+                height: 9.31%;
+                text-align: right;
+                // font: normal normal bold 16px/24px 'Heebo', sans-serif;
+                font: normal normal bold 1em/1.5em 'Heebo', sans-serif;
+                color: #2C2C2C;
+            }
+
+            .text {
+                // width: 418px;
+                // height: 50px;
+                width: 48.89%;
+                height: 19.38%;
+                background: #E5EEFF 0% 0% no-repeat padding-box;
+                // border-bottom: 4px #FDBD03 solid;
+                border-bottom: 0.35em #FDBD03 solid;
+
+                &:last-child {
+                    // width: 854px;
+                    // height: 143px;
+                    width: 100%;
+                    height: 55.43%;
+                    resize: none;
+                }
+            }
+        }
     }
 
     img[alt="SMS chat"] {
@@ -68,6 +104,8 @@
         width: 27.87%;
         height: 63.56%;
         background: transparent 0% 0% no-repeat padding-box;
+        // margin: 120px 166px 323px 181px; // origin
+        margin: 60px 83px 161px 90px;
     }
 
     .iconsSet {
@@ -76,6 +114,9 @@
         width: 25.73%;
         height: 7.51%;
         display: flex;
+        justify-content: space-between;
+        // margin: 299px 1371px 38px 55px; // origin
+        margin: auto auto 19px 27.5px; // need to mvoe the sms chat image for better placment of the icons
 
         .bg-icon{
             // width: 95px;
@@ -97,7 +138,6 @@
                 // height: 32px;
                 width: 33.69%;
                 height: 33.69%;
-                background: #000000 0% 0% no-repeat padding-box;
             }
 
             img[alt="linkedin icon"] {
@@ -105,7 +145,6 @@
                 // height: 31px;
                 width: 33.69%;
                 height: 32.64%;
-                background: #000000 0% 0% no-repeat padding-box;
             }
 
             img[alt="phone icon"] {
@@ -113,7 +152,6 @@
                 // height: 27px;
                 width: 28.43%;
                 height: 28.43%;
-                background: #000000 0% 0% no-repeat padding-box;
             }
         }
     }

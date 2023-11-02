@@ -32,29 +32,54 @@
   width: 16.05%;
   height: 8.67%;
   text-align: right;
-  font: normal normal 900 66px/97px "Heebo", sans-serif;
+  font: normal normal 900 3.5em/1.5em "Heebo", sans-serif;
   color: #FDBD03;
 }
 .project-container h6 {
   width: 20.06%;
   height: 4.59%;
   text-align: right;
-  font: normal normal normal 20px/29px "Heebo", sans-serif;
+  font: normal normal normal 1.2em/1.5em "Heebo", sans-serif;
   color: #020253;
 }
 .project-container form {
   width: 44.54%;
   height: 30.12%;
 }
+.project-container form .field-section {
+  width: 100%;
+  height: 67.72%;
+}
+.project-container form .field-section .headline {
+  width: 6.79%;
+  height: 9.31%;
+  text-align: right;
+  font: normal normal bold 1em/1.5em "Heebo", sans-serif;
+  color: #2C2C2C;
+}
+.project-container form .field-section .text {
+  width: 48.89%;
+  height: 19.38%;
+  background: #E5EEFF 0% 0% no-repeat padding-box;
+  border-bottom: 0.35em #FDBD03 solid;
+}
+.project-container form .field-section .text:last-child {
+  width: 100%;
+  height: 55.43%;
+  resize: none;
+}
 .project-container img[alt="SMS chat"] {
   width: 27.87%;
   height: 63.56%;
   background: transparent 0% 0% no-repeat padding-box;
+  margin: 60px 83px 161px 90px;
 }
 .project-container .iconsSet {
   width: 25.73%;
   height: 7.51%;
   display: flex;
+  justify-content: space-between;
+  margin: auto auto 19px 27.5px;
 }
 .project-container .iconsSet .bg-icon {
   width: 19.24%;
@@ -69,17 +94,14 @@
 .project-container .iconsSet .bg-icon img[alt="instagram icon"] {
   width: 33.69%;
   height: 33.69%;
-  background: #000000 0% 0% no-repeat padding-box;
 }
 .project-container .iconsSet .bg-icon img[alt="linkedin icon"] {
   width: 33.69%;
   height: 32.64%;
-  background: #000000 0% 0% no-repeat padding-box;
 }
 .project-container .iconsSet .bg-icon img[alt="phone icon"] {
   width: 28.43%;
   height: 28.43%;
-  background: #000000 0% 0% no-repeat padding-box;
 }
 .project-container .bottom-left-page-style {
   width: 54.0625%;
