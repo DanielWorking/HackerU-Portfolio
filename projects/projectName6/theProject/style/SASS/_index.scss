@@ -1,9 +1,11 @@
-.project-container { // need to fix the solo whatsapp icon bg, maybe need to create a seperate element for it 02/11
+.project-container { // need to check if palcing the elements with margin will fix the position problem with the elements and maybe even fix the size of the elements, becaause i saw some othere projects of mine where i used only displaay flex and i dont see any additional setting for fixing the elements size. 03/11
     // width: 1920px;
     // height: 1265px;
     width: 100%;
     height: 117.13vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
+    // display: flex; // for dissappearing the html element space
+    // flex-direction: column; // not sure if needed here
 
     .top-right-page-style {
         // width: 434px;
@@ -11,7 +13,8 @@
         width: 22.61%;
         height: 1.43%;
         background: #FDBD03 0% 0% no-repeat padding-box;
-        margin: 0 0 auto auto; // not exactly working
+        // margin: 0 0 120px 1486px; // origin
+        // margin: 0 0 auto auto; // check later
     }
 
     .bg-icon {
@@ -24,6 +27,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        // margin: 63px 1760px 1107px 65px; // origin
 
         img[alt="whatsapp icon"] {
             // width: 54px;
@@ -40,8 +44,10 @@
         height: 8.67%;
         text-align: right;
         // font: normal normal 900 66px/97px 'Heebo', sans-serif;
-        font: normal normal 900 3.5em/1.5em 'Heebo', sans-serif; // maybe not good
+        font: normal normal 900 3.5em/1.5em 'Heebo', sans-serif;
         color: #FDBD03;
+        // need margin here
+        // margin: 226px 181px 15px 730px; // origin
     }
 
     h6 {
@@ -51,8 +57,10 @@
         height: 4.59%;
         text-align: right;
         // font: normal normal normal 20px/29px 'Heebo', sans-serif;
-        font: normal normal normal 1.2em/1.5em 'Heebo', sans-serif; // need to adjust
+        font: normal normal normal 1.2em/1.5em 'Heebo', sans-serif;
         color: #020253;
+        // need margin here
+        // margin: 0 181px 38px 653px; // origin
     }
 
     form {
@@ -60,6 +68,8 @@
         // height: 381px;
         width: 44.54%;
         height: 30.12%;
+        // need margin here
+        // margin: 0 181px 432px 183px; // origin
 
         .field-section {
             // width: 855px;
@@ -84,7 +94,6 @@
                 width: 48.89%;
                 height: 19.38%;
                 background: #E5EEFF 0% 0% no-repeat padding-box;
-                // border-bottom: 4px #FDBD03 solid;
                 border-bottom: 0.35em #FDBD03 solid;
 
                 &:last-child {
@@ -96,6 +105,19 @@
                 }
             }
         }
+
+        #submit {
+            // width: 166px;
+            // height: 50px;
+            width: 19.42%;
+            height: 13.13%;
+            background: #FDBD03 0% 0% no-repeat padding-box;
+            border: #FDBD03;
+            text-align: center;
+            // font: normal normal bold 22px/30px 'Heebo', sans-serif;
+            font: normal normal bold 1.4em/1.5em 'Heebo', sans-serif;
+            letter-spacing: 0.01em;
+        }
     }
 
     img[alt="SMS chat"] {
@@ -105,7 +127,6 @@
         height: 63.56%;
         background: transparent 0% 0% no-repeat padding-box;
         // margin: 120px 166px 323px 181px; // origin
-        margin: 60px 83px 161px 90px;
     }
 
     .iconsSet {
@@ -116,11 +137,10 @@
         display: flex;
         justify-content: space-between;
         // margin: 299px 1371px 38px 55px; // origin
-        margin: auto auto 19px 27.5px; // need to mvoe the sms chat image for better placment of the icons
 
         .bg-icon{
             // width: 95px;
-            // height: 95px; // probably need to use vh and vw insted of %
+            // height: 95px;
             width: 19.24%;
             height: 100%;
             background: #FDBD03 0% 0% no-repeat padding-box;
@@ -162,6 +182,7 @@
         width: 54.0625%;
         height: 1.43%;
         background: #FDBD03 0% 0% no-repeat padding-box;
-        margin: auto auto 0 0;
+        // margin: auto auto 0 0; // check later
+        // margin: 0 882px 0 0; // origin
     }
 }
