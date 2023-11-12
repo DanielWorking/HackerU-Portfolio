@@ -1,32 +1,31 @@
-.project-container { // need to check if palcing the elements with margin will fix the position problem with the elements and maybe even fix the size of the elements, becaause i saw some othere projects of mine where i used only displaay flex and i dont see any additional setting for fixing the elements size. 03/11
+.project-container { // with % the img element adn its bg0icon does not appear, need to understand how to override it. also the elements dont appear inside the iconset element.
     // width: 1920px;
     // height: 1265px;
-    // width: 100%;
-    // height: 117.13vh;
+    width: 100%;
+    // height: 117.13vh; // create html space not desirable in the page
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    // flex-direction: column; // not sure if needed here
 
     .top-right-page-style {
         // width: 434px;
         // height: 18px;
         width: 22.61%;
-        height: 1.43%;
+        height: 1.43vh; // because there is no height specified in the page container, i need to use vh for every element container
         background: #FDBD03 0% 0% no-repeat padding-box;
-        // margin: 0 0 120px 1486px; // origin
-        // margin: 0 0 auto auto; // check later
+        margin: 0 0 auto auto;
     }
 
     .bg-icon {
         // width: 95px;
         // height: 95px;
         width: 4.95%;
-        height: 7.51%;
+        height: 7.51vh; // seems like the w is too wide for this height
         background: #FDBD03 0% 0% no-repeat padding-box;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        // margin: 63px 1760px 1107px 65px; // origin
+        // margin: 63px 1760px 956px 65px; // origin
+        margin: 4.99vh  91.67vw 75.58vh 3.39vw;
 
         img[alt="whatsapp icon"] {
             // width: 54px;
@@ -40,41 +39,43 @@
         // width: 308px;
         // height: 97px;
         width: 16.05%;
-        height: 8.67%;
+        height: 7.67vh;
         text-align: right;
         // font: normal normal 900 66px/97px 'Heebo', sans-serif;
-        font: normal normal 900 3.5em/1.5em 'Heebo', sans-serif;
+        font: normal normal 900 4.12em/1.5em 'Heebo', sans-serif;
         color: #FDBD03;
-        // need margin here
         // margin: 226px 181px 15px 730px; // origin
+        margin: 17.87vh 9.43vw 1.19vh 38.03vw;
     }
 
     h6 {
         // width: 385px;
         // height: 58px;
         width: 20.06%;
-        height: 4.59%;
+        height: 4.59vh;
         text-align: right;
         // font: normal normal normal 20px/29px 'Heebo', sans-serif;
-        font: normal normal normal 1.2em/1.5em 'Heebo', sans-serif;
+        font: normal normal normal 1.25em/1.5em 'Heebo', sans-serif;
         color: #020253;
-        // need margin here
         // margin: 0 181px 38px 653px; // origin
+        margin: 0 9.43vw 3.01vh 34.02vw;
     }
 
     form {
         // width: 855px;
         // height: 381px;
         width: 44.54%;
-        height: 30.12%;
-        // need margin here
+        height: 30.12vh;
         // margin: 0 181px 432px 183px; // origin
+        margin: 0 9.43vw 34.16vh 9.53125vw;
 
         .field-section {
             // width: 855px;
             // height: 258px;
             width: 100%;
             height: 67.72%;
+            // margin: 0 0 123.49px 0; // origin
+            margin: 0 0 9.77vh 0;
 
             .headline {
                 // width: 58px;
@@ -116,6 +117,8 @@
             // font: normal normal bold 22px/30px 'Heebo', sans-serif;
             font: normal normal bold 1.4em/1.5em 'Heebo', sans-serif;
             letter-spacing: 0.01em;
+            // margin: 73.49px 0 0 689px (auto); // origin (auto not working)
+            margin: 5.81vh 0 0 35.89vw;
         }
     }
 
@@ -125,52 +128,64 @@
         width: 27.87%;
         height: 63.56%;
         background: transparent 0% 0% no-repeat padding-box;
-        // margin: 120px 166px 323px 181px; // origin
+        // margin: 120px 166px 323px 0; // origin
+        margin: 9.49vh 8.65vw 25.54vh 0;
     }
 
     .iconsSet {
         // width: 494px;
         // height: 95px;
         width: 25.73%;
-        height: 7.51%;
+        height: 7.51vh;
         display: flex;
         justify-content: space-between;
         // margin: 299px 1371px 38px 55px; // origin
+        margin: 23.64vh auto 3.01vh 2.87vw;
 
-        .bg-icon{
+        .bg-icon {
             // width: 95px;
             // height: 95px;
-            width: 19.24%;
-            height: 100%;
+            // width: 19.24%;
+            // height: 100%; // it didnt change anything
+            width: 4.95vw;
+            height: 7.51vh;
             background: #FDBD03 0% 0% no-repeat padding-box;
             box-shadow: 0px 3px 6px #00000029;
 
             img[alt="facebook icon"] {
                 // width: 19px;
                 // height: 36px;
-                width: 20%;
-                height: 37.9%;
+                // width: 20%;
+                // height: 37.9%; // it make the icons to appear but not with the right size. maybe because the img element is inside the bg-icon element, and he already has style earlier in this code.
+                width: 0.99vw;
+                height: 2.85vh;
             }
 
             img[alt="instagram icon"] {
                 // width: 32px;
                 // height: 32px;
-                width: 33.69%;
-                height: 33.69%;
+                // width: 33.69%;
+                // height: 33.69%;
+                width: 1.67vw;
+                height: 2.53vh;
             }
 
             img[alt="linkedin icon"] {
                 // width: 32px;
                 // height: 31px;
-                width: 33.69%;
-                height: 32.64%;
+                // width: 33.69%;
+                // height: 32.64%;
+                width: 1.67vw;
+                height: 2.46vh;
             }
 
             img[alt="phone icon"] {
                 // width: 27px;
                 // height: 27px;
-                width: 28.43%;
-                height: 28.43%;
+                // width: 28.43%;
+                // height: 28.43%;
+                width: 1.40625vw;
+                height: 2.14vh;
             }
         }
     }
@@ -179,9 +194,8 @@
         // width: 1038px;
         // height: 18px;
         width: 54.0625%;
-        height: 1.43%;
+        height: 1.43vh;
         background: #FDBD03 0% 0% no-repeat padding-box;
-        // margin: auto auto 0 0; // check later
-        // margin: 0 882px 0 0; // origin
+        margin: auto auto 0 0;
     }
 }
