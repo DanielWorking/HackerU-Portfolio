@@ -35,101 +35,127 @@
         }
     }
 
-    h1 {
-        // width: 308px;
-        // height: 97px;
-        width: 16.05%;
-        height: 7.67vh;
-        text-align: right;
-        // font: normal normal 900 66px/97px 'Heebo', sans-serif;
-        font: normal normal 900 4.12em/1.5em 'Heebo', sans-serif;
-        color: #FDBD03;
-        // margin: 226px 181px 15px 730px; // origin
-        margin: 17.87vh 9.43vw 1.19vh 38.03vw;
-    }
+    .content-container {
+        // width: 1571px;
+        // height: 804px;
+        width: 81.83%;
+        height: 63.56vh;
+        display: flex;
+        // margin: 138px 166px 323px 183px; // origin
+        margin: 10.91vh 8.65vw 25.54vh 9.54vw;
 
-    h6 {
-        // width: 385px;
-        // height: 58px;
-        width: 20.06%;
-        height: 4.59vh;
-        text-align: right;
-        // font: normal normal normal 20px/29px 'Heebo', sans-serif;
-        font: normal normal normal 1.25em/1.5em 'Heebo', sans-serif;
-        color: #020253;
-        // margin: 0 181px 38px 653px; // origin
-        margin: 0 9.43vw 3.01vh 34.02vw;
-    }
-
-    form {
-        // width: 855px;
-        // height: 381px;
-        width: 44.54%;
-        height: 30.12vh;
-        // margin: 0 181px 432px 183px; // origin
-        margin: 0 9.43vw 34.16vh 9.53125vw;
-
-        .field-section {
+        .contact-container {
             // width: 855px;
-            // height: 258px;
-            width: 100%;
-            height: 67.72%;
-            // margin: 0 0 123.49px 0; // origin
-            margin: 0 0 9.77vh 0;
+            // height: 589px;
+            width: 54.43%;
+            height: 73.26%;
+            display: flex;
+            flex-direction: column;
+            // margin: 0 0 215px 0; // origin
+            margin: 0 0 17vh 0;
 
-            .headline {
-                // width: 58px;
-                // height: 24px;
-                width: 6.79%;
-                height: 9.31%;
+            h1 {
+                // width: 308px;
+                // height: 97px;
+                width: 36.03%;
+                height: 16.47%;
                 text-align: right;
-                // font: normal normal bold 16px/24px 'Heebo', sans-serif;
-                font: normal normal bold 1em/1.5em 'Heebo', sans-serif;
-                color: #2C2C2C;
+                // font: normal normal 900 66px/97px 'Heebo', sans-serif;
+                font: normal normal 900 4.12em/1.5em 'Heebo', sans-serif;
+                color: #FDBD03;
+                // margin: 226px 181px 15px 730px; // origin
+                // margin: 17.87vh 9.43vw 1.19vh 38.03vw;
+                margin: 0 0 1.19vh auto;
             }
 
-            .text {
-                // width: 418px;
-                // height: 50px;
-                width: 48.89%;
-                height: 19.38%;
-                background: #E5EEFF 0% 0% no-repeat padding-box;
-                border-bottom: 0.35em #FDBD03 solid;
+            h6 {
+                // width: 385px;
+                // height: 58px;
+                width: 45.03%;
+                height: 9.85%;
+                text-align: right;
+                // font: normal normal normal 20px/29px 'Heebo', sans-serif;
+                font: normal normal normal 1.25em/1.5em 'Heebo', sans-serif;
+                color: #020253;
+                // margin: 0 181px 38px 653px; // origin
+                // margin: 0 9.43vw 3.01vh 34.02vw;
+                margin: 0 0 3.01vh auto;
+            }
 
-                &:last-child {
-                    // width: 854px;
-                    // height: 143px;
+            form {
+                // width: 855px;
+                // height: 381px;
+                width: 100%;
+                height: 64.69%;
+                // margin: 0 181px 432px 183px; // origin
+                // margin: 0 9.43vw 34.16vh 9.53125vw;
+                margin: 0 0 auto 0;
+
+                .field-section { // continue from here
+                    // width: 855px;
+                    // height: 258px;
                     width: 100%;
-                    height: 55.43%;
-                    resize: none;
+                    height: 67.72%;
+                    // margin: 0 0 123.49px 0; // origin
+                    margin: 0 0 9.77vh 0;
+
+                    .headline {
+                        // width: 58px;
+                        // height: 24px;
+                        width: 6.79%;
+                        height: 9.31%;
+                        text-align: right;
+                        // font: normal normal bold 16px/24px 'Heebo', sans-serif;
+                        font: normal normal bold 1em/1.5em 'Heebo', sans-serif;
+                        color: #2C2C2C;
+                    }
+
+                    .text {
+                        // width: 418px;
+                        // height: 50px;
+                        width: 48.89%;
+                        height: 19.38%;
+                        background: #E5EEFF 0% 0% no-repeat padding-box;
+                        border-bottom: 0.35em #FDBD03 solid;
+
+                        &:last-child {
+                            // width: 855px;
+                            // height: 143px;
+                            width: 100%;
+                            height: 55.43%;
+                            resize: none;
+                        }
+                    }
+                }
+
+                #submit {
+                    // width: 166px;
+                    // height: 50px;
+                    width: 19.42%;
+                    height: 13.13%;
+                    background: #FDBD03 0% 0% no-repeat padding-box;
+                    border: #FDBD03;
+                    text-align: center;
+                    // font: normal normal bold 22px/30px 'Heebo', sans-serif;
+                    font: normal normal bold 1.4em/1.5em 'Heebo', sans-serif;
+                    letter-spacing: 0.01em;
+                    // margin: 73.49px 0 0 689px (auto); // origin (auto not working)
+                    margin: 5.81vh 0 0 35.89vw;
                 }
             }
         }
 
-        #submit {
-            // width: 166px;
-            // height: 50px;
-            width: 19.42%;
-            height: 13.13%;
-            background: #FDBD03 0% 0% no-repeat padding-box;
-            border: #FDBD03;
-            text-align: center;
-            // font: normal normal bold 22px/30px 'Heebo', sans-serif;
-            font: normal normal bold 1.4em/1.5em 'Heebo', sans-serif;
-            letter-spacing: 0.01em;
-            // margin: 73.49px 0 0 689px (auto); // origin (auto not working)
-            margin: 5.81vh 0 0 35.89vw;
+        img[alt="SMS chat"] {
+            // width: 535px;
+            // height: 804px;
+            width: 34.06%;
+            height: 100%;
+            background: transparent 0% 0% no-repeat padding-box;
+            // margin: 120px 166px 323px 0; // origin
+            // margin: 9.49vh 8.65vw 25.54vh 0;
+            // margin: 0 0 0 181px/auto;
+            margin: 0 0 0 9.43vw;
         }
-    }
-
-    img[alt="SMS chat"] {
-        // width: 535px;
-        // height: 804px;
-        width: 27.87%;
-        height: 63.56%;
-        background: transparent 0% 0% no-repeat padding-box;
-        // margin: 120px 166px 323px 0; // origin
-        margin: 9.49vh 8.65vw 25.54vh 0;
     }
 
     .iconsSet {
