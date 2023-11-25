@@ -15,7 +15,7 @@
   margin: 0 0 auto auto;
 }
 .project-container .bg-icon {
-  width: 4.95%;
+  width: 4%;
   height: 7.51vh;
   background: #FDBD03 0% 0% no-repeat padding-box;
   border-radius: 50%;
@@ -96,26 +96,28 @@
   margin: 23.64vh auto 3.01vh 2.87vw;
 }
 .project-container .iconsSet .bg-icon {
-  width: 4.95vw;
-  height: 7.51vh;
+  width: 15%;
+  height: 100%;
   background: #FDBD03 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 50%;
+  margin: 0;
 }
 .project-container .iconsSet .bg-icon img[alt="facebook icon"] {
-  width: 0.99vw;
-  height: 2.85vh;
+  width: 20%;
+  height: 37.9%;
 }
 .project-container .iconsSet .bg-icon img[alt="instagram icon"] {
-  width: 1.67vw;
-  height: 2.53vh;
+  width: 33.69%;
+  height: 33.69%;
 }
 .project-container .iconsSet .bg-icon img[alt="linkedin icon"] {
-  width: 1.67vw;
-  height: 2.46vh;
+  width: 33.69%;
+  height: 32.64%;
 }
 .project-container .iconsSet .bg-icon img[alt="phone icon"] {
-  width: 1.40625vw;
-  height: 2.14vh;
+  width: 28.43%;
+  height: 28.43%;
 }
 .project-container .bottom-left-page-style {
   width: 54.0625%;
