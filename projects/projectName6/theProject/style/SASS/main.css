@@ -12,7 +12,7 @@
   width: 22.61%;
   height: 1.43vh;
   background: #FDBD03 0% 0% no-repeat padding-box;
-  margin: 0 0 auto auto;
+  margin: 0 0 0 auto;
 }
 .project-container .bg-icon {
   width: 4%;
@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4.99vh 91.67vw 75.58vh 3.39vw;
+  margin: 4.99vh 91.67vw 0 3.39vw;
 }
 .project-container .bg-icon img[alt="whatsapp icon"] {
   width: 56.85%;
@@ -42,18 +42,21 @@
   margin: 0 0 17vh 0;
 }
 .project-container .content-container .contact-container h1 {
-  width: 36.03%;
+  width: 40%;
   height: 16.47%;
   text-align: right;
-  font: normal normal 900 4.12em/1.5em "Heebo", sans-serif;
+  font: normal normal 900 3.5em/1.5em "Heebo", sans-serif;
   color: #FDBD03;
   margin: 0 0 1.19vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-container .content-container .contact-container h6 {
   width: 45.03%;
-  height: 9.85%;
+  height: 13%;
   text-align: right;
-  font: normal normal normal 1.25em/1.5em "Heebo", sans-serif;
+  font: normal normal normal 1em/1.5em "Heebo", sans-serif;
   color: #020253;
   margin: 0 0 3.01vh auto;
 }
@@ -67,22 +70,37 @@
   height: 67.72%;
   margin: 0 0 9.77vh 0;
 }
-.project-container .content-container .contact-container form .field-section .headline {
-  width: 6.79%;
-  height: 9.31%;
+.project-container .content-container .contact-container form .field-section .wrapper-container {
+  width: 100%;
+  height: 29.07%;
+  display: flex;
+  justify-content: space-between;
+}
+.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper {
+  width: 48.89%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .headline {
+  width: 13.88%;
+  height: 32%;
   text-align: right;
   font: normal normal bold 1em/1.5em "Heebo", sans-serif;
   color: #2C2C2C;
+  margin: 0 0 0 auto;
 }
-.project-container .content-container .contact-container form .field-section .text {
-  width: 48.89%;
-  height: 19.38%;
+.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .text {
+  width: 100%;
+  height: 66.67%;
   background: #E5EEFF 0% 0% no-repeat padding-box;
   border-bottom: 0.35em #FDBD03 solid;
+  margin: 0 0 0 auto;
 }
-.project-container .content-container .contact-container form .field-section .text:last-child {
+.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .text:first-child {
   width: 100%;
-  height: 55.43%;
+  height: 286%;
   resize: none;
 }
 .project-container .content-container .contact-container form #submit {

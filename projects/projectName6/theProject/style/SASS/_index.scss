@@ -11,7 +11,7 @@
         width: 22.61%;
         height: 1.43vh; // because there is no height specified in the page container, i need to use vh for every element container
         background: #FDBD03 0% 0% no-repeat padding-box;
-        margin: 0 0 auto auto;
+        margin: 0 0 0 auto;
     }
 
     .bg-icon {
@@ -25,7 +25,7 @@
         justify-content: center;
         align-items: center;
         // margin: 63px 1760px 956px 65px; // origin
-        margin: 4.99vh  91.67vw 75.58vh 3.39vw;
+        margin: 4.99vh 91.67vw 0 3.39vw;
 
         img[alt="whatsapp icon"] {
             // width: 54px;
@@ -57,25 +57,29 @@
             h1 {
                 // width: 308px;
                 // height: 97px;
-                width: 36.03%;
+                width: 40%;
                 height: 16.47%;
                 text-align: right;
                 // font: normal normal 900 66px/97px 'Heebo', sans-serif;
-                font: normal normal 900 4.12em/1.5em 'Heebo', sans-serif;
+                font: normal normal 900 3.5em/1.5em 'Heebo', sans-serif;
                 color: #FDBD03;
                 // margin: 226px 181px 15px 730px; // origin
                 // margin: 17.87vh 9.43vw 1.19vh 38.03vw;
-                margin: 0 0 1.19vh auto;
+                margin: 0 0 1.19vh auto; // maybe add more space between this to h6
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             h6 {
                 // width: 385px;
                 // height: 58px;
                 width: 45.03%;
-                height: 9.85%;
+                // height: 9.85%;
+                height: 13%;
                 text-align: right;
                 // font: normal normal normal 20px/29px 'Heebo', sans-serif;
-                font: normal normal normal 1.25em/1.5em 'Heebo', sans-serif;
+                font: normal normal normal 1em/1.5em 'Heebo', sans-serif;
                 color: #020253;
                 // margin: 0 181px 38px 653px; // origin
                 // margin: 0 9.43vw 3.01vh 34.02vw;
@@ -99,31 +103,52 @@
                     // margin: 0 0 123.49px 0; // origin
                     margin: 0 0 9.77vh 0;
 
-                    .headline {
-                        // width: 58px;
-                        // height: 24px;
-                        width: 6.79%;
-                        height: 9.31%;
-                        text-align: right;
-                        // font: normal normal bold 16px/24px 'Heebo', sans-serif;
-                        font: normal normal bold 1em/1.5em 'Heebo', sans-serif;
-                        color: #2C2C2C;
-                    }
+                    .wrapper-container {
+                        // width: 855px;
+                        // height: 75px;
+                        width: 100%;
+                        height: 29.07%;
+                        display: flex;
+                        justify-content: space-between;
 
-                    .text {
-                        // width: 418px;
-                        // height: 50px;
-                        width: 48.89%;
-                        height: 19.38%;
-                        background: #E5EEFF 0% 0% no-repeat padding-box;
-                        border-bottom: 0.35em #FDBD03 solid;
+                        .wrapper {
+                            // width: 418px;
+                            // height: 75px;
+                            width: 48.89%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
 
-                        &:last-child {
-                            // width: 855px;
-                            // height: 143px;
-                            width: 100%;
-                            height: 55.43%;
-                            resize: none;
+                            .headline {
+                                // width: 58px;
+                                // height: 24px;
+                                width: 13.88%;
+                                height: 32%;
+                                text-align: right;
+                                // font: normal normal bold 16px/24px 'Heebo', sans-serif;
+                                font: normal normal bold 1em/1.5em 'Heebo', sans-serif;
+                                color: #2C2C2C;
+                                margin: 0 0 0 auto;
+                            }
+
+                            .text { // why margin has no effect?
+                                // width: 418px;
+                                // height: 50px;
+                                width: 100%;
+                                height: 66.67%;
+                                background: #E5EEFF 0% 0% no-repeat padding-box;
+                                border-bottom: 0.35em #FDBD03 solid;
+                                margin: 0 0 0 auto;
+
+                                &:first-child { // not first child
+                                    // width: 855px;
+                                    // height: 143px;
+                                    width: 100%;
+                                    height: 286%;
+                                    resize: none;
+                                }
+                            }
                         }
                     }
                 }
