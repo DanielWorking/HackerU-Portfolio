@@ -46,9 +46,9 @@
 
         .contact-container {
             // width: 855px;
-            // height: 589px;
-            width: 54.43%;
-            height: 73.26%;
+            // height: 804px;
+            width: 54.43%; // need to resize all the elementas inside this container so the submit will be inside this element fully
+            height: 100%;
             display: flex;
             flex-direction: column;
             // margin: 0 0 215px 0; // origin
@@ -57,57 +57,58 @@
             h1 {
                 // width: 308px;
                 // height: 97px;
+                // width: 26.03%;
+                // height: 12.07%;
                 width: 40%;
-                height: 16.47%;
-                text-align: right;
+                height: 16%;
+                text-align: left;
                 // font: normal normal 900 66px/97px 'Heebo', sans-serif;
-                font: normal normal 900 3.5em/1.5em 'Heebo', sans-serif;
+                font: normal normal 900 2.8em/1.5em 'Heebo', sans-serif;
                 color: #FDBD03;
                 // margin: 226px 181px 15px 730px; // origin
-                // margin: 17.87vh 9.43vw 1.19vh 38.03vw;
-                margin: 0 0 1.19vh auto; // maybe add more space between this to h6
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                margin: 0 auto 1.19vh 0;
             }
 
             h6 {
                 // width: 385px;
                 // height: 58px;
                 width: 45.03%;
-                // height: 9.85%;
-                height: 13%;
-                text-align: right;
+                // height: 7.22%;
+                height: 10%;
+                text-align: left;
                 // font: normal normal normal 20px/29px 'Heebo', sans-serif;
                 font: normal normal normal 1em/1.5em 'Heebo', sans-serif;
                 color: #020253;
                 // margin: 0 181px 38px 653px; // origin
-                // margin: 0 9.43vw 3.01vh 34.02vw;
-                margin: 0 0 3.01vh auto;
+                margin: 0 auto 3.01vh 0;
             }
 
             form {
                 // width: 855px;
                 // height: 381px;
                 width: 100%;
-                height: 64.69%;
+                // height: 47.39%;
+                // height: 51%;
+                height: 60%;
                 // margin: 0 181px 432px 183px; // origin
-                // margin: 0 9.43vw 34.16vh 9.53125vw;
                 margin: 0 0 auto 0;
 
-                .field-section { // continue from here
+                .field-section {
                     // width: 855px;
                     // height: 258px;
                     width: 100%;
-                    height: 67.72%;
+                    height: 67.72%; // new experimant
+                    // height: 75%;
+                    // height: 80%;
                     // margin: 0 0 123.49px 0; // origin
-                    margin: 0 0 9.77vh 0;
 
                     .wrapper-container {
                         // width: 855px;
                         // height: 75px;
                         width: 100%;
-                        height: 29.07%;
+                        // height: 29.07%;
+                        // height: 32%;
+                        height: 34%;
                         display: flex;
                         justify-content: space-between;
 
@@ -123,16 +124,17 @@
                             .headline {
                                 // width: 58px;
                                 // height: 24px;
-                                width: 13.88%;
-                                height: 32%;
-                                text-align: right;
+                                // width: 13.88%;
+                                height: 20%;
+                                width: 19%;
+                                text-align: left;
                                 // font: normal normal bold 16px/24px 'Heebo', sans-serif;
-                                font: normal normal bold 1em/1.5em 'Heebo', sans-serif;
+                                font: normal normal bold .8em/1.5em 'Heebo', sans-serif;
                                 color: #2C2C2C;
-                                margin: 0 0 0 auto;
+                                margin: 0 auto .5vh 0;
                             }
 
-                            .text { // why margin has no effect?
+                            .text {
                                 // width: 418px;
                                 // height: 50px;
                                 width: 100%;
@@ -140,15 +142,42 @@
                                 background: #E5EEFF 0% 0% no-repeat padding-box;
                                 border-bottom: 0.35em #FDBD03 solid;
                                 margin: 0 0 0 auto;
-
-                                &:first-child { // not first child
-                                    // width: 855px;
-                                    // height: 143px;
-                                    width: 100%;
-                                    height: 286%;
-                                    resize: none;
-                                }
                             }
+                        }
+                    }
+
+                    .area-wrapper {
+                        // width: 855px;
+                        // height: 168px;
+                        width: 100%;
+                        height: 65.12%;
+                        // height: 90%; // experimental
+                        display: flex;
+                        flex-direction: column;
+                        // margin: 15px 0 73.5px 0; // origin
+                        margin: 2.3vh 0 0 0;
+
+                        .headline {
+                            // width: 58px;
+                            // height: 24px;
+                            // width: 6.79%;
+                            height: 14.29%;
+                            width: 10%;
+                            text-align: left;
+                            font: normal normal bold .8em/1.5em 'Heebo', sans-serif;
+                            color: #2C2C2C;
+                            margin: 0 auto .5vh 0;
+                        }
+
+                        #text {
+                            // width: 855px
+                            // height: 143px;
+                            width: 100%;
+                            // height: 85.12%;
+                            height: 71%;
+                            resize: none;
+                            background: #E5EEFF 0% 0% no-repeat padding-box;
+                            border-bottom: 0.35em #FDBD03 solid;
                         }
                     }
                 }
@@ -162,10 +191,10 @@
                     border: #FDBD03;
                     text-align: center;
                     // font: normal normal bold 22px/30px 'Heebo', sans-serif;
-                    font: normal normal bold 1.4em/1.5em 'Heebo', sans-serif;
+                    font: normal normal bold 1.2em/1.5em 'Heebo', sans-serif;
                     letter-spacing: 0.01em;
                     // margin: 73.49px 0 0 689px (auto); // origin (auto not working)
-                    margin: 5.81vh 0 0 35.89vw;
+                    margin: 7.4vh 35.4vw 0 0;
                 }
             }
         }
@@ -177,9 +206,8 @@
             height: 100%;
             background: transparent 0% 0% no-repeat padding-box;
             // margin: 120px 166px 323px 0; // origin
-            // margin: 9.49vh 8.65vw 25.54vh 0;
-            // margin: 0 0 0 181px/auto;
             margin: 0 0 0 9.43vw;
+            object-fit: contain;
         }
     }
 
@@ -227,8 +255,8 @@
             img[alt="phone icon"] {
                 // width: 27px;
                 // height: 27px;
-                width: 28.43%;
-                height: 28.43%;
+                width: 35%;
+                height: 35%;
             }
         }
     }

@@ -36,43 +36,39 @@
 }
 .project-container .content-container .contact-container {
   width: 54.43%;
-  height: 73.26%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 0 17vh 0;
 }
 .project-container .content-container .contact-container h1 {
   width: 40%;
-  height: 16.47%;
-  text-align: right;
-  font: normal normal 900 3.5em/1.5em "Heebo", sans-serif;
+  height: 16%;
+  text-align: left;
+  font: normal normal 900 2.8em/1.5em "Heebo", sans-serif;
   color: #FDBD03;
-  margin: 0 0 1.19vh auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto 1.19vh 0;
 }
 .project-container .content-container .contact-container h6 {
   width: 45.03%;
-  height: 13%;
-  text-align: right;
+  height: 10%;
+  text-align: left;
   font: normal normal normal 1em/1.5em "Heebo", sans-serif;
   color: #020253;
-  margin: 0 0 3.01vh auto;
+  margin: 0 auto 3.01vh 0;
 }
 .project-container .content-container .contact-container form {
   width: 100%;
-  height: 64.69%;
+  height: 60%;
   margin: 0 0 auto 0;
 }
 .project-container .content-container .contact-container form .field-section {
   width: 100%;
   height: 67.72%;
-  margin: 0 0 9.77vh 0;
 }
 .project-container .content-container .contact-container form .field-section .wrapper-container {
   width: 100%;
-  height: 29.07%;
+  height: 34%;
   display: flex;
   justify-content: space-between;
 }
@@ -84,12 +80,12 @@
   justify-content: space-between;
 }
 .project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .headline {
-  width: 13.88%;
-  height: 32%;
-  text-align: right;
-  font: normal normal bold 1em/1.5em "Heebo", sans-serif;
+  height: 20%;
+  width: 19%;
+  text-align: left;
+  font: normal normal bold 0.8em/1.5em "Heebo", sans-serif;
   color: #2C2C2C;
-  margin: 0 0 0 auto;
+  margin: 0 auto 0.5vh 0;
 }
 .project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .text {
   width: 100%;
@@ -98,10 +94,27 @@
   border-bottom: 0.35em #FDBD03 solid;
   margin: 0 0 0 auto;
 }
-.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .text:first-child {
+.project-container .content-container .contact-container form .field-section .area-wrapper {
   width: 100%;
-  height: 286%;
+  height: 65.12%;
+  display: flex;
+  flex-direction: column;
+  margin: 2.3vh 0 0 0;
+}
+.project-container .content-container .contact-container form .field-section .area-wrapper .headline {
+  height: 14.29%;
+  width: 10%;
+  text-align: left;
+  font: normal normal bold 0.8em/1.5em "Heebo", sans-serif;
+  color: #2C2C2C;
+  margin: 0 auto 0.5vh 0;
+}
+.project-container .content-container .contact-container form .field-section .area-wrapper #text {
+  width: 100%;
+  height: 71%;
   resize: none;
+  background: #E5EEFF 0% 0% no-repeat padding-box;
+  border-bottom: 0.35em #FDBD03 solid;
 }
 .project-container .content-container .contact-container form #submit {
   width: 19.42%;
@@ -109,15 +122,17 @@
   background: #FDBD03 0% 0% no-repeat padding-box;
   border: #FDBD03;
   text-align: center;
-  font: normal normal bold 1.4em/1.5em "Heebo", sans-serif;
+  font: normal normal bold 1.2em/1.5em "Heebo", sans-serif;
   letter-spacing: 0.01em;
-  margin: 5.81vh 0 0 35.89vw;
+  margin: 7.4vh 35.4vw 0 0;
 }
 .project-container .content-container img[alt="SMS chat"] {
   width: 34.06%;
   height: 100%;
   background: transparent 0% 0% no-repeat padding-box;
   margin: 0 0 0 9.43vw;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .project-container .iconsSet {
   width: 25.73%;
@@ -147,8 +162,8 @@
   height: 32.64%;
 }
 .project-container .iconsSet .bg-icon img[alt="phone icon"] {
-  width: 28.43%;
-  height: 28.43%;
+  width: 35%;
+  height: 35%;
 }
 .project-container .bottom-left-page-style {
   width: 54.0625%;
