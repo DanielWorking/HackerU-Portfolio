@@ -18,7 +18,7 @@
   align-items: center;
 }
 .navbar .profile {
-  width: 8.23%;
+  width: 12.2%;
   height: 5.75vh;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
   margin-right: 0.8em;
 }
 .navbar .profile h6 {
-  width: 50.07%;
+  width: 75%;
   height: 56.53%;
   font-family: "Satisfy", cursive;
   font-size: 1.563em;
