@@ -226,8 +226,8 @@
   margin: 0 auto 0.85em;
 }
 .aboutme-container .aboutme-display .aboutme-section .resume {
-  width: 32.59%;
-  height: 11.69%;
+  width: 27.5%;
+  height: 11%;
   background-color: #1AE0EC;
   border-radius: 1.1rem;
   display: flex;
@@ -238,11 +238,14 @@
 .aboutme-container .aboutme-display .aboutme-section .resume a {
   width: 64.24%;
   height: 70.74%;
-  font: normal normal bold 0.9em/2em "Heebo", sans-serif;
+  font: normal normal bold 0.8em/1.5em "Heebo", sans-serif;
   color: #3A3A3A;
   text-decoration: none;
   letter-spacing: 0.015em;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: capitalize;
 }
 
