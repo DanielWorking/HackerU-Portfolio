@@ -17,7 +17,7 @@
         width: 30%;
         height: 60%;
         background: #1A1A1AD4 0% 0% no-repeat padding-box;
-        margin: 20% 15.4% 26% 55%;
+        margin: 20% 55% 26% 15.4%;
 
         .content {
             // width: 418px;
@@ -34,7 +34,7 @@
                 // margin: 0 0 21px 0;
                 width: 100%;
                 height: 12.39%;
-                text-align: right;
+                text-align: left;
                 font: normal normal 900 1.8em/1.5 'Heebo', sans-serif;
                 color: #FFFFFF;
                 margin: 0 0 4.91% 0;
@@ -51,7 +51,7 @@
                 font: normal normal normal 1em/1.5 'Heebo', sans-serif;
                 color: #F9F9F9;
                 margin: 0 0 10.29% 0;
-                text-align: right;
+                text-align: left;
             }
 
             .field-section {
@@ -72,8 +72,12 @@
                     height: 14.38%;
                     font: normal normal bold .8em/1.5 'Heebo', sans-serif;
                     color: #FFFFFF;
-                    margin: 0 0 0 86.01%;
+                    margin: 0 86.01% 0 0;
                     white-space: nowrap;
+
+                    &:nth-child(3) {
+                        margin-right: 91%;
+                    }
                 }
 
                 .text {
@@ -99,7 +103,7 @@
                 font: normal normal bold 1.2em/1.5 'Heebo', sans-serif;
                 letter-spacing: 0.02em;
                 color: #FFFFFF;
-                margin: 0 0.24% 0 60.05%;
+                margin: 0 60.05% 0 0.24%;
             }
         }
     }
