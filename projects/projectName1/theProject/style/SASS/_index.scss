@@ -15,7 +15,7 @@
         // height: 643px;
         // margin: 157.27px 295.39px 279.93px 1056px;
         width: 30%;
-        height: 60%;
+        height: 70%;
         background: #1A1A1AD4 0% 0% no-repeat padding-box;
         margin: 20% 55% 26% 15.4%;
 
@@ -24,8 +24,8 @@
             // height: 428px;
             // margin: 75.73px 75.61px 139.07px 75px;
             width: 73.47%;
-            height: 66.57%;
-            margin: 11.78% 13.29% 21.63% 13.19%;
+            height: 75%;
+            margin: 11.78% 13.29% 15.5% 13.19%;
 
             h4 {
                 // width: 413px;
@@ -50,8 +50,8 @@
                 height: 13.56%;
                 font: normal normal normal 1em/1.5 'Heebo', sans-serif;
                 color: #F9F9F9;
-                margin: 0 0 10.29% 0;
                 text-align: left;
+                margin: 0 0 10.29% 0;
             }
 
             .field-section {
@@ -59,9 +59,12 @@
                 // height: 167px;
                 // margin: 0 0 34.54px 0;
                 width: 100%;
-                height: 39.1%;
+                height: 36%;
                 margin: 0 0 8.08% 0;
-                text-align: right;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; // aligning items to the left hen using flexbox
 
                 .headline {
                     // width: 58px;
@@ -72,12 +75,7 @@
                     height: 14.38%;
                     font: normal normal bold .8em/1.5 'Heebo', sans-serif;
                     color: #FFFFFF;
-                    margin: 0 86.01% 0 0;
                     white-space: nowrap;
-
-                    &:nth-child(3) {
-                        margin-right: 91%;
-                    }
                 }
 
                 .text {
@@ -98,12 +96,12 @@
                 // font: normal normal bold 22px/30px 'Heebo', sans-serif;
                 // margin: 0 1 0 251px;
                 width: 39.8%;
-                height: 14%;
+                height: 11%;
                 background: #D31C75 0% 0% no-repeat padding-box;
                 font: normal normal bold 1.2em/1.5 'Heebo', sans-serif;
                 letter-spacing: 0.02em;
                 color: #FFFFFF;
-                margin: 0 60.05% 0 0.24%;
+                margin: 7.5% auto 0 0;
             }
         }
     }
