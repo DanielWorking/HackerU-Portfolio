@@ -15,7 +15,7 @@
   display: grid;
   gap: 2.08vh 1.17vw;
   margin: 0 auto;
-  padding-top: 23vh;
+  padding-top: 22vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
@@ -116,7 +116,7 @@
 }
 .project-container .content-container form h6 {
   width: 77.49%;
-  height: 6.11%;
+  height: 6.5%;
   text-align: center;
   font: normal normal normal 1em/1.5em "Assistant", sans-serif;
   color: #F9F9F9;
@@ -132,7 +132,7 @@
 }
 .project-container .content-container form .form-content .field-section {
   width: 100%;
-  height: 84.29%;
+  height: 80%;
 }
 .project-container .content-container form .form-content .field-section .headline {
   width: 18.37%;
