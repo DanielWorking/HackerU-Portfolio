@@ -35,3 +35,39 @@
         }
     }
 }
+
+@media (max-width: 1024px) {// tablet
+    .header-container {
+        .text-container {
+            width: 45%;
+
+            h1 {
+                width: 80%;
+                font: normal normal 900 3.5em/1.5em 'Heebo', sans-serif;
+            }
+
+            p {
+                height: 34%;
+                font: normal normal 500 .9em/1.3em 'Heebo', sans-serif;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {// mobile
+    .header-container {
+        .text-container {
+            width: 65%;
+            height: 43%;
+
+            h1 {
+                width: 100%;
+            }
+
+            p {
+                height: 36%;
+                font: normal normal 500 1em/1.3em 'Heebo', sans-serif;
+            }
+        }
+    }
+}
