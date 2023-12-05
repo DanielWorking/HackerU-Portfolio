@@ -86,7 +86,27 @@
   color: #1AE0EC;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+  .navbar .profile {
+    margin-left: 5.87em;
+  }
+  .navbar .profile img {
+    margin-right: 0.43em;
+  }
+  .navbar .links {
+    margin-right: 3.71em;
+  }
+  .navbar .links ul li:not(:last-child) {
+    margin-right: 1.34em;
+  }
+  .navbar .links ul li a {
+    font: normal normal normal 1.4em/1em "Heebo", sans-serif;
+  }
+  .navbar .links ul li #main-btn {
+    font: normal normal bold 1.4em/1em "Heebo", sans-serif;
+  }
+}
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -97,7 +117,7 @@
     margin-left: 1em;
   }
   .navbar .profile img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin-right: 0;
   }
