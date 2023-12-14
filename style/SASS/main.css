@@ -230,8 +230,51 @@
 .technologies-container .technologies img {
   width: 7.6%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .technologies-container {
+    height: auto;
+  }
+  .technologies-container .technologies {
+    flex-wrap: wrap;
+  }
+  .technologies-container .technologies img[alt="html icon"] {
+    flex: 16.66%;
+  }
+  .technologies-container .technologies img[alt="css icon"] {
+    flex: 16.66%;
+  }
+  .technologies-container .technologies img[alt="Bootstrap icon"] {
+    flex: 16.66%;
+  }
+  .technologies-container .technologies img[alt="SASS icon"] {
+    flex: 16.66%;
+  }
+  .technologies-container .technologies img[alt="JavaScript icon"] {
+    flex: 16.66%;
+  }
+  .technologies-container .technologies img[alt="oop icon"] {
+    flex: 16.66%;
+  }
+  .technologies-container .technologies img[alt="ES6 icon"] {
+    flex: 20%;
+  }
+  .technologies-container .technologies img[alt="TypeScript icon"] {
+    flex: 20%;
+  }
+  .technologies-container .technologies img[alt="API icon"] {
+    flex: 20%;
+  }
+  .technologies-container .technologies img[alt="React icon"] {
+    flex: 20%;
+  }
+  .technologies-container .technologies img[alt="nodeJS icon"] {
+    flex: 20%;
+  }
+}
 .aboutme-container {
   width: 100%;
   height: 66.21vh;

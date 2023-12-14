@@ -1,4 +1,4 @@
-.technologies-container {// maybe im not suppose to use flex wrap based on the style in the mobile version of the site result from the course
+.technologies-container {
     width: 100%;
     height: 12.04vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -17,19 +17,61 @@
         img {
             width: 7.6%;
             height: 100%;
+            object-fit: cover;
         }
     }
 }
 
-// @media (max-width: 768px) {// no effect of the flex wrap on the mobile version of the site
-//     .technologies-container {
-//         height: 20vh;
-//         .technologies { 
-//             height: 30%;
-//             flex-wrap: wrap;
-//             img {
-//                 height: 50%;
-//             }
-//         }
-//     }
-// }
+@media (max-width: 768px) {// how can i make the space like in the result website?
+    .technologies-container {
+        height: auto;
+
+        .technologies {
+            flex-wrap: wrap;
+
+            img[alt="html icon"] {
+                flex: 16.66%;
+            }
+
+            img[alt="css icon"] {
+                flex: 16.66%;
+            }
+
+            img[alt="Bootstrap icon"] {
+                flex: 16.66%;
+            }
+
+            img[alt="SASS icon"] {
+                flex: 16.66%;
+            }
+
+            img[alt="JavaScript icon"] {
+                flex: 16.66%;
+            }
+
+            img[alt="oop icon"] {
+                flex: 16.66%;
+            }
+
+            img[alt="ES6 icon"] {
+                flex: 20%;
+            }
+
+            img[alt="TypeScript icon"] {
+                flex: 20%;
+            }
+
+            img[alt="API icon"] {
+                flex: 20%;
+            }
+
+            img[alt="React icon"] {
+                flex: 20%;
+            }
+
+            img[alt="nodeJS icon"] {
+                flex: 20%;
+            }
+        }
+    }
+}
