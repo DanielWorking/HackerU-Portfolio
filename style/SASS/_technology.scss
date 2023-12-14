@@ -1,4 +1,4 @@
-.technologies-container {
+.technologies-container {// maybe im not suppose to use flex wrap based on the style in the mobile version of the site result from the course
     width: 100%;
     height: 12.04vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -20,3 +20,16 @@
         }
     }
 }
+
+// @media (max-width: 768px) {// no effect of the flex wrap on the mobile version of the site
+//     .technologies-container {
+//         height: 20vh;
+//         .technologies { 
+//             height: 30%;
+//             flex-wrap: wrap;
+//             img {
+//                 height: 50%;
+//             }
+//         }
+//     }
+// }
