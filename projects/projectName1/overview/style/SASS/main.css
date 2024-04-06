@@ -4,270 +4,192 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  width: 100%;
-  height: 7.41vh;
-  max-height: 80px;
-  background-color: #FFFFFF;
-  border-top: 0.1em solid #1AE0EC;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar .profile {
-  width: 12.2%;
-  height: 5.75vh;
-  display: flex;
-  align-items: center;
-  margin-left: 11em;
-}
-.navbar .profile img {
-  width: 39.25%;
+html, body {
   height: 100%;
-  border-radius: 50%;
-  margin-right: 0.8em;
-}
-.navbar .profile h6 {
-  width: 75%;
-  height: 56.53%;
-  font-family: "Satisfy", cursive;
-  font-size: 1.563em;
-  color: #444444;
-  white-space: nowrap;
-  margin: 0 auto;
-}
-.navbar input {
-  visibility: hidden;
-}
-.navbar .toggle-button {
-  display: none;
-  position: absolute;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #1AE0EC;
-  background: 0% 0% no-repeat padding-box;
-  font-size: 1.5em;
-}
-.navbar .links {
-  width: 27.87%;
-  height: auto;
-  margin-right: 13em;
-}
-.navbar .links ul {
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-.navbar .links ul li {
-  list-style: none;
-}
-.navbar .links ul li:not(:last-child) {
-  margin-right: 2.5em;
-}
-.navbar .links ul li a {
-  font: normal normal normal 1.563em/1em "Heebo", sans-serif;
-  text-decoration: none;
-  color: #2C2C2C;
-  text-transform: capitalize;
-}
-.navbar .links ul li a:hover {
-  color: #1AE0EC;
-}
-.navbar .links ul li:last-child a:hover {
-  color: #000;
-}
-.navbar .links ul li #main-btn {
-  font: normal normal bold 1.563em/1em "Heebo", sans-serif;
-  color: #1AE0EC;
 }
 
-@media (max-width: 1024px) {
-  .navbar .profile {
-    margin-left: 5.87em;
+.px-5 {
+  padding: 0 1em !important;
+}
+.px-5 .visilbe {
+  display: none !important;
+}
+.px-5 .fs-4 {
+  font: normal normal 400 1.56em/1.5 "Satisfy", cursive;
+}
+.px-5 .navbar-toggler-icon {
+  width: 1.9em;
+  background-image: none;
+  color: #1AE0EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.px-5 .nav-item {
+  margin: 0 auto !important;
+}
+.px-5 .nav-item .hover-color:hover {
+  color: #1AE0EC;
+}
+.px-5 .nav-item .nav-link {
+  font: normal normal normal 1rem/0.84em "Heebo", sans-serif;
+}
+.px-5 .nav-item .bold-font {
+  font-weight: bold;
+}
+
+@media (min-width: 767px) {
+  .px-5 {
+    padding: 0 1em !important;
   }
-  .navbar .profile img {
-    margin-right: 0.43em;
+  .px-5 .nav-item + .nav-item {
+    margin-left: 2em;
   }
-  .navbar .links {
-    margin-right: 3.71em;
-  }
-  .navbar .links ul li:not(:last-child) {
-    margin-right: 1.34em;
-  }
-  .navbar .links ul li a {
-    font: normal normal normal 1.4em/1em "Heebo", sans-serif;
-  }
-  .navbar .links ul li #main-btn {
-    font: normal normal bold 1.4em/1em "Heebo", sans-serif;
+  .px-5 .nav-link {
+    font-size: 1.35rem !important;
   }
 }
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+@media (min-width: 1200px) {
+  .px-5 {
+    padding: 0 7em !important;
   }
-  .navbar .profile {
-    width: 6vw;
-    height: 5vh;
-    margin-left: 1em;
-  }
-  .navbar .profile img {
-    width: 80%;
-    height: 100%;
-    margin-right: 0;
-  }
-  .navbar .profile h6 {
-    display: none;
-  }
-  .navbar .toggle-button {
-    display: flex;
-    top: 0.3em;
-    right: 0.8em;
-  }
-  .navbar #toggle:checked ~ .links {
-    display: block;
-    width: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    margin-top: 6vh;
-  }
-  .navbar .links {
-    display: none;
-    text-align: center;
-  }
-  .navbar .links ul {
-    flex-direction: column;
-  }
-  .navbar .links ul li {
-    width: 100%;
-  }
-  .navbar .links ul li a {
-    display: block;
+  .px-5 .nav-link {
+    font-size: 1.56rem !important;
   }
 }
 .header-container {
   width: 100%;
-  height: 42.69%;
-  background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../../../projectName1/overview/images/headerBackgroundImage.jpg");
+  background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 4.1875em 1.3125em;
+  text-align: center;
 }
 .header-container .text-container {
-  width: 44%;
-  height: 21.9%;
-  margin: 5% auto 2%;
+  max-width: 351px;
+  color: #3A3A3A;
+  margin: 0 auto;
 }
 .header-container .text-container h1 {
-  width: 56 0.5%;
-  height: 65.2%;
-  font: normal normal 900 5em/1.5 "Heebo", sans-serif;
-  color: #3A3A3A;
-  text-align: center;
-  margin-bottom: 2.21%;
+  font: normal normal 900 2.88rem/1.45em "Heebo", sans-serif;
   text-transform: uppercase;
 }
 .header-container .text-container p {
-  width: 100%;
-  height: 34.8%;
-  font: normal normal 500 1em/1.5 "Heebo", sans-serif;
-  color: #3A3A3A;
-  text-align: center;
-  margin: 0;
+  font: normal normal 500 0.94rem/1.66em "Heebo", sans-serif;
 }
 .header-container .links-container {
-  width: 100%;
-  height: 4vh;
+  max-width: 282px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 6%;
-  gap: 0.74%;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-.header-container .links-container .overview {
-  width: 7.97%;
-  height: 80%;
-  background-color: #1AE0EC;
-  border-radius: 1.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header-container .links-container .overview a {
-  width: 100%;
-  height: 70%;
-  font: normal normal 500 0.8em/2em "Heebo", sans-serif;
-  color: #412020;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: capitalize;
+.header-container .links-container a {
+  min-height: 18px;
+  color: #2C2C2C;
+  font: normal normal 500 0.75rem/1.84em "Heebo", sans-serif;
 }
 
+@media (min-width: 900px) {
+  .text-container {
+    max-width: 844px;
+  }
+  .text-container h1 {
+    font: normal normal 900 5rem/1.48em "Heebo", sans-serif;
+  }
+  .text-container p {
+    font: normal normal 500 1.25rem/1.5em "Heebo", sans-serif;
+  }
+  .links-container {
+    max-width: 318px;
+  }
+  .links-container a {
+    font: normal normal 500 0.88rem/1.85em "Heebo", sans-serif;
+  }
+}
 .technologies-container {
   width: 100%;
-  height: 12.04%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0em 0.1875em 0.375em rgba(0, 0, 0, 0.1607843137);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  padding: 0.5em;
 }
 .technologies-container .technologies {
-  width: 24.22%;
-  height: 9.26%;
+  width: 68.2%;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 .technologies-container .technologies img {
-  width: 21.51%;
-  height: 100%;
+  min-width: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.technologies-container .technologies img + img {
+  margin-left: 0.6em;
 }
 
+@media (min-width: 600px) {
+  .technologies {
+    max-width: 465px;
+  }
+}
 .overview-container {
   width: 100%;
-  height: 93.9%;
   background: #EBFEFF 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  padding: 5em 0;
 }
 .overview-container img {
   width: 61.93%;
-  height: 70.81%;
-  margin: 6% 19.02% 18.15% 19.04%;
+  min-width: 295px;
   box-shadow: 0px 0px 2.5em rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 600px) {
+  .overview-container {
+    padding-bottom: 8em;
+  }
+}
+@media (min-width: 900px) {
+  .overview-container {
+    padding-bottom: 11.5em;
+  }
+}
 .copyright-section {
   width: 100%;
-  height: 4.75%;
   background: #000000 0% 0% no-repeat padding-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.375em solid #1AE0EC;
+  border-bottom: 0.35em solid #1AE0EC;
 }
 .copyright-section p {
   color: #1AE0EC;
-  margin: auto 1.594rem;
+  margin: 0;
+  font: normal normal normal 0.56rem/1.45em "Heebo", sans-serif;
 }
-.copyright-section p #name {
-  width: 3.9%;
-  height: 2.7%;
-  font: normal normal normal 1rem/1.5 "Heebo", sans-serif;
-  letter-spacing: 0.03125em;
+.copyright-section #copy {
+  font-weight: 300;
+  padding-left: 1em;
 }
-.copyright-section p #copy {
-  width: 7.8%;
-  height: 2.7%;
-  font: normal normal 300 1rem/1.5 "Heebo", sans-serif;
+.copyright-section #name {
+  padding-right: 1em;
+}
+
+@media (min-width: 600px) {
+  .copyright-section {
+    border-bottom-width: 0.4em;
+  }
+  .copyright-section p {
+    font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
+  }
+  .copyright-section #copy {
+    font-weight: 300;
+    padding-left: 2.79em;
+  }
+  .copyright-section #name {
+    padding-right: 2.79em;
+  }
 }/*# sourceMappingURL=main.css.map */

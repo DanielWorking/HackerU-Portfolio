@@ -24,20 +24,35 @@
 </head>
 
 <body>
-    <!-- new navbar -->
-    <nav class="navbar">
-        <div class="profile">
-            <img src="../overview/images/profilePicture.jpg" alt="profile image">
-            <h6>Daniel Reifer</h6>
-        </div>
-        <div class="toggle-button">&#9776;</div>
-        <div class="links">
-            <ul>
-                <li><a href="#main" id="main-btn">main</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-white border-top border-info-subtle border-3">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center">
+                <img src="./images/profilePicture.jpg" alt="profile image" class="rounded-circle" width="40"
+                    height="40">
+                <span class="fs-4 ms-1 visilbe">Daniel Reifer</span> </a>
+
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon">&#9776;</span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-info bold-font" href="../../../index.html#main" id="main-btn">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-color" href="../../../index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-color" href="../../../index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -50,12 +65,13 @@
             </p>
         </div>
         <div class="links-container">
-            <div class="overview">
-                <a href="../theProject/index.html">watch project &#8811;</a>
-            </div>
-            <div class="overview">
-                <a href="../theProject/project4_zip.zip" download="project4">download project &#8811;</a>
-            </div>
+            <a class="btn btn-info rounded-pill" href="../theProject/index.html" role="button">
+                watch project &#8811;
+            </a>
+            <a class="btn btn-info rounded-pill" href="../theProject/project4_zip.zip" download="project4"
+                role="button">
+                download project &#8811;
+            </a>
         </div>
     </div>
 
