@@ -4,170 +4,250 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  font-family: "Heebo", sans-serif;
+}
+
 .project-container {
   width: 100%;
+  height: 100%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
+  position: absolute;
 }
-.project-container .top-right-page-style {
-  width: 22.61%;
-  height: 1.43vh;
-  background: #FDBD03 0% 0% no-repeat padding-box;
-  margin: 0 0 0 auto;
+.project-container .top-page-style {
+  width: 90%;
+  min-height: 10px;
+  background: #FDBD03;
+  margin: 0 0 auto auto;
 }
-.project-container .bg-icon {
-  width: 4%;
-  height: 7.51vh;
+.project-container .solo-bg-icon {
+  display: none;
+}
+.project-container .content-container {
+  display: flex;
+  flex-direction: column;
+}
+.project-container .content-container img[alt="SMS chat"] {
+  max-width: 79px;
+  margin: 3em auto 0;
+  order: 1;
+}
+.project-container .content-container .contact-container {
+  width: 85%;
+  margin: 3em auto 0;
+  text-align: center;
+  order: 2;
+}
+.project-container .content-container .contact-container h1 {
+  font-size: 2.5rem;
+  line-height: 1.48em;
+  font-weight: 900;
+  color: #FDBD03;
+  margin: 0 auto 0.23em;
+}
+.project-container .content-container .contact-container h6 {
+  max-width: 385px;
+  font-size: 0.938rem;
+  line-height: 1.47em;
+  font-weight: 400;
+  color: #020253;
+  margin: 0 auto 2.29em;
+}
+.project-container .content-container .contact-container form {
+  max-width: 855px;
+  max-height: 381px;
+}
+.project-container .content-container .contact-container form .wrapper-container .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.project-container .content-container .contact-container form .wrapper-container .wrapper .headline {
+  text-align: left;
+  font-size: 0.625rem;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #2C2C2C;
+}
+.project-container .content-container .contact-container form .wrapper-container .wrapper .text {
+  background: #E5EEFF 0% 0% no-repeat padding-box;
+  border: #E5EEFF;
+  border-bottom: 3px solid #FDBD03;
+  min-height: 37px;
+}
+.project-container .content-container .contact-container form .wrapper-container .wrapper + .wrapper {
+  margin: 0.96em 0 0.98em 0;
+}
+.project-container .content-container .contact-container form .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.project-container .content-container .contact-container form .wrapper .headline {
+  text-align: left;
+  font-size: 0.625rem;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #2C2C2C;
+}
+.project-container .content-container .contact-container form .wrapper .text {
+  background: #E5EEFF 0% 0% no-repeat padding-box;
+  border: #E5EEFF;
+  border-bottom: 3px solid #FDBD03;
+  min-height: 37px;
+  max-height: 50px;
+  min-height: 106px;
+}
+.project-container .content-container .contact-container form #submit {
+  width: 100%;
+  min-height: 37px;
   background: #FDBD03 0% 0% no-repeat padding-box;
-  border-radius: 50%;
+  font-size: 0.938rem;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #000000;
+  margin: 1.17em 0 9.66em 0;
+  border: rgba(0, 0, 0, 0.1607843137);
+}
+.project-container .iconsSet {
+  max-width: 236px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 1.63em;
+}
+.project-container .iconsSet .bg-icon {
+  min-width: 46px;
+  min-height: 46px;
+  background: #FDBD03 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4.99vh 91.67vw 0 3.39vw;
-}
-.project-container .bg-icon img[alt="whatsapp icon"] {
-  width: 56.85%;
-  height: 56.85%;
-}
-.project-container .content-container {
-  width: 81.83%;
-  height: 63.56vh;
-  display: flex;
-  margin: 10.91vh 8.65vw 25.54vh 9.54vw;
-}
-.project-container .content-container .contact-container {
-  width: 54.43%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 17vh 0;
-}
-.project-container .content-container .contact-container h1 {
-  width: 40%;
-  height: 16%;
-  text-align: left;
-  font: normal normal 900 2.8em/1.5em "Heebo", sans-serif;
-  color: #FDBD03;
-  margin: 0 auto 1.19vh 0;
-}
-.project-container .content-container .contact-container h6 {
-  width: 45.03%;
-  height: 10%;
-  text-align: left;
-  font: normal normal normal 1em/1.5em "Heebo", sans-serif;
-  color: #020253;
-  margin: 0 auto 3.01vh 0;
-}
-.project-container .content-container .contact-container form {
-  width: 100%;
-  height: 60%;
-  margin: 0 0 auto 0;
-}
-.project-container .content-container .contact-container form .field-section {
-  width: 100%;
-  height: 67.72%;
-}
-.project-container .content-container .contact-container form .field-section .wrapper-container {
-  width: 100%;
-  height: 34%;
-  display: flex;
-  justify-content: space-between;
-}
-.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper {
-  width: 48.89%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .headline {
-  width: 19%;
-  height: 20%;
-  text-align: left;
-  font: normal normal bold 0.8em/1.5em "Heebo", sans-serif;
-  color: #2C2C2C;
-  margin: 0 auto 0.5vh 0;
-}
-.project-container .content-container .contact-container form .field-section .wrapper-container .wrapper .text {
-  width: 100%;
-  height: 66.67%;
-  background: #E5EEFF 0% 0% no-repeat padding-box;
-  border-bottom: 0.35em #FDBD03 solid;
-  margin: 0 0 0 auto;
-}
-.project-container .content-container .contact-container form .field-section .area-wrapper {
-  width: 100%;
-  height: 65.12%;
-  display: flex;
-  flex-direction: column;
-  margin: 2.3vh 0 0 0;
-}
-.project-container .content-container .contact-container form .field-section .area-wrapper .headline {
-  width: 10%;
-  height: 14.29%;
-  text-align: left;
-  font: normal normal bold 0.8em/1.5em "Heebo", sans-serif;
-  color: #2C2C2C;
-  margin: 0 auto 0.5vh 0;
-}
-.project-container .content-container .contact-container form .field-section .area-wrapper #text {
-  width: 100%;
-  height: 71%;
-  resize: none;
-  background: #E5EEFF 0% 0% no-repeat padding-box;
-  border-bottom: 0.35em #FDBD03 solid;
-}
-.project-container .content-container .contact-container form #submit {
-  width: 19.42%;
-  height: 13.13%;
-  background: #FDBD03 0% 0% no-repeat padding-box;
-  border: #FDBD03;
-  text-align: center;
-  font: normal normal bold 1.2em/1.5em "Heebo", sans-serif;
-  letter-spacing: 0.01em;
-  margin: 7.4vh 35.4vw 0 0;
-}
-.project-container .content-container img[alt="SMS chat"] {
-  width: 34.06%;
-  height: 100%;
-  background: transparent 0% 0% no-repeat padding-box;
-  margin: 0 0 0 9.43vw;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.project-container .iconsSet {
-  width: 25.73%;
-  height: 7.51vh;
-  display: flex;
-  justify-content: space-between;
-  margin: 23.64vh auto 3.01vh 2.87vw;
-}
-.project-container .iconsSet .bg-icon {
-  width: 15%;
-  height: 100%;
-  background: #FDBD03 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   border-radius: 50%;
-  margin: 0;
 }
-.project-container .iconsSet .bg-icon img[alt="facebook icon"] {
-  width: 20%;
-  height: 37.9%;
+.project-container .iconsSet .bg-icon img {
+  max-width: 17px;
+  max-height: 17px;
 }
-.project-container .iconsSet .bg-icon img[alt="instagram icon"] {
-  width: 33.69%;
-  height: 33.69%;
+.project-container .bottom-page-style {
+  width: 100%;
+  min-height: 10px;
+  background: #FDBD03;
 }
-.project-container .iconsSet .bg-icon img[alt="linkedin icon"] {
-  width: 33.69%;
-  height: 32.64%;
+
+@media (min-width: 900px) {
+  .project-container .top-page-style {
+    width: 22.7%;
+    max-width: 434px;
+    min-height: 18px;
+  }
+  .project-container .solo-bg-icon {
+    min-width: 46px;
+    min-height: 46px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95px;
+    max-height: 95px;
+    height: 100%;
+    margin: 2.8125em auto auto 4.0625em;
+  }
+  .project-container .solo-bg-icon img {
+    max-width: 54px;
+    max-height: 54px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .project-container .content-container {
+    flex-direction: row;
+  }
+  .project-container .content-container img[alt="SMS chat"] {
+    max-width: 280px;
+    min-height: 804px;
+    order: 2;
+    margin: 0 auto auto 5em;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .project-container .content-container .contact-container {
+    max-width: 855px;
+    order: 1;
+    margin: 4.25em 0 18.6875em 11.4375em;
+    text-align: left;
+  }
+  .project-container .content-container .contact-container h1 {
+    font-size: 4.125rem;
+    line-height: 1.47em;
+    font-weight: 900;
+    margin: 0 auto 0.23em 0;
+  }
+  .project-container .content-container .contact-container h6 {
+    max-width: 385px;
+    font-size: 1.25rem;
+    line-height: 1.45em;
+    font-weight: 400;
+    margin: 0 auto 1.9em 0;
+  }
+  .project-container .content-container .contact-container form .wrapper-container {
+    display: flex;
+    margin-bottom: 0.9375em;
+  }
+  .project-container .content-container .contact-container form .wrapper-container .wrapper + .wrapper {
+    margin: 0 0 0 1.22em;
+  }
+  .project-container .content-container .contact-container form .wrapper-container .wrapper {
+    width: 100%;
+  }
+  .project-container .content-container .contact-container form .wrapper-container .wrapper .headline {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+  }
+  .project-container .content-container .contact-container form .wrapper-container .wrapper .text {
+    min-height: 50px;
+  }
+  .project-container .content-container .contact-container form .wrapper .headline {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+  }
+  .project-container .content-container .contact-container form .wrapper .text {
+    min-height: 143px;
+  }
+  .project-container .content-container .contact-container form #submit {
+    max-width: 166px;
+    font-size: 1.375rem;
+    line-height: 1.65em;
+    font-weight: 700;
+    margin: 3.34em auto 0 0;
+  }
+  .project-container .iconsSet {
+    max-width: 494px;
+    margin: auto auto 2.38em 3.45em;
+  }
+  .project-container .iconsSet .bg-icon {
+    min-width: 95px;
+    min-height: 95px;
+  }
+  .project-container .iconsSet .bg-icon img {
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .project-container .bottom-page-style {
+    width: 54.0625%;
+    min-height: 18px;
+    margin: 0 auto 0 0;
+  }
 }
-.project-container .iconsSet .bg-icon img[alt="phone icon"] {
-  width: 35%;
-  height: 35%;
-}
-.project-container .bottom-left-page-style {
-  width: 54.0625%;
-  height: 1.43vh;
-  background: #FDBD03 0% 0% no-repeat padding-box;
-  margin: auto auto 0 0;
+@media (min-width: 1500px) {
+  .project-container .content-container img[alt="SMS chat"] {
+    margin: 0 10.375em auto 11.3125em;
+    max-width: 535px;
+    max-height: 804px;
+  }
 }/*# sourceMappingURL=main.css.map */

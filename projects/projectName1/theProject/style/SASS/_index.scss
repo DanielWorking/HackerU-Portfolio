@@ -1,107 +1,112 @@
 .project-container {
-    // width: 1920px;
-    // height: 1080px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("../../images/purpleBackground.png");
-    background-size: 100% 50%;
+    background-size: 100% 33.33%;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
 
     form {
-        // width: 569px;
-        // height: 643px;
-        // margin: 157.27px 295.39px 279.93px 1056px;
-        width: 30%;
-        height: 70%;
+        width: clamp(299px, 70%, 569px);
         background: #1A1A1AD4 0% 0% no-repeat padding-box;
-        margin: 20% 55% 26% 15.4%;
+        margin: 5.5625em auto 8em;
 
         .content {
-            // width: 418px;
-            // height: 428px;
-            // margin: 75.73px 75.61px 139.07px 75px;
-            width: 73.47%;
-            height: 75%;
-            margin: 11.78% 13.29% 15.5% 13.19%;
+            width: clamp(230px, 80%, 418px);
+            margin: 3em auto;
 
             h4 {
-                // width: 413px;
-                // height: 53px;
-                // font: normal normal 900 36px/53px 'Heebo', sans-serif;
-                // margin: 0 0 21px 0;
-                width: 100%;
-                height: 12.39%;
-                text-align: left;
-                font: normal normal 900 1.8em/1.5 'Heebo', sans-serif;
+                width: 60%;
+                font: normal normal 900 1.56rem/1.2em "Heebo", sans-serif;
                 color: #FFFFFF;
-                margin: 0 0 4.91% 0;
                 text-align: center;
+                margin: 0 auto;
             }
 
             p {
-                // width: 417px;
-                // height: 58px;
-                // font: normal normal normal 20px/29px 'Heebo', sans-serif;
-                // margin: 0 0 44px 0;
                 width: 100%;
-                height: 13.56%;
-                font: normal normal normal 1em/1.5 'Heebo', sans-serif;
+                font: normal normal normal .94rem/1.47em "Heebo", sans-serif;
                 color: #F9F9F9;
-                text-align: left;
-                margin: 0 0 10.29% 0;
+                text-align: center;
+                margin-top: .85em;
             }
 
             .field-section {
-                // width: 418px;
-                // height: 167px;
-                // margin: 0 0 34.54px 0;
                 width: 100%;
-                height: 36%;
-                margin: 0 0 8.08% 0;
                 text-align: left;
+                margin-top: 1.4em;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start; // aligning items to the left hen using flexbox
+                color: #FFFFFF;
 
                 .headline {
-                    // width: 58px;
-                    // height: 24px;
-                    // font: normal normal bold 16px/24px 'Heebo', sans-serif;
-                    // margin: 0 0 0 359.5px;
-                    width: 100%;
-                    height: 14.38%;
-                    font: normal normal bold .8em/1.5 'Heebo', sans-serif;
-                    color: #FFFFFF;
-                    white-space: nowrap;
+                    font: normal normal 900 .88rem/1.49em "Heebo", sans-serif;
+                }
+
+                .text + .headline {
+                    margin-top: 1.77em;
                 }
 
                 .text {
-                    // width: 418px;
-                    // height: 50px;
-                    // margin: 1 0 17.97px 0;
-                    width: 100%;
-                    height: 30%;
                     background: #FFFFFF 0% 0% no-repeat padding-box;
                     border: .1em solid #D31C75;
-                    margin: 0 0 4.2% 0;
+                    min-height: 28px;
                 }
             }
 
             #submit {
-                // width: 166px;
-                // height: 50px;
-                // font: normal normal bold 22px/30px 'Heebo', sans-serif;
-                // margin: 0 1 0 251px;
-                width: 39.8%;
-                height: 11%;
+                width: clamp(76px, 33.33%, 166px);
+                min-height: 33px;
                 background: #D31C75 0% 0% no-repeat padding-box;
-                font: normal normal bold 1.2em/1.5 'Heebo', sans-serif;
-                letter-spacing: 0.02em;
+                font: normal normal 900 .94rem/1.33em "Heebo", sans-serif;
+                letter-spacing: 0.014em;
                 color: #FFFFFF;
-                margin: 7.5% auto 0 0;
+                margin-top: 1.1em;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .project-container {
+        background-size: 100% 55%;
+
+        form {
+            margin: 5em 8em 9em auto;
+
+            .content {
+                margin: 4.7em auto 8.7em;
+
+                h4 {
+                    width: 100%;
+                    font: normal normal 900 2.25rem/1.47em "Heebo", sans-serif;
+                }
+
+                p {
+                    font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
+                }
+
+                .field-section {
+                    .headline {
+                        font: normal normal 900 1rem/1.5em "Heebo", sans-serif;
+                    }
+
+                    .text + .headline {
+                        margin-top: 1.13em;
+                    }
+
+                    .text {
+                        padding: 1em;
+                    }
+                }
+
+                #submit {
+                    font: normal normal 900 1.375rem/1.364em "Heebo", sans-serif;
+                    margin-top: 1.6em;
+                    padding: .41em 2.23em;
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
     }

@@ -4,73 +4,89 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+}
+
 .project-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  display: flex;
 }
 .project-container img {
-  width: 56.52%;
-  height: 100%;
+  width: 100%;
+  height: 33.33%;
+  min-height: 219px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.project-container form {
-  width: 21.78%;
-  height: 40%;
-  margin: 25.1vh auto 35.47vh;
+.project-container .content {
+  width: clamp(286px, 90%, 418px);
+  margin: 2em auto 4em;
   text-align: left;
 }
-.project-container form h4 {
-  width: 95%;
-  height: 14.59%;
-  font: normal normal 900 2em/1em "Heebo", sans-serif;
+.project-container .content h4 {
+  font-size: 1.75rem;
+  line-height: 1.46em;
+  font-weight: 900;
   color: #020253;
-  margin: 0 auto 2.04vh 0;
-  text-transform: capitalize;
+  margin-bottom: 0.57em;
 }
-.project-container form p {
-  width: 100%;
-  height: 16%;
-  font: normal normal normal 1em/1.5em "Heebo", sans-serif;
+.project-container .content p {
+  font-size: 0.94rem;
+  line-height: 1.46em;
+  font-weight: normal;
   color: #020253;
-  margin-bottom: 2.41vh;
+  margin-bottom: 2.06em;
 }
-.project-container form .formApplication {
+.project-container .content form {
   width: 100%;
-  height: 58.1%;
   display: flex;
   flex-direction: column;
 }
-.project-container form .formApplication .field-section {
-  width: 100%;
-  height: 67.71%;
-}
-.project-container form .formApplication .field-section .headline {
-  width: 13.88%;
-  height: 13.8%;
-  font: normal normal bold 0.9em/1em "Heebo", sans-serif;
+.project-container .content form .headline {
+  font-size: 0.63rem;
+  line-height: 1.5em;
   color: #2C2C2C;
-  text-transform: capitalize;
 }
-.project-container form .formApplication .field-section .headline:nth-child(3) {
-  display: flex;
-  justify-content: left;
-  margin: 2vh auto 0 0;
-}
-.project-container form .formApplication .field-section .text {
+.project-container .content form .text {
   width: 100%;
-  height: 28.74%;
+  max-width: 418px;
+  min-height: 34px;
   background: #E5EEFF 0% 0% no-repeat padding-box;
-  border-bottom: #020253 solid 0.3em;
+  border: #E5EEFF;
+  border-bottom: 0.1875em solid #020253;
 }
-.project-container form .formApplication #submit {
-  width: 39.72%;
-  height: 19.46%;
+.project-container .content form .text + .headline {
+  margin-top: 1.63em;
+}
+.project-container .content form #submit {
+  width: 100%;
+  max-width: 418px;
+  min-height: 34px;
   background: #020253 0% 0% no-repeat padding-box;
-  font: normal normal bold 1.1em/1em "Heebo", sans-serif;
-  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.357em;
+  letter-spacing: 0.015em;
   color: #FFFFFF;
-  margin: auto auto 0 0;
-  text-transform: capitalize;
+  margin-top: 1.6em;
+}
+
+@media (min-width: 900px) {
+  .project-container {
+    display: flex;
+  }
+  .project-container img {
+    width: 69%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .project-container .content {
+    margin: 8em 3em 8em;
+  }
 }/*# sourceMappingURL=main.css.map */

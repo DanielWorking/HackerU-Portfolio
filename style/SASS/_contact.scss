@@ -1,91 +1,116 @@
 .contact-us-container {
     width: 100%;
-    height: 88.8vh;
     background: #3A3A3A 0% 0% no-repeat padding-box;
     display: flex;
+    flex-direction: column;
 
     form {
-        width: 28.6%;
-        height: 67.37%;
+        width: min(80%, 548px);
         color: #FFFFFF;
         order: 2;
-        margin: auto 19.03125em auto 13.75em;
+        text-align: left;
+        margin: 0 auto 5.25em;
 
-
-        h4{
-            width: 35%;
-            height: 8.21%;
-            font: normal normal 900 1.8em/1em 'Heebo', sans-serif;
+        h4 {
+            font: normal normal 900 1.563rem/1.48em "Heebo", sans-serif;
             text-align: left;
-            margin: 0 auto 0.28em 0;
-            text-transform: uppercase;
         }
 
-        p{
-            width: 99.82%;
-            height: 8.98%;
-            font: normal normal normal 1em/1.3em 'Heebo', sans-serif;
+        p {
+            font: normal normal normal .938rem/1.47em "Heebo", sans-serif;
             text-align: left;
-            margin: 0 auto 2em 0;
         }
 
         .field-section {
-            width: 99.82%;
-            height: 61.77%;
-            text-align: left;
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
 
             .headline {
-                width: 26.5%;
-                height: 6.02%;
-                font: normal normal bold .8em/1em 'Heebo', sans-serif;
                 text-align: left;
-                white-space: nowrap;
-                margin: 1.22em auto .12em 0;
-                text-transform: capitalize;
-
-                &:nth-child(1) {
-                    margin-top: 0;
-                }
+                font: normal normal bold .75rem/1.5em "Heebo", sans-serif;
             }
 
             .text {
                 width: 100%;
-                height: 12.54%;
+                min-height: 28px;
                 background: #FFFFFF 0% 0% no-repeat padding-box;
-                border-bottom-color: #1AE0EC;
-                resize: none;
+                border: #FFFFFF;
+                border-bottom: 2px solid #1AE0EC;
             }
 
             textarea.text {
-                height: 25.07%;
+                min-height: 57px;
+            }
+
+            .text + .headline {
+                margin-top: .35em;
             }
         }
 
         #submit {
-            width: 30.24%;
-            height: 7.74%;
-            background: #1AE0EC 0% 0% no-repeat; // according to the design, it doesnt really have padding-box
-            border-radius: 1.2em;
-            font: normal normal bold 1.1em/1em 'Heebo', sans-serif;
-            letter-spacing: .02em;
+            width: min(100%, 94px);
+            background: #1AE0EC 0% 0% no-repeat padding-box;
+            font: normal normal bold .75rem/1.33em "Heebo", sans-serif;
+            letter-spacing: 0.18px;
             color: #2C2C2C;
-            margin: 1em auto 0 0;
-            border: #1AE0EC; // there is a black border appear and its not in the design
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            text-transform: capitalize;
+            border: #1AE0EC;
+            border-radius: 1.1rem;
+            margin-top: 1.34em;
         }
     }
 
     img {
-        width: 40.11%;
-        height: 69.97%;
+        width: clamp(185px, 40%, 770px);
         order: 1;
-        margin: 0 0 auto 4.78em;
+        margin: 0 .7em 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-us-container {
+        flex-direction: row;
+
+        form {
+            order: 1;
+            margin: 10.06em auto 9.44em 15em;
+
+            h4 {
+                font: normal normal 900 2.25rem/1.47em "Heebo", sans-serif;
+            }
+
+            p {
+                font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
+            }
+
+            .field-section {
+                .headline {
+                    font: normal normal bold 1rem/1.5em "Heebo", sans-serif;
+                }
+
+                .text {
+                    min-height: 50px;
+                }
+
+                textarea.text {
+                    min-height: 100px;
+                }
+
+                .text + .headline {
+                    margin-top: .94em;
+                }
+            }
+
+            #submit {
+                width: min(100%, 166px);
+                font: normal normal bold 1.375rem/1.36em "Heebo", sans-serif;
+                letter-spacing: 0.33px;
+            }
+        }
+
+        img {
+            margin: 0 4.75em auto auto;
+            order: 2;
+        }
     }
 }

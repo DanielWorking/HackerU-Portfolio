@@ -1,87 +1,114 @@
 .project-container {
+    position: absolute;
     width: 100%;
-    height: 100vh;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    background: transparent url('../../images/Path\ 15.png') 0% 0% no-repeat padding-box;
+    background-size: 100% 45.67%;
+    text-align: center;
 
-    .layout {
-        width: 100%;
-        height: 68.8%;
-        background: transparent url('../../images/Path\ 15.png') 0% 0% no-repeat padding-box;
-        background-size: 100% 100%; // makes sure the background image is taking 100% of the width and height of the container to get the desired cover effect
+    h1 {
+        max-width: 286px;
+        font-weight: $fw-bold;
+        color: $clr-yellowgreen;
+        font-size: 1.88rem;
+        line-height: 1.33em;
+        margin: 2.5em auto .8em;
+    }
 
-        h1 {
-            width: 51%;
-            height: 15.21%;
-            font: normal normal bold 4em/1em 'Assistant', sans-serif;
-            color: #D3E10E;
-            margin: 26.12vh auto 2.13vh;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        h6 {
-            width: 37.56%;
-            height: 3.5%;
-            font: normal normal normal 1em/1em 'Assistant', sans-serif;
-            text-align: center;
-            color: #F9F9F9;
-            margin: 0 auto;
-        }
+    h6 {
+        max-width: 286px;
+        font-weight: $fw-regular;
+        color: $clr-white;
+        font-size: .94rem;
+        line-height: 1.27em;
+        margin: 0 auto 10em;
     }
 
     form {
-        width: 57.3%;
-        height: 9%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10vh auto auto;
+        max-width: 286px;
+        margin: 0 auto;
 
-        .field-section {
-            width: 79.37%;
-            height: 100%;
+        .wrapper {
+            width: clamp(286px, 90%, 418px);
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
 
-            .wrapper {
-                width: 47.89%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-
-                .headline {
-                    width: 18%;
-                    height: 20%;
-                    text-align: left;
-                    font: normal normal bold .85em/1em 'Assistant', sans-serif;
-                    color: #011560;
-                    margin-bottom: .5vh;
-                    margin-top: .6vh;
-                    text-transform: capitalize;
-                }
-
-                .text {
-                    width: 100%;
-                    height: 67.57%;
-                    background: #F6F6F6 0% 0% no-repeat padding-box;
-                    border-bottom: #D3E10E solid .3em;
-                    text-transform: capitalize;
-                }
+            .headline {
+                text-align: left;
+                font-size: .63rem;
+                line-height: 1.39em;
             }
+
+            .text {
+                background: $clr-lightblue 0% 0% no-repeat padding-box;
+                border: $clr-lightblue;
+                border-bottom: 3px solid $clr-yellowgreen;
+                min-height: 34px;
+            }
+        }
+        
+        .wrapper + .wrapper {
+            margin-top: 1em;
         }
 
         #submit {
-            width: 15.1%;
-            height: 67.57%;
-            background: #D3E10E 0% 0% no-repeat padding-box;
-            font: normal normal bold 1.1em/1em 'Assistant', sans-serif;
-            letter-spacing: .03em;
-            color: #011560;
-            margin-top: auto;
-            border: #D3E10E;
-            text-transform: capitalize;
+            width: 100%;
+            min-height: 34px;
+            background: $clr-yellowgreen 0% 0% no-repeat padding-box;
+            border: $clr-gray;
+            font-size: .875rem;
+            line-height: 2em;
+            margin-top: 1.62em;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .project-container {
+        background-size: 100% 60%;
+
+        h1 {
+            max-width: 868px;
+            font-size: 4rem;
+            line-height: 1.77em;
+            margin: 3em auto .36em;
+        }
+
+        h6 {
+            max-width: 721px;
+            margin-bottom: 20em;
+            font-size: 1.25rem;
+            line-height: 1.3em;
+        }
+
+        form {
+            max-width: 1100px;
+            display: flex;
+            padding: 0 4em;
+
+            .wrapper {
+                justify-content: flex-end;
+
+                .headline {
+                    font-size: 1rem;
+                    line-height: 1.31em;
+                }
+
+                .text {
+                    max-width: 418px;
+                }
+            }
+
+            .wrapper + .wrapper {
+                margin-top: 0;
+                margin-left: 2.35em;
+            }
+
+            #submit {
+                max-width: 166px;
+                margin-top: auto;
+                margin-left: 4.36em;
+            }
         }
     }
 }

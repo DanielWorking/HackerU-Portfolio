@@ -6,85 +6,143 @@
 
 html, body {
   height: 100%;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .project-container {
   width: 100%;
-  height: 100.56%;
+  height: 100%;
   background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .project-container .content {
-  width: 57.3%;
-  height: 42%;
+  width: clamp(328px, 95%, 1100px);
+  margin: 5.6em auto 6.3em;
 }
 .project-container .content h1 {
-  width: 68.64%;
-  height: 50.13%;
-  text-align: left;
-  font: normal normal normal 7em/1.5 "Satisfy", cursive;
+  width: 100%;
+  min-height: 93px;
+  text-align: center;
+  font: normal normal normal 3.75rem/1.43em "Satisfy", cursive;
   color: #FFFFFF;
-  text-shadow: 0px 0px 0.3em rgba(0, 0, 0, 0.5294117647);
-  margin: 0 auto 0.089em;
+  text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.5294117647);
+  margin: 0 auto 0.33em;
 }
 .project-container .content h5 {
-  width: 48.091%;
-  height: 9.34%;
+  width: 95%;
   text-align: center;
-  font: normal normal normal 1.1em/1.5 Varela Round;
   color: #FFFFFF;
-  margin: 0 auto 0.75em;
+  font-size: 1.125rem;
+  line-height: 1.22em;
+  font-weight: 400;
+  margin: 0 auto 1.11em;
 }
 .project-container .content p {
-  width: 93.46%;
-  height: 13.5%;
+  width: 95%;
   text-align: center;
-  font: normal normal normal 0.8em/1.5 Varela Round;
   color: #F9F9F9;
-  margin: 0 auto 0.3em;
+  font-size: 1rem;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0 auto 1.4em;
 }
 .project-container .content form {
+  width: min(302px, 95%);
+  max-height: 169px;
+  margin: 0 auto;
+}
+.project-container .content form .wrapper {
   width: 100%;
-  height: 17.94%;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
 }
-.project-container .content form .field-section {
-  width: 79.37%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.project-container .content form .field-section .wrapper {
-  width: 47.89%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.project-container .content form .field-section .wrapper .headline {
-  width: 11%;
-  height: 27.4%;
-  text-align: left;
-  font: normal normal normal 0.8em/1 Varela Round;
+.project-container .content form .wrapper .headline {
+  width: inherit;
+  text-align: center;
+  font-size: 0.69rem;
+  line-height: 1.712em;
+  font-weight: 400;
   color: #F9F9F9;
-  margin-bottom: 0.3em;
 }
-.project-container .content form .field-section .wrapper .text {
-  width: 100%;
-  height: 68.5%;
+.project-container .content form .wrapper .text {
+  width: inherit;
+  min-height: 36px;
   background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
-  border: 0.15em solid #FFFFFF;
+  border: 0.125em solid #FFFFFF;
+}
+.project-container .content form .wrapper:nth-of-type(2) {
+  margin-top: 0.8em;
+}
+.project-container .content form .wrapper:nth-of-type(2) {
+  margin-bottom: 1.04em;
 }
 .project-container .content form #submit {
-  width: 18.73%;
-  height: 68.5%;
+  width: 100%;
+  min-height: 33px;
   text-align: center;
-  font: normal normal normal 0.85em/1.5 Varela Round;
+  font-size: 0.6875rem;
+  line-height: 1.72em;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
   border: #FFFFFF;
-  color: #1C1C1C;
-  margin: auto 0 0 auto;
+  color: #2823FD;
+}
+
+@media (min-width: 900px) {
+  .project-container .content {
+    margin: auto;
+  }
+  .project-container .content h1 {
+    max-width: 755px;
+    max-height: 204px;
+    font-size: 10rem;
+    line-height: 1.29em;
+  }
+  .project-container .content h5 {
+    max-width: 529px;
+    font-size: 2rem;
+    line-height: 1.19em;
+  }
+  .project-container .content p {
+    max-width: 1028px;
+    max-height: 60px;
+    font-size: 1rem;
+    line-height: 1.25em;
+  }
+  .project-container .content form {
+    width: 100%;
+    min-height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .project-container .content form .wrapper {
+    width: 25%;
+    max-width: 418px;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-container .content form .wrapper .headline {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.125em;
+  }
+  .project-container .content form .wrapper .text {
+    width: 100%;
+    min-height: 50px;
+  }
+  .project-container .content form .wrapper:nth-of-type(2) {
+    margin: 0;
+  }
+  .project-container .content form #submit {
+    max-width: 206px;
+    min-height: 50px;
+    font-size: 1rem;
+    line-height: 1.125em;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 50% !important;
+  }
 }/*# sourceMappingURL=main.css.map */

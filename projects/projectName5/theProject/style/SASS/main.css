@@ -4,163 +4,125 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 .project-container {
   width: 100%;
-  height: 233vh;
+  height: 100%;
   background: #E5EEFF 0% 0% no-repeat padding-box;
 }
 .project-container .content-container {
-  width: 64.9%;
-  height: 90.6%;
   display: grid;
-  gap: 2.08vh 1.17vw;
-  margin: 0 auto;
-  padding-top: 22vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 11px 0;
+  padding-bottom: 1.5em;
+  justify-items: center;
+  align-items: center;
 }
-.project-container .content-container .layout {
+.project-container .content-container .first-view {
   background: #020253 0% 0% no-repeat padding-box;
-  grid-row: 1/3;
-  grid-column: 3/5;
-}
-.project-container .content-container .layout h1 {
-  width: 64.28%;
-  height: 14.24%;
   text-align: center;
-  font: normal normal bold 2.5em/1.5em "Assistant", sans-serif;
-  color: #0EE1DA;
-  margin: 18vh auto 3.39vh;
-}
-.project-container .content-container .layout h6 {
-  width: 77.49%;
-  height: 10%;
-  text-align: center;
-  font: normal normal normal 1em/1.5em "Assistant", sans-serif;
-  color: #F9F9F9;
-  margin: 0 auto;
-}
-.project-container .content-container img {
-  width: 100%;
-  height: 100%;
-  background: transparent 0% 0% no-repeat padding-box;
-}
-.project-container .content-container img[alt="iland trees"] {
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-.project-container .content-container img[alt=sunset] {
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-.project-container .content-container img[alt=beach] {
-  grid-row: 2/3;
-  grid-column: 1/2;
-}
-.project-container .content-container img[alt=cow] {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-.project-container .content-container img[alt="far tree"] {
-  grid-row: 3/4;
-  grid-column: 1/2;
-}
-.project-container .content-container img[alt=surfe] {
-  grid-row: 3/4;
-  grid-column: 2/3;
-}
-.project-container .content-container img[alt="beach sunset"] {
-  grid-row: 3/4;
-  grid-column: 3/4;
-}
-.project-container .content-container img[alt=orest] {
-  grid-row: 3/4;
-  grid-column: 4/5;
-}
-.project-container .content-container img[alt=monkey] {
-  grid-row: 4/5;
-  grid-column: 3/4;
-}
-.project-container .content-container img[alt=homeless] {
-  grid-row: 4/5;
-  grid-column: 4/5;
-}
-.project-container .content-container img[alt="tree maze"] {
-  grid-row: 5/6;
-  grid-column: 3/4;
-}
-.project-container .content-container img[alt="moving train"] {
-  grid-row: 5/6;
-  grid-column: 4/5;
-}
-.project-container .content-container img[alt=templae] {
-  grid-row: 6/7;
-  grid-column: 3/4;
-}
-.project-container .content-container img[alt=canoe] {
-  grid-row: 6/7;
-  grid-column: 4/5;
-}
-.project-container .content-container form {
-  background: #8E097C 0% 0% no-repeat padding-box;
-  grid-row: 4/7;
-  grid-column: 1/3;
-}
-.project-container .content-container form h1 {
-  width: 55.47%;
-  height: 5.4%;
-  text-align: center;
-  font: normal normal bold 1.7em/1.5em "Assistant", sans-serif;
-  color: #FFFFFF;
-  margin: 6.77vh auto 2.47vh;
-}
-.project-container .content-container form h6 {
-  width: 77.49%;
-  height: 6.5%;
-  text-align: center;
-  font: normal normal normal 1em/1.5em "Assistant", sans-serif;
-  color: #F9F9F9;
-  margin: 0 auto 7.6vh;
-}
-.project-container .content-container form .form-content {
-  width: 81.73%;
-  height: 59.75%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 2;
+  grid-column: span 2;
+  padding: 4rem;
 }
-.project-container .content-container form .form-content .field-section {
-  width: 100%;
-  height: 80%;
-}
-.project-container .content-container form .form-content .field-section .headline {
-  width: 18.37%;
-  height: 5.6%;
-  font: normal normal bold 1em/1.5em "Heebo", sans-serif;
+.project-container .content-container .first-view h1 {
+  font-family: "Assistant", sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.31em;
+  font-weight: bold;
   color: #0EE1DA;
+  margin-bottom: 0.39em;
 }
-.project-container .content-container form .form-content .field-section .text {
-  width: 100%;
-  height: 13.99%;
-  background: #E5EEFF 0% 0% no-repeat padding-box;
-  border-bottom: 0.6vh solid #0EE1DA;
-  margin-bottom: 4vh;
+.project-container .content-container .first-view h6 {
+  font-family: "Assistant", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.3em;
+  font-weight: normal;
+  color: #F9F9F9;
 }
-.project-container .content-container form .form-content .field-section .text:nth-child(4) {
-  margin-bottom: 2.5vh;
+.project-container .content-container .experience-form {
+  background: #8E097C 0% 0% no-repeat padding-box;
+  text-align: center;
+  grid-row: span 3;
+  grid-column: span 2;
+  justify-self: stretch;
+  align-self: stretch;
+  width: 95%;
+  margin: 0 auto;
 }
-.project-container .content-container form .form-content .field-section .text:nth-child(6) {
-  height: 35%;
-  resize: none;
-  margin-bottom: 0;
+.project-container .content-container .experience-form h1 {
+  font-family: "Assistant", sans-serif;
+  font-size: 1.563rem;
+  line-height: 1.32em;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 2.33em auto 0.56em;
 }
-.project-container .content-container form .form-content #submit {
-  width: 100%;
-  height: 13.99%;
+.project-container .content-container .experience-form h6 {
+  max-width: 278px;
+  font-family: "Assistant", sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.27em;
+  font-weight: normal;
+  color: #F9F9F9;
+  margin: 0 auto 2em;
+}
+.project-container .content-container .experience-form form {
+  max-width: 278px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 auto 3.9em;
+}
+.project-container .content-container .experience-form form .headline {
+  font-family: "Heebo", sans-serif;
+  font-size: 0.438rem;
+  line-height: 1.43em;
+  font-weight: bold;
+  color: #0EE1DA;
+  margin-bottom: 0.75em;
+}
+.project-container .content-container .experience-form form .text {
+  min-height: 33px;
+  background: #F9F9F9 0% 0% no-repeat padding-box;
+  border: #F9F9F9;
+  border-bottom: 3px solid #0EE1DA;
+}
+.project-container .content-container .experience-form form textarea.text {
+  min-height: 96px;
+}
+.project-container .content-container .experience-form form .text + .headline {
+  margin-top: 2em;
+}
+.project-container .content-container .experience-form form #submit {
+  min-height: 33px;
   background: #0EE1DA 0% 0% no-repeat padding-box;
-  font: normal normal bold 1.3em/1.5em "Heebo", sans-serif;
-  letter-spacing: 0.01em;
-  color: #011560;
   border: #0EE1DA;
+  font-family: "Heebo", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.34em;
+  font-weight: bold;
+  letter-spacing: 0.18px;
+  color: #011560;
+  margin-top: 0.94em;
+}
+.project-container .content-container .decoration-img {
+  max-width: 159px;
+}
+
+@media (min-width: 800px) {
+  .project-container {
+    padding: 6rem;
+  }
+  .project-container .content-container {
+    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    gap: 19px;
+  }
 }/*# sourceMappingURL=main.css.map */

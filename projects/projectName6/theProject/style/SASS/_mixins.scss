@@ -1,0 +1,31 @@
+@mixin wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin headline {
+    text-align: left;
+    font-size: .625rem;
+    line-height: 1.4em;
+    font-weight: $fw-bold;
+    color: $clr-gray;
+}
+
+@mixin text {
+    background: $clr-light-blue 0% 0% no-repeat padding-box;
+    border: $clr-light-blue;
+    border-bottom: 3px solid $clr-yellow;
+    min-height: 37px;
+    max-height: 50px;
+}
+
+@mixin bg-icon {
+    min-width: 46px;
+    min-height: 46px;
+    background: $clr-yellow 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px $clr-light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

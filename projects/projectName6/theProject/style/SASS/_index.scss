@@ -1,259 +1,281 @@
-.project-container { // basically i can earase all the comments, for now im keeping them especially the new stuff i learned from this project for the future reference
-    // width: 1920px;
-    // height: 1265px;
+.project-container {
     width: 100%;
-    // height: 117.13vh; // create html space not desirable in the page
+    height: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
+    position: absolute;
 
-    .top-right-page-style {
-        // width: 434px;
-        // height: 18px;
-        width: 22.61%;
-        height: 1.43vh; // because there is no height specified in the page container, i need to use vh for every element container
-        background: #FDBD03 0% 0% no-repeat padding-box;
-        margin: 0 0 0 auto;
+    .top-page-style {
+        width: 90%;
+        min-height: 10px;
+        background: $clr-yellow;
+        margin: 0 0 auto auto;
     }
 
-    .bg-icon {
-        // width: 95px;
-        // height: 95px;
-        width: 4%;
-        height: 7.51vh;
-        background: #FDBD03 0% 0% no-repeat padding-box;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // margin: 63px 1760px 956px 65px; // origin
-        margin: 4.99vh 91.67vw 0 3.39vw;
-
-        img[alt="whatsapp icon"] {
-            // width: 54px;
-            // height: 54px;
-            width: 56.85%;
-            height: 56.85%;
-        }
+    .solo-bg-icon {
+        display: none;
     }
 
     .content-container {
-        // width: 1571px;
-        // height: 804px;
-        width: 81.83%;
-        height: 63.56vh;
         display: flex;
-        // margin: 138px 166px 323px 183px; // origin
-        margin: 10.91vh 8.65vw 25.54vh 9.54vw;
+        flex-direction: column;
+
+        img[alt="SMS chat"] {
+            max-width: 79px;
+            margin: 3em auto 0;
+            order: 1;
+        }
 
         .contact-container {
-            // width: 855px;
-            // height: 804px;
-            width: 54.43%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            // margin: 0 0 215px 0; // origin
-            margin: 0 0 17vh 0;
+            width: 85%;
+            margin: 3em auto 0;
+            text-align: center;
+            order: 2;
 
             h1 {
-                // width: 308px;
-                // height: 97px;
-                width: 40%;
-                height: 16%;
-                text-align: left;
-                // font: normal normal 900 66px/97px 'Heebo', sans-serif;
-                font: normal normal 900 2.8em/1.5em 'Heebo', sans-serif;
-                color: #FDBD03;
-                // margin: 226px 181px 15px 730px; // origin
-                margin: 0 auto 1.19vh 0;
+                font-size: 2.5rem;
+                line-height: 1.48em;
+                font-weight: $fw-black;
+                color: $clr-yellow;
+                margin: 0 auto .23em;
             }
 
             h6 {
-                // width: 385px;
-                // height: 58px;
-                width: 45.03%;
-                height: 10%;
-                text-align: left;
-                // font: normal normal normal 20px/29px 'Heebo', sans-serif;
-                font: normal normal normal 1em/1.5em 'Heebo', sans-serif;
-                color: #020253;
-                // margin: 0 181px 38px 653px; // origin
-                margin: 0 auto 3.01vh 0;
+                max-width: 385px;
+                font-size: .938rem;
+                line-height: 1.47em;
+                font-weight: $fw-regular;
+                color: $clr-blue;
+                margin: 0 auto 2.29em;
             }
 
             form {
-                // width: 855px;
-                // height: 381px;
-                width: 100%;
-                height: 60%;
-                // margin: 0 181px 432px 183px; // origin
-                margin: 0 0 auto 0;
+                max-width: 855px;
+                max-height: 381px;
 
-                .field-section {
-                    // width: 855px;
-                    // height: 258px;
-                    width: 100%;
-                    height: 67.72%;
-                    // margin: 0 0 123.49px 0; // origin
+                .wrapper-container {
 
-                    .wrapper-container {
-                        // width: 855px;
-                        // height: 75px;
-                        width: 100%;
-                        height: 34%;
+                    .wrapper {
                         display: flex;
-                        justify-content: space-between;
+                        flex-direction: column;
 
-                        .wrapper {
-                            // width: 418px;
-                            // height: 75px;
-                            width: 48.89%;
-                            height: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
+                        .headline {
+                            text-align: left;
+                            font-size: .625rem;
+                            line-height: 1.4em;
+                            font-weight: $fw-bold;
+                            color: $clr-gray;
+                        }
 
-                            .headline {
-                                // width: 58px;
-                                // height: 24px;
-                                width: 19%;
-                                height: 20%;
-                                text-align: left;
-                                // font: normal normal bold 16px/24px 'Heebo', sans-serif;
-                                font: normal normal bold .8em/1.5em 'Heebo', sans-serif;
-                                color: #2C2C2C;
-                                margin: 0 auto .5vh 0;
-                            }
-
-                            .text {
-                                // width: 418px;
-                                // height: 50px;
-                                width: 100%;
-                                height: 66.67%;
-                                background: #E5EEFF 0% 0% no-repeat padding-box;
-                                border-bottom: 0.35em #FDBD03 solid;
-                                margin: 0 0 0 auto;
-                            }
+                        .text {
+                            background: $clr-light-blue 0% 0% no-repeat padding-box;
+                            border: $clr-light-blue;
+                            border-bottom: 3px solid $clr-yellow;
+                            min-height: 37px;
                         }
                     }
 
-                    .area-wrapper {
-                        // width: 855px;
-                        // height: 168px;
-                        width: 100%;
-                        height: 65.12%;
-                        display: flex;
-                        flex-direction: column;
-                        // margin: 15px 0 73.5px 0; // origin
-                        margin: 2.3vh 0 0 0;
+                    .wrapper + .wrapper {
+                        margin: .96em 0 .98em 0;
+                    }
+                }
 
-                        .headline {
-                            // width: 58px;
-                            // height: 24px;
-                            width: 10%;
-                            height: 14.29%;
-                            text-align: left;
-                            font: normal normal bold .8em/1.5em 'Heebo', sans-serif;
-                            color: #2C2C2C;
-                            margin: 0 auto .5vh 0;
-                        }
+                .wrapper {
+                    @include wrapper;
 
-                        #text {
-                            // width: 855px
-                            // height: 143px;
-                            width: 100%;
-                            height: 71%;
-                            resize: none;
-                            background: #E5EEFF 0% 0% no-repeat padding-box;
-                            border-bottom: 0.35em #FDBD03 solid;
-                        }
+                    .headline {
+                        @include headline;
+                    }
+
+                    .text {
+                        @include text;
+                        min-height: 106px;
                     }
                 }
 
                 #submit {
-                    // width: 166px;
-                    // height: 50px;
-                    width: 19.42%;
-                    height: 13.13%;
-                    background: #FDBD03 0% 0% no-repeat padding-box;
-                    border: #FDBD03;
-                    text-align: center;
-                    // font: normal normal bold 22px/30px 'Heebo', sans-serif;
-                    font: normal normal bold 1.2em/1.5em 'Heebo', sans-serif;
-                    letter-spacing: 0.01em;
-                    // margin: 73.49px 0 0 689px (auto); // origin (auto not working)
-                    margin: 7.4vh 35.4vw 0 0;
+                    width: 100%;
+                    min-height: 37px;
+                    background: $clr-yellow 0% 0% no-repeat padding-box;
+                    font-size: .938rem;
+                    line-height: 1.4em;
+                    font-weight: $fw-bold;
+                    color: $clr-black;
+                    margin: 1.17em 0 9.66em 0;
+                    border: $clr-light-gray;
                 }
             }
-        }
-
-        img[alt="SMS chat"] {
-            // width: 535px;
-            // height: 804px;
-            width: 34.06%;
-            height: 100%;
-            background: transparent 0% 0% no-repeat padding-box;
-            // margin: 120px 166px 323px 0; // origin
-            margin: 0 0 0 9.43vw;
-            object-fit: contain;
         }
     }
 
     .iconsSet {
-        // width: 494px;
-        // height: 95px;
-        width: 25.73%;
-        height: 7.51vh;
+        max-width: 236px;
         display: flex;
         justify-content: space-between;
-        // margin: 299px 1371px 38px 55px; // origin
-        margin: 23.64vh auto 3.01vh 2.87vw;
+        margin: 0 auto 1.63em;
 
         .bg-icon {
-            // width: 95px;
-            // height: 95px;
-            width: 15%;
-            height: 100%;
-            background: #FDBD03 0% 0% no-repeat padding-box;
-            box-shadow: 0px 3px 6px #00000029;
+            min-width: 46px;
+            min-height: 46px;
+            background: $clr-yellow 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px $clr-light-gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 50%;
-            margin: 0; // for eliminating the effect of the margin in the first bg-icon in the page
 
-            img[alt="facebook icon"] {
-                // width: 19px;
-                // height: 36px;
-                width: 20%;
-                height: 37.9%;
-            }
-
-            img[alt="instagram icon"] {
-                // width: 32px;
-                // height: 32px;
-                width: 33.69%;
-                height: 33.69%;
-            }
-
-            img[alt="linkedin icon"] {
-                // width: 32px;
-                // height: 31px;
-                width: 33.69%;
-                height: 32.64%;
-            }
-
-            img[alt="phone icon"] {
-                // width: 27px;
-                // height: 27px;
-                width: 35%;
-                height: 35%;
+            img {
+                max-width: 17px;
+                max-height: 17px;
             }
         }
     }
 
-    .bottom-left-page-style {
-        // width: 1038px;
-        // height: 18px;
-        width: 54.0625%;
-        height: 1.43vh;
-        background: #FDBD03 0% 0% no-repeat padding-box;
-        margin: auto auto 0 0;
+    .bottom-page-style {
+        width: 100%;
+        min-height: 10px;
+        background: $clr-yellow;
+    }
+}
+
+@media (min-width: 900px) {
+    .project-container {
+
+        .top-page-style {
+            width: 22.7%;
+            max-width: 434px;
+            min-height: 18px;
+        }
+
+        .solo-bg-icon {
+            @include bg-icon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 95px;
+            max-height: 95px;
+            height: 100%;
+            margin: 2.8125em auto auto 4.0625em;
+
+            img {
+                max-width: 54px;
+                max-height: 54px;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+
+        .content-container {
+            flex-direction: row;
+
+            img[alt="SMS chat"] {
+                max-width: 280px;
+                min-height: 804px;
+                order: 2;
+                margin: 0 auto auto 5em;
+                object-fit: contain;
+            }
+
+            .contact-container {
+                max-width: 855px;
+                order: 1;
+                margin: 4.25em 0 18.6875em 11.4375em;
+                text-align: left;
+
+                h1 {
+                    font-size: 4.125rem;
+                    line-height: 1.47em;
+                    font-weight: $fw-black;
+                    margin: 0 auto .23em 0;
+                }
+
+                h6 {
+                    max-width: 385px;
+                    font-size: 1.25rem;
+                    line-height: 1.45em;
+                    font-weight: $fw-regular;
+                    margin: 0 auto 1.9em 0;
+                }
+
+                form {
+
+                    .wrapper-container {
+                        display: flex;
+                        margin-bottom: .9375em;
+
+                        .wrapper + .wrapper {
+                            margin: 0 0 0 1.22em;
+                        }
+
+                        .wrapper {
+                            width: 100%;
+
+                            .headline {
+                                font-size: 1rem;
+                                line-height: 1.5em;
+                                font-weight: $fw-bold;
+                            }
+
+                            .text {
+                                min-height: 50px;
+                            }
+                        }
+                    }
+
+                    .wrapper {
+
+                        .headline {
+                            font-size: 1rem;
+                            line-height: 1.5em;
+                            font-weight: $fw-bold;
+                        }
+
+                        .text {
+                            min-height: 143px;
+                        }
+                    }
+
+                    #submit {
+                        max-width: 166px;
+                        font-size: 1.375rem;
+                        line-height: 1.65em;
+                        font-weight: $fw-bold;
+                        margin: 3.34em auto 0 0;
+                    }
+                }
+            }
+        }
+
+        .iconsSet {
+            max-width: 494px;
+            margin: auto auto 2.38em 3.45em;
+
+            .bg-icon {
+                min-width: 95px;
+                min-height: 95px;
+
+                img {
+                    max-width: 32px;
+                    max-height: 32px;
+                }
+            }
+        }
+
+        .bottom-page-style {
+            width: 54.0625%;
+            min-height: 18px;
+            margin: 0 auto 0 0;
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .project-container {
+        .content-container {
+            img[alt="SMS chat"] {
+                margin: 0 10.375em auto 11.3125em;
+                max-width: 535px;
+                max-height: 804px;
+            }
+        }
     }
 }

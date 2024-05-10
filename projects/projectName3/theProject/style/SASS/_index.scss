@@ -1,80 +1,89 @@
 .project-container {
     width: 100%;
-    height: 100vh;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
-    display: flex;
+    height: 100%;
+    background: $clr-white 0% 0% no-repeat padding-box;
 
     img {
-        width: 56.52%;
-        height: 100%;
+        width: 100%;
+        height: 33.33%;
+        min-height: 219px;
+        object-fit: cover;
     }
 
-    form {
-        width: 21.78%;
-        height: 40%;
-        margin: 25.1vh auto 35.47vh;
+    .content {
+        width: clamp(286px, 90%, 418px);
+        margin: 2em auto 4em;
         text-align: left;
 
         h4 {
-            width: 95%;
-            height: 14.59%;
-            font: normal normal 900 2em/1em 'Heebo', sans-serif;
-            color: #020253;
-            margin: 0 auto 2.04vh 0;
-            text-transform: capitalize;
+            font-size: 1.75rem;
+            line-height: 1.46em;
+            font-weight: $fw-900;
+            color: $clr-blue;
+            margin-bottom: .57em;
         }
 
         p {
-            width: 100%;
-            height: 16%;
-            font: normal normal normal 1em/1.5em 'Heebo', sans-serif;
-            color: #020253;
-            margin-bottom: 2.41vh;
+            font-size: .94rem;
+            line-height: 1.46em;
+            font-weight: $fw-regular;
+            color: $clr-blue;
+            margin-bottom: 2.06em;
         }
 
-        .formApplication {
+        form {
             width: 100%;
-            height: 58.1%;
             display: flex;
             flex-direction: column;
 
-            .field-section {
+            .headline {
+                font-size: .63rem;
+                line-height: 1.5em;
+                color: $clr-dark;
+            }
+
+            .text {
                 width: 100%;
-                height: 67.71%;
+                max-width: 418px;
+                min-height: 34px;
+                background: $clr-light-blue 0% 0% no-repeat padding-box;
+                border: $clr-light-blue;
+                border-bottom: .1875em solid $clr-blue;
+            }
 
-                .headline {
-                    width: 13.88%;
-                    height: 13.8%;
-                    font: normal normal bold .9em/1em 'Heebo', sans-serif;
-                    color: #2C2C2C;
-                    text-transform: capitalize;
-
-                    &:nth-child(3) {
-                        display: flex;
-                        justify-content: left;
-                        margin: 2vh auto 0 0;
-                    }
-                }
-
-                .text {
-                    width: 100%;
-                    height: 28.74%;
-                    background: #E5EEFF 0% 0% no-repeat padding-box;
-                    border-bottom: #020253 solid .3em;
-                }
+            .text + .headline {
+                margin-top: 1.63em;
             }
 
             #submit {
-                width: 39.72%;
-                height: 19.46%;
-                background: #020253 0% 0% no-repeat padding-box;
-                font: normal normal bold 1.1em/1em 'Heebo', sans-serif;
-                letter-spacing: .1em;
-                color: #FFFFFF;
-                margin: auto auto 0 0;
-                text-transform: capitalize;
+                width: 100%;
+                max-width: 418px;
+                min-height: 34px;
+                background: $clr-blue 0% 0% no-repeat padding-box;
+                text-align: center;
+                font-size: .875rem;
+                font-weight: $fw-bold;
+                line-height: 1.357em;
+                letter-spacing: .015em;
+                color: $clr-white;
+                margin-top: 1.6em;
             }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .project-container {
+        display: flex;
+
+        img {
+            width: 69%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .content {
+            margin: 8em 3em 8em;
         }
     }
 }
