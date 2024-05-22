@@ -185,58 +185,84 @@
     letter-spacing: 0.3px;
   }
 }
-.selected-projects-container {
+.page-container {
   width: 100%;
-  background-color: #F6F6F6;
-  padding: 6.3em 0 11.4em 0;
+  height: 100%;
+  background: #F6F6F6 0% 0% no-repeat padding-box;
 }
-.selected-projects-container .header-section {
-  width: 100%;
+.page-container .content-container {
+  width: min(1315px, 95%);
   margin: 0 auto;
-  color: #3A3A3A;
   text-align: center;
+  color: #3A3A3A;
+  padding: 4.9em 0 7.7em;
 }
-.selected-projects-container .header-section h4 {
-  font: normal normal 900 2.25rem/1.47em "Heebo";
+.page-container .content-container h4 {
+  font: normal normal 900 1.563rem/1.48em "Heebo", sans-serif;
 }
-.selected-projects-container .header-section p {
-  font: normal normal normal 1.25rem/1.45em "Heebo";
+.page-container .content-container p {
+  font: normal normal normal 0.938rem/1.47em "Heebo", sans-serif;
 }
-.selected-projects-container .container {
-  width: 100%;
-  max-width: 1315px;
+.page-container .content-container .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(342px, 405px));
   padding: 0;
-  margin-top: 4.25em;
+  gap: 2em;
 }
-.selected-projects-container .container .row {
+.page-container .content-container .gallery-container .card {
   width: 100%;
-  max-width: 1315px;
-  margin: 0 auto;
-}
-.selected-projects-container .container .row .col {
   padding: 0;
 }
-.selected-projects-container .container .row .col .card-img-top {
+.page-container .content-container .gallery-container .card .card-img-top {
+  width: 100%;
   max-height: 223px;
 }
-.selected-projects-container .container .row .col .card-body {
-  color: #3A3A3A;
-}
-.selected-projects-container .container .row .col .card-body .card-title {
-  font: normal normal 500 1.44rem/1.48em "Heebo";
-}
-.selected-projects-container .container .row .col .card-body .card-text {
-  font: normal normal normal 1rem/1.5em "Heebo";
-}
-.selected-projects-container .container .row .col .used-technologies {
-  width: 100%;
-  max-width: 122px;
+.page-container .content-container .gallery-container .card .allContent {
+  max-width: 353px;
   margin: 0 auto;
 }
-.selected-projects-container .container .row .col .used-technologies img {
-  max-width: 26px;
+.page-container .content-container .gallery-container .card .allContent .contentNoBtn {
+  margin-bottom: 1.3em;
+}
+.page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-title {
+  font: normal normal 500 1rem/1.5em "Heebo", sans-serif;
+  margin-bottom: 1.1em;
+}
+.page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-text {
+  font: normal normal normal 1rem/1.5em "Heebo", sans-serif;
+  margin: 0;
+}
+.page-container .content-container .gallery-container .card .allContent .contentNoBtn .project-technology-container {
+  max-width: 122px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.page-container .content-container .gallery-container .card .allContent .contentNoBtn .project-technology-container img {
+  max-width: 26.5px;
+}
+.page-container .content-container .gallery-container .card .allContent .btn {
+  font: normal normal 500 0.625rem/1.9em "Heebo", sans-serif;
+  color: #2C2C2C;
 }
 
+@media (min-width: 900px) {
+  .page-container .content-container h4 {
+    font: normal normal 900 2.25rem/1.47em "Heebo", sans-serif;
+  }
+  .page-container .content-container p {
+    font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
+  }
+  .page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-title {
+    font: normal normal 500 1.438rem/1.48em "Heebo", sans-serif;
+  }
+  .page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-text {
+    font: normal normal normal 1rem/1.5em "Heebo", sans-serif;
+  }
+  .page-container .content-container .gallery-container .card .allContent .btn {
+    font: normal normal 500 0.875rem/1.86em "Heebo", sans-serif;
+  }
+}
 .contact-us-container {
   width: 100%;
   background: #3A3A3A 0% 0% no-repeat padding-box;
