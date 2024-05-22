@@ -56,9 +56,12 @@
             min-height: 34px;
             background: $clr-yellowgreen 0% 0% no-repeat padding-box;
             border: $clr-gray;
+            font-weight: $fw-bold;
             font-size: .875rem;
             line-height: 2em;
             margin-top: 1.62em;
+            letter-spacing: 0.33px;
+            color: $clr-blue;
         }
     }
 }

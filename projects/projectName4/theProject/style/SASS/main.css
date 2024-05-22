@@ -6,16 +6,11 @@
 
 html, body {
   height: 100%;
-}
-
-h1, h6 {
   font-family: "Assistant", sans-serif;
 }
 
-label, #submit {
-  font-family: "heebo", sans-serif;
+label {
   font-weight: bold;
-  color: #011560;
 }
 
 .project-container {
@@ -70,9 +65,12 @@ label, #submit {
   min-height: 34px;
   background: #D3E10E 0% 0% no-repeat padding-box;
   border: rgba(0, 0, 0, 0.1607843137);
+  font-weight: bold;
   font-size: 0.875rem;
   line-height: 2em;
   margin-top: 1.62em;
+  letter-spacing: 0.33px;
+  color: #011560;
 }
 
 @media (min-width: 900px) {

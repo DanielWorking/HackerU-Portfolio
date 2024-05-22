@@ -6,14 +6,9 @@
 
 html, body {
     height: 100%;
-}
-
-h1, h6 {
     font-family: $ff-assistant;
 }
 
-label, #submit {
-    font-family: $ff-heebo;
+label {
     font-weight: $fw-bold;
-    color: $clr-blue; //doesnt seem to have an efect on the submit
 }
