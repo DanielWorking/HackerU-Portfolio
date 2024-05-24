@@ -1,46 +1,39 @@
-.social-container {
+.section-container {
     width: 100%;
+    height: 100%;
     background: #1AE0EC 0% 0% no-repeat padding-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3em;
-
-    .content-box + .content-box {
-        margin-left: 6.2em;
-    }
-
-    .content-box {
-        width: 100%;
-        max-width: 120px;
-
-        img {
-            width: 100%;
-            max-width: 41px;
-            background: transparent 0% 0% no-repeat padding-box;
-        }
-
-        img[alt="location icon"] {
-            width: 25%;
-        }
-
-        img[alt="facebook icon"] {
-            width: 20%;
-        }
-
-        p {
-            width: 100%;
-            font: normal normal normal .88rem/1.14em 'Heebo', sans-serif;
-            letter-spacing: 0;
-            color: #2C2C2C;
-            margin-top: 1.25em;
+    
+    .social-container {
+        width: 80%;
+        padding: 3.5em 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        .content-box {
+            max-width: 100px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            flex-direction: column;
+        
+            img {
+                // width: min(40px, 100%);
+                max-width: 45px;
+                max-height: 45px;
+                margin: 0 auto 1.3em;
+            }
+            
+            p {
+                width: 100%;
+                margin: 0 auto;
+                font: normal normal normal .938rem/1.47em "Heebo", sans-serif;
+                color: #2C2C2C;
+                word-wrap: break-word;
+            }
 
-        .helFont {
-            font: normal normal normal .88rem/1.14em 'Inter', sans-serif;
+            .helFont {
+                font: normal normal normal .938rem/1.13em "Inter", sans-serif;
+            }
         }
     }
 }
@@ -64,6 +57,28 @@
 
         #copy {
             font: normal normal 300 1rem/1.5 'Heebo', sans-serif;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .section-container {
+        .social-container {
+            .content-box {
+                justify-content: center;
+
+                img {
+                    max-width: 40px;
+                }
+
+                p {
+                    font: normal normal normal .875rem/1.5em "Heebo", sans-serif;
+                }
+
+                .helFont {
+                    font: normal normal normal .875rem/1.21em "Inter", sans-serif;
+                }
+            }
         }
     }
 }

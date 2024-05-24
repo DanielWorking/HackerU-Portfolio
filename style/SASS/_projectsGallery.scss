@@ -23,6 +23,7 @@
             grid-template-columns: repeat(auto-fit, minmax(342px, 405px));
             padding: 0;
             gap: 2em;
+            justify-content: center;
 
             .card {
                 width: 100%;
