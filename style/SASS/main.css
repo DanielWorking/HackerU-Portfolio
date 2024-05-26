@@ -138,7 +138,7 @@
   margin: 0 auto;
 }
 .aboutme-container .aboutme-display img {
-  width: 141px;
+  max-width: 141px;
   margin: 0 auto 1.88em;
 }
 .aboutme-container .aboutme-display .aboutme-section {

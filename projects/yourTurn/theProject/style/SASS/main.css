@@ -85,14 +85,14 @@ label {
   }
   .project-container h6 {
     max-width: 721px;
-    margin-bottom: 20em;
+    margin-bottom: 15em;
     font-size: 1.25rem;
     line-height: 1.3em;
   }
   .project-container form {
     max-width: 1100px;
     display: flex;
-    padding: 0 4em;
+    margin: 0 auto 4em;
   }
   .project-container form .wrapper {
     justify-content: flex-end;
