@@ -13,13 +13,14 @@ html, body {
   width: 100%;
   height: 100%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 .project-container .top-page-style {
   width: 90%;
   min-height: 10px;
   background: #FDBD03;
-  margin: 0 0 auto auto;
+  margin: 0 0 2em auto;
 }
 .project-container .solo-bg-icon {
   display: none;
@@ -56,7 +57,7 @@ html, body {
 }
 .project-container .content-container .contact-container form {
   max-width: 855px;
-  max-height: 381px;
+  margin: 0 auto 7em;
 }
 .project-container .content-container .contact-container form .wrapper-container .wrapper {
   display: flex;
@@ -74,6 +75,7 @@ html, body {
   border: #E5EEFF;
   border-bottom: 3px solid #FDBD03;
   min-height: 37px;
+  max-height: 50px;
 }
 .project-container .content-container .contact-container form .wrapper-container .wrapper + .wrapper {
   margin: 0.96em 0 0.98em 0;
@@ -105,14 +107,15 @@ html, body {
   line-height: 1.4em;
   font-weight: 700;
   color: #000000;
-  margin: 1.17em 0 9.66em 0;
+  margin-top: 1.17em;
   border: rgba(0, 0, 0, 0.1607843137);
 }
 .project-container .iconsSet {
   max-width: 236px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 1.63em;
+  margin: auto auto 1.63em;
 }
 .project-container .iconsSet .bg-icon {
   min-width: 46px;
@@ -132,6 +135,7 @@ html, body {
   width: 100%;
   min-height: 10px;
   background: #FDBD03;
+  margin: 1em 0 0 0;
 }
 
 @media (min-width: 900px) {
@@ -149,19 +153,16 @@ html, body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 95px;
-    max-height: 95px;
-    height: 100%;
-    margin: 2.8125em auto auto 4.0625em;
+    min-width: 95px;
+    min-height: 95px;
+    margin: 0 auto auto 2.5em;
   }
   .project-container .solo-bg-icon img {
     max-width: 54px;
     max-height: 54px;
     display: flex;
     margin: 0 auto;
+    height: 100%;
   }
   .project-container .content-container {
     flex-direction: row;
@@ -177,7 +178,7 @@ html, body {
   .project-container .content-container .contact-container {
     max-width: 855px;
     order: 1;
-    margin: 4.25em 0 18.6875em 11.4375em;
+    margin-left: 11em;
     text-align: left;
   }
   .project-container .content-container .contact-container h1 {

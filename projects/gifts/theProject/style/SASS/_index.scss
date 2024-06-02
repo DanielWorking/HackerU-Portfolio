@@ -5,7 +5,7 @@
     display: flex;
 
     .content {
-        width: clamp(328px, 95%, 1100px);
+        width: clamp(328px, 95%, 1100px); // (minimum value, desired value, maximum value)
         margin: 5.6em auto 6.3em;
 
         h1 {
@@ -39,7 +39,7 @@
         }
 
         form {
-            width: min(302px, 95%);
+            width: min(302px, 95%); // (max-width value, width value)
             max-height: 169px;
             margin: 0 auto;
 
@@ -64,9 +64,6 @@
 
                 &:nth-of-type(2) {
                     margin-top: .8em;
-                }
-
-                &:nth-of-type(2) {
                     margin-bottom: 1.04em;
                 }
             }
@@ -85,7 +82,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) { // responsive for tablet and desktop screen size
     .project-container {
         .content {
             margin: auto;
@@ -115,7 +112,7 @@
                 min-height: 73px;
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-end;
+                align-items: flex-end; // align the flex items at the end of the container
 
                 .wrapper {
                     width: 25%;
@@ -135,7 +132,7 @@
                         min-height: 50px;
                     }
 
-                    &:nth-of-type(2) {
+                    &:nth-of-type(2) {// eliminate the margin on the second text element
                         margin: 0;
                     }
                 }
@@ -151,7 +148,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) { // responsive for desktop screen size
     .wrapper {
         width: 50% !important;
     }

@@ -92,7 +92,7 @@ label {
   .project-container form {
     max-width: 1100px;
     display: flex;
-    margin: 0 auto 4em;
+    margin: 0 1em 4em;
   }
   .project-container form .wrapper {
     justify-content: flex-end;

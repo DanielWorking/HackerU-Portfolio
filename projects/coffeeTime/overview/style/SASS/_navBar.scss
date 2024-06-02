@@ -1,15 +1,11 @@
-.px-5 {
+.px-5 { // padding in bootstrap
     padding: 0 1em !important;
 
-    .visilbe { // Hide name span on smaller screens
-        display: none !important;
-    }
-
-    .fs-4 {
+    .fs-4 { // font size in bootstrap
         font: normal normal 400 1.56em/1.5 "Satisfy", cursive;
     }
 
-    .navbar-toggler-icon {
+    .navbar-toggler-icon { // the hamburger icon in mobile mode
         width: 1.9em;
         background-image: none;
         color: #1AE0EC;
@@ -19,18 +15,18 @@
         font-size: 1.5em;
     }
 
-    .nav-item {
+    .nav-item { // the link container for sections in the home page
         margin: 0 auto !important;
 
-        .hover-color:hover {
+        .hover-color:hover { // adding an hover effect on the links
             color: #1AE0EC;
         }
 
-        .nav-link {
+        .nav-link { // the link element
             font: normal normal normal 1rem/0.84em "Heebo", sans-serif;
         }
 
-        .bold-font {
+        .bold-font { // different font weight for few of the links
             font-weight: bold;
         }
     }
@@ -40,7 +36,7 @@
     .px-5 {
         padding: 0 1em !important;
 
-        .nav-item + .nav-item {
+        .nav-item + .nav-item { // creating a space between eeach nav-item element, effects from the second nav-item
             margin-left: 2em;
         }
 

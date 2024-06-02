@@ -1,9 +1,9 @@
-@mixin wrapper {
+@mixin wrapper { // contains a set of headline and text elements together
     display: flex;
     flex-direction: column;
 }
 
-@mixin headline {
+@mixin headline { // the headline element in the form
     text-align: left;
     font-size: .625rem;
     line-height: 1.4em;
@@ -11,7 +11,7 @@
     color: $clr-gray;
 }
 
-@mixin text {
+@mixin text { // the text element in the form
     background: $clr-light-blue 0% 0% no-repeat padding-box;
     border: $clr-light-blue;
     border-bottom: 3px solid $clr-yellow;
@@ -19,7 +19,7 @@
     max-height: 50px;
 }
 
-@mixin bg-icon {
+@mixin bg-icon { // the container of icons
     min-width: 46px;
     min-height: 46px;
     background: $clr-yellow 0% 0% no-repeat padding-box;

@@ -12,17 +12,17 @@
         font: normal normal normal .56rem/1.45em 'Heebo', sans-serif;
     }
 
-    #copy {
+    #copy { // the copyright element
         font-weight: 300;
         padding-left: 1em;
     }
 
-    #name {
+    #name { // the copyright name
         padding-right: 1em;
     }
 }
 
-@media (min-width: 600px) { // works both for tablet and desktop screen size
+@media (min-width: 600px) { // responsive for all screen sizes except mobile
     .copyright-section {
         border-bottom-width: .4em;
 

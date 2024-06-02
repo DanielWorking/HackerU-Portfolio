@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 .px-5 {
   padding: 0 1em !important;
-}
-.px-5 .visilbe {
-  display: none !important;
 }
 .px-5 .fs-4 {
   font: normal normal 400 1.56em/1.5 "Satisfy", cursive;

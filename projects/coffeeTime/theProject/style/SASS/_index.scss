@@ -11,7 +11,7 @@
     }
 
     .content {
-        width: clamp(286px, 90%, 418px);
+        width: clamp(286px, 90%, 418px); // min value, desired value, max value
         margin: 2em auto 4em;
         text-align: left;
 
@@ -36,13 +36,13 @@
             display: flex;
             flex-direction: column;
 
-            .headline {
+            .headline { // the label of the text input
                 font-size: .63rem;
                 line-height: 1.5em;
                 color: $clr-dark;
             }
 
-            .text {
+            .text { // the text input
                 width: 100%;
                 max-width: 418px;
                 min-height: 34px;
@@ -51,11 +51,11 @@
                 border-bottom: .1875em solid $clr-blue;
             }
 
-            .text + .headline {
+            .text + .headline { // creating a space between text and headline element, effects the second headline element and so on
                 margin-top: 1.63em;
             }
 
-            #submit {
+            #submit { // the submit button
                 width: 100%;
                 max-width: 418px;
                 min-height: 34px;
@@ -72,7 +72,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) { // responsive for big tablets and desktop
     .project-container {
         display: flex;
 

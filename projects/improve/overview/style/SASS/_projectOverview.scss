@@ -12,13 +12,13 @@
     }
 }
 
-@media (min-width: 600px) { // tablet screen size
+@media (min-width: 600px) { // responsive for tablet screen size
     .overview-container {
         padding-bottom: 8em;
     }
 }
 
-@media (min-width:900px) { // desktop screen size
+@media (min-width:900px) { // responsive for desktop screen size
     .overview-container {
         padding-bottom: 11.5em;
     }

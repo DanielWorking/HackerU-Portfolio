@@ -7,7 +7,7 @@
     display: flex;
 
     form {
-        width: clamp(299px, 70%, 569px);
+        width: clamp(299px, 70%, 569px); // (min value, desired value, max value)
         background: #1A1A1AD4 0% 0% no-repeat padding-box;
         margin: 5.5625em auto 8em;
 
@@ -31,7 +31,7 @@
                 margin-top: .85em;
             }
 
-            .field-section {
+            .field-section { // container of the headline and text elements in the form
                 width: 100%;
                 text-align: left;
                 margin-top: 1.4em;
@@ -43,7 +43,7 @@
                     font: normal normal 900 .88rem/1.49em "Heebo", sans-serif;
                 }
 
-                .text + .headline {
+                .text + .headline { // create a spacec between the sets of headline and text in the form
                     margin-top: 1.77em;
                 }
 
@@ -67,7 +67,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) { // responsive big tablet and desktop screen size
     .project-container {
         background-size: 100% 55%;
 

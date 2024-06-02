@@ -78,7 +78,7 @@ html, body {
   width: 90%;
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: left;
   margin: 0 auto;
 }
 .project-container .content-container .experience-form form .headline {

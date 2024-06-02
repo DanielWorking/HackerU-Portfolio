@@ -2,20 +2,21 @@
     width: 100%;
     height: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
 
-    .top-page-style {
+    .top-page-style { // the line at the top of the page
         width: 90%;
         min-height: 10px;
         background: $clr-yellow;
-        margin: 0 0 auto auto;
+        margin: 0 0 2em auto;
     }
 
-    .solo-bg-icon {
+    .solo-bg-icon { // the isolated icon at the top
         display: none;
     }
 
-    .content-container {
+    .content-container { // containing the phone image and the entire form in the page
         display: flex;
         flex-direction: column;
 
@@ -25,7 +26,7 @@
             order: 1;
         }
 
-        .contact-container {
+        .contact-container { // the form with headlines
             width: 85%;
             margin: 3em auto 0;
             text-align: center;
@@ -50,36 +51,28 @@
 
             form {
                 max-width: 855px;
-                max-height: 381px;
+                margin: 0 auto 7em;
 
-                .wrapper-container {
+                .wrapper-container { // containing all the headlines and input texts
 
                     .wrapper {
-                        display: flex;
-                        flex-direction: column;
+                        @include wrapper; // takes all the properties from the wrapper element
 
                         .headline {
-                            text-align: left;
-                            font-size: .625rem;
-                            line-height: 1.4em;
-                            font-weight: $fw-bold;
-                            color: $clr-gray;
+                            @include headline; // takes all the properties from the headline element
                         }
 
                         .text {
-                            background: $clr-light-blue 0% 0% no-repeat padding-box;
-                            border: $clr-light-blue;
-                            border-bottom: 3px solid $clr-yellow;
-                            min-height: 37px;
+                            @include text; // takes all the properties from the text element
                         }
                     }
 
-                    .wrapper + .wrapper {
+                    .wrapper + .wrapper { // create a space between the wrapper element, effects from the second wrapper
                         margin: .96em 0 .98em 0;
                     }
                 }
 
-                .wrapper {
+                .wrapper { // for the third wrapper element in the form
                     @include wrapper;
 
                     .headline {
@@ -100,20 +93,21 @@
                     line-height: 1.4em;
                     font-weight: $fw-bold;
                     color: $clr-black;
-                    margin: 1.17em 0 9.66em 0;
+                    margin-top: 1.17em;
                     border: $clr-light-gray;
                 }
             }
         }
     }
 
-    .iconsSet {
+    .iconsSet { // the container of the icons
         max-width: 236px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0 auto 1.63em;
+        margin: auto auto 1.63em;
 
-        .bg-icon {
+        .bg-icon { // the container of each icon
             min-width: 46px;
             min-height: 46px;
             background: $clr-yellow 0% 0% no-repeat padding-box;
@@ -130,14 +124,15 @@
         }
     }
 
-    .bottom-page-style {
+    .bottom-page-style { // the line at the bottom of the page
         width: 100%;
         min-height: 10px;
         background: $clr-yellow;
+        margin: 1em 0 0 0;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) { // responsive for big tablets and desktop
     .project-container {
 
         .top-page-style {
@@ -148,19 +143,16 @@
 
         .solo-bg-icon {
             @include bg-icon;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 95px;
-            max-height: 95px;
-            height: 100%;
-            margin: 2.8125em auto auto 4.0625em;
+            min-width: 95px;
+            min-height: 95px;
+            margin: 0 auto auto 2.5em;
 
             img {
                 max-width: 54px;
                 max-height: 54px;
                 display: flex;
                 margin: 0 auto;
+                height: 100%;
             }
         }
 
@@ -178,7 +170,7 @@
             .contact-container {
                 max-width: 855px;
                 order: 1;
-                margin: 4.25em 0 18.6875em 11.4375em;
+                margin-left: 11em;
                 text-align: left;
 
                 h1 {
@@ -268,7 +260,7 @@
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1500px) { // responsive for big desktop screen size
     .project-container {
         .content-container {
             img[alt="SMS chat"] {

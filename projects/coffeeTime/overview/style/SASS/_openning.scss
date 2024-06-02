@@ -1,9 +1,9 @@
 .header-container {
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(to bottom, rgba(19, 232, 241, 0.388), rgba(255, 255, 255, 0.5)), url("../../images/headerBackgroundImage.jpg"); // creates a transition between specified colors along a straight line
+    background-size: cover; //resizes the background image to cover the entire container while maintaining its aspect ratio.
+    background-repeat: no-repeat; // ensures the background image appears only once without repetition
+    background-position: center; // positioning the background image to the center
     padding: 4.1875em 1.3125em;
     text-align: center;
 
@@ -22,7 +22,7 @@
         }
     }
 
-    .links-container {
+    .links-container { // contain the buttons that are links to view and download the project
         max-width: 282px;
         display: flex;
         justify-content: space-between;
@@ -36,7 +36,7 @@
     }
 }
 
-@media (min-width: 900px) {//desktop size
+@media (min-width: 900px) { // responmsive for big tablets and desktop 
     .text-container {
         max-width: 844px;
 

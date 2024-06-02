@@ -28,8 +28,8 @@
         max-width: 286px;
         margin: 0 auto;
 
-        .wrapper {
-            width: clamp(286px, 90%, 418px);
+        .wrapper { // contain set of headline and text elements in the form
+            width: clamp(286px, 90%, 418px); // (min value, desired value, max value)
             display: flex;
             flex-direction: column;
 
@@ -47,7 +47,7 @@
             }
         }
         
-        .wrapper + .wrapper {
+        .wrapper + .wrapper { // effects the second wrapper alone
             margin-top: 1em;
         }
 
@@ -66,7 +66,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) { // responsive for big tablet and desktop screen size
     .project-container {
         background-size: 100% 60%;
 
@@ -87,7 +87,7 @@
         form {
             max-width: 1100px;
             display: flex;
-            margin: 0 auto 4em;
+            margin: 0 1em 4em;
 
             .wrapper {
                 justify-content: flex-end;
