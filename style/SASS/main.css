@@ -218,31 +218,31 @@
   width: 100%;
   max-height: 223px;
 }
-.page-container .content-container .gallery-container .card .allContent {
+.page-container .content-container .gallery-container .card .all-content {
   max-width: 353px;
   margin: 0 auto;
 }
-.page-container .content-container .gallery-container .card .allContent .contentNoBtn {
+.page-container .content-container .gallery-container .card .all-content .content-no-btn {
   margin-bottom: 1.3em;
 }
-.page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-title {
+.page-container .content-container .gallery-container .card .all-content .content-no-btn .card-title {
   font: normal normal 500 1rem/1.5em "Heebo", sans-serif;
   margin-bottom: 1.1em;
 }
-.page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-text {
+.page-container .content-container .gallery-container .card .all-content .content-no-btn .card-text {
   font: normal normal normal 1rem/1.5em "Heebo", sans-serif;
   margin: 0;
 }
-.page-container .content-container .gallery-container .card .allContent .contentNoBtn .project-technology-container {
+.page-container .content-container .gallery-container .card .all-content .content-no-btn .project-technology-container {
   max-width: 122px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
-.page-container .content-container .gallery-container .card .allContent .contentNoBtn .project-technology-container img {
+.page-container .content-container .gallery-container .card .all-content .content-no-btn .project-technology-container img {
   max-width: 26.5px;
 }
-.page-container .content-container .gallery-container .card .allContent .btn {
+.page-container .content-container .gallery-container .card .all-content .btn {
   font: normal normal 500 0.625rem/1.9em "Heebo", sans-serif;
   color: #2C2C2C;
 }
@@ -254,13 +254,13 @@
   .page-container .content-container p {
     font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
   }
-  .page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-title {
+  .page-container .content-container .gallery-container .card .all-content .content-no-btn .card-title {
     font: normal normal 500 1.438rem/1.48em "Heebo", sans-serif;
   }
-  .page-container .content-container .gallery-container .card .allContent .contentNoBtn .card-text {
+  .page-container .content-container .gallery-container .card .all-content .content-no-btn .card-text {
     font: normal normal normal 1rem/1.5em "Heebo", sans-serif;
   }
-  .page-container .content-container .gallery-container .card .allContent .btn {
+  .page-container .content-container .gallery-container .card .all-content .btn {
     font: normal normal 500 0.875rem/1.86em "Heebo", sans-serif;
   }
 }
@@ -389,7 +389,7 @@
   color: #2C2C2C;
   word-wrap: break-word;
 }
-.section-container .social-container .content-box .helFont {
+.section-container .social-container .content-box .hel-font {
   font: normal normal normal 0.938rem/1.13em "Inter", sans-serif;
 }
 
@@ -423,7 +423,7 @@
   .section-container .social-container .content-box p {
     font: normal normal normal 0.875rem/1.5em "Heebo", sans-serif;
   }
-  .section-container .social-container .content-box .helFont {
+  .section-container .social-container .content-box .hel-font {
     font: normal normal normal 0.875rem/1.21em "Inter", sans-serif;
   }
 }/*# sourceMappingURL=main.css.map */

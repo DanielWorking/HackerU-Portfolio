@@ -110,14 +110,14 @@ html, body {
   margin-top: 1.17em;
   border: rgba(0, 0, 0, 0.1607843137);
 }
-.project-container .iconsSet {
+.project-container .icons-set {
   max-width: 236px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto auto 1.63em;
 }
-.project-container .iconsSet .bg-icon {
+.project-container .icons-set .bg-icon {
   min-width: 46px;
   min-height: 46px;
   background: #FDBD03 0% 0% no-repeat padding-box;
@@ -127,7 +127,7 @@ html, body {
   align-items: center;
   border-radius: 50%;
 }
-.project-container .iconsSet .bg-icon img {
+.project-container .icons-set .bg-icon img {
   max-width: 17px;
   max-height: 17px;
 }
@@ -227,15 +227,15 @@ html, body {
     font-weight: 700;
     margin: 3.34em auto 0 0;
   }
-  .project-container .iconsSet {
+  .project-container .icons-set {
     max-width: 494px;
     margin: auto auto 2.38em 3.45em;
   }
-  .project-container .iconsSet .bg-icon {
+  .project-container .icons-set .bg-icon {
     min-width: 95px;
     min-height: 95px;
   }
-  .project-container .iconsSet .bg-icon img {
+  .project-container .icons-set .bg-icon img {
     max-width: 32px;
     max-height: 32px;
   }
