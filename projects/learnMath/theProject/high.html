@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/high.css">
+    <title>high Level</title>
+</head>
+
+<body>
+    <!-- the game -->
+    <div class="container">
+        <h1>high Math Game</h1>
+        <!-- contain all the elements of the equation -->
+        <div class="equation">
+            <div id="num1"></div>
+            <div id="operator"></div>
+            <div id="num2"></div>
+            <div>=</div>
+        </div>
+        <!-- the line for the user to his answer -->
+        <input type="number" id="userAnswer" placeholder="enter result">
+        <!-- message from the game -->
+        <div id="rightOrWrongMsg"></div>
+        <!-- checking the user answer -->
+        <button id="checkBtn">check answer</button>
+        <!-- contain home page link and creating new exercise button -->
+        <div id="moreOptions">
+            <a href="./index.html" class="home-link">Back to Home</a>
+            <button id="newExerciseBtn">new exercise</button>
+        </div>
+    </div>
+    <script src="./script/high.js"></script>
+</body>
+
+</html>

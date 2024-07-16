@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* the game itself */
+.container {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* the headline of the game */
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+/* the equation container */
+.equation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* the elements of the equation */
+.equation > div {
+    font-size: 36px;
+    margin: 0 10px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+#num1, #num2 {
+    font-weight: bold;
+    color: #3498db;
+}
+
+#operator {
+    color: #e74c3c;
+}
+
+/* the user answer */
+#userAnswer {
+    max-width: 150px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 1px dashed black;
+}
+
+/* the game message */
+#rightOrWrongMsg {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+/* the button for the user to check his answer */
+#checkBtn {
+    margin-top: 20px;
+    border: 0;
+    background-color: orange;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* container of the home page link and new exercise button */
+#moreOptions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home-link, #newExerciseBtn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    /* This creates a smooth fade effect when the background color changes using hover */
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.home-link {
+    margin-right: 20px;
+}
+
+.home-link:hover, #newExerciseBtn:hover {
+    background-color: #2980b9;
+}
+
+#newExerciseBtn {
+    background-color: #2ecc71;
+}
+
+#newExerciseBtn:hover {
+    background-color: #27ae60;
+}
