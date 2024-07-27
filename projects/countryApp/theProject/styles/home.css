@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Card container */
+.card {
+    border-radius: 10px;
+    /* animation of adding shadow and the efect of card lifted up */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* the animation takes effect when hovering the card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image */
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    /* to visually seperate the image from the card body */
+    border-bottom: 2px solid #007bff;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    /* to seperate the country name to the country capital */
+    &:nth-child(2) {
+        font-weight: normal;
+    }
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Card button */
+.btn {
+    /* to make animation transition for the background color */
+    transition: background-color 0.3s;
+}
+
+/* takes effect when hovering */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 10px;
+}
+
+/* Heart icon */
+.bi {
+    margin: auto 0;
+    color: red;
+}
+
+.bi:hover {
+    cursor: pointer;
+}
+
+/* Search input */
+#search {
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    padding: 10px;
+    /* set the width to be 100% less 70px */
+    width: calc(100% - 70px);
+    /* for creating animation for the border-color */
+    transition: border-color 0.3s;
+}
+
+/* using the border-color animation when focusing the input search bar */
+#search:focus {
+    border-color: #0056b3;
+}

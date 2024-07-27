@@ -1,0 +1,139 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffd700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #ff4500;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px #ffa07a;
+}
+
+.equation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.equation div {
+    margin: 0 10px;
+    color: #1e90ff;
+}
+
+input[type="number"] {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 60%;
+    max-width: 200px;
+    border: 3px solid #4ecdc4;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    display: block;
+    text-align: center; /* Centers the placeholder and input text */
+}
+
+#rightOrWrongMsg {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    min-height: 1.5em;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    /* a change in style will happen after set time like on hover event*/
+    transition: all 0.3s;
+    box-shadow: 0 5px 0px #cd5c5c;
+    position: relative;
+    top: 0;
+}
+
+button:hover {
+    background-color: #ff7f50;
+    top: 2px;
+    box-shadow: 0 3px 0px #cd5c5c;
+}
+
+/* when the button is pressed and hold these styles will take effect */
+button:active {
+    top: 5px;
+    box-shadow: none;
+}
+
+#moreOptions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.home-link {
+    background-color: #4ecdc4;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: all 0.3s;
+    box-shadow: 0 5px 0px #45b7d1;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.home-link:hover {
+    background-color: #45b7d1;
+    top: 2px;
+    box-shadow: 0 3px 0px #3a9bba;
+}
+
+.home-link:active {
+    top: 5px;
+    box-shadow: none;
+}
+
+/* creates a new element as the first child of the body element. used to add decorative elements without changing the HTML. */
+body::before {
+    /* the element is empty and so you only see the style of this element */
+    content: '';
+    /* positioned to cover the entire viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* creates colorful circles */
+    background: 
+        radial-gradient(circle at 10% 20%, #ff6b6b 10px, transparent 10px),
+        radial-gradient(circle at 90% 80%, #4ecdc4 15px, transparent 15px),
+        radial-gradient(circle at 50% 50%, #45b7d1 20px, transparent 20px);
+    opacity: 0.1;
+    /* making sure the element is at the bottom layer in the page */
+    z-index: -1;
+}

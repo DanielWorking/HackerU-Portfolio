@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    color: #2575fc;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    color: #6a11cb;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.scoreboard {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.scoreboard th, .scoreboard td {
+    padding: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.scoreboard th {
+    background-color: #2575fc;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    border-radius: 8px;
+}
+
+.scoreboard tr {
+    background-color: #f8f9fa;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.scoreboard tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr td {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.dates-table-wrapper {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.dates-table-wrapper .scoreboard {
+    margin-top: 0;
+}
+
+.back-button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #2575fc;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .scoreboard th, .scoreboard td {
+        padding: 0.5rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
