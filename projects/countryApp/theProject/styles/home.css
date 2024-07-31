@@ -11,11 +11,9 @@ body {
 /* Card container */
 .card {
     border-radius: 10px;
-    /* animation of adding shadow and the efect of card lifted up */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* the animation takes effect when hovering the card */
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -25,7 +23,6 @@ body {
 .card-img-top {
     height: 150px;
     object-fit: cover;
-    /* to visually seperate the image from the card body */
     border-bottom: 2px solid #007bff;
 }
 
@@ -36,11 +33,10 @@ body {
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
+}
 
-    /* to seperate the country name to the country capital */
-    &:nth-child(2) {
-        font-weight: normal;
-    }
+.card-title:nth-child(2) {
+    font-weight: normal;
 }
 
 .card-text {
@@ -50,11 +46,9 @@ body {
 
 /* Card button */
 .btn {
-    /* to make animation transition for the background color */
     transition: background-color 0.3s;
 }
 
-/* takes effect when hovering */
 .btn:hover {
     background-color: #0056b3;
 }
@@ -80,13 +74,23 @@ body {
     border-radius: 5px;
     border: 2px solid #007bff;
     padding: 10px;
-    /* set the width to be 100% less 70px */
-    width: calc(100% - 70px);
-    /* for creating animation for the border-color */
+    width: calc(100% - 150px);
     transition: border-color 0.3s;
 }
 
-/* using the border-color animation when focusing the input search bar */
 #search:focus {
     border-color: #0056b3;
+}
+
+/* Favorites button */
+.favorites-btn {
+    margin: auto;
+    height: 40px;
+    white-space: nowrap;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.favorites-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
 }

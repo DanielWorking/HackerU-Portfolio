@@ -8,12 +8,8 @@ searchInput.addEventListener("keydown", (event) => {
     search(event.target.value.trim());
     createCardList();
 })
-
-// creating array empty array to contain all the cards name for favoriets page
-let favoriets = localStorage.setItem("favoriets", JSON.stringify([]));
-// getting the array from localstorage for manipulating the item
-let favorietsList = JSON.parse(localStorage.getItem("favoriets"));
-
+// getting the favorietsList value and if there is no value create one as empty array
+let favorietsList = JSON.parse(localStorage.getItem('favorietsList')) || [];
 
 // the container for all the cards of the countries
 const cardsList = document.getElementById("cardsList");
@@ -44,6 +40,7 @@ const createCard = (country) => {
     cardCapital.className = "card-title";
     // accessing the country capital name from api
     if (Object.values(country.capital).length == 0) { // dealing with situation where the country doesnt have a capital
+
         cardCapital.textContent = "The Country Has No Capital";
     } else {
         cardCapital.textContent = `Capital: ${Object.values(country.capital).join(", ")}`; // accessing the values of capital and seperating with comma
@@ -59,8 +56,7 @@ const createCard = (country) => {
     const cardInfo = document.createElement("a");
     cardInfo.className = "btn bg-primary text-white";
     cardInfo.textContent = "More Details";
-    // the link to view more info of the country_______________________________need to update url to the next html file
-    cardInfo.href = "#";
+    cardInfo.href = "./pages/details.html";
 
     // the card footer for adding the country to favorits using localstorage
     const cardFooter = document.createElement("div");
@@ -71,18 +67,17 @@ const createCard = (country) => {
     heart.addEventListener("click", () => {
         if (heart.className === "bi bi-heart") {
             heart.className = "bi bi-heart-fill";
-            // adding the country name to the favorietsList key in localStorage _________________add code
-            JSON.stringify(favorietsList.push(cardTitle.textContent));
-            console.log(favorietsList);
-
+            // pushing the country name to the array of favorietsList key in localStorage
+            favorietsList.push(cardTitle.textContent);
+            localStorage.setItem('favorietsList', JSON.stringify(favorietsList));
         } else {
             heart.className = "bi bi-heart";
-            // making sure to remove the country name from the localStorage_______-check in localStorage
+            // remove the country name from array in localstorage when removing like on the card
             let itemIndex = favorietsList.indexOf(cardTitle.textContent);
             if (itemIndex !== -1) {
                 favorietsList.splice(itemIndex, 1);
+                localStorage.setItem("favorietsList", JSON.stringify(favorietsList));
             }
-            JSON.stringify(localStorage.setItem("favoriets", favorietsList));
         }
     })
 

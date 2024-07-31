@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.country-card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.country-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.country-flag {
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #007bff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.country-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.map-link {
+    transition: background-color 0.3s;
+}
+
+.map-link:hover {
+    background-color: #0056b3;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-heart {
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.back-button {
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}

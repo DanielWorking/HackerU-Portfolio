@@ -1,4 +1,3 @@
-// ___________________________add to the more details page
 // the the card paragraph for population
 const cardPopulation = document.createElement("p");
 cardPopulation.className = "card-text";
