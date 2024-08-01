@@ -6,6 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 20px;
+}
+
+header {
+    background-color: #007bff;
+}
+
+header h1 {
+    margin: 0;
 }
 
 .country-card {
@@ -13,6 +24,9 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
     max-width: 600px;
     margin: 0 auto;
+    background-color: #ffffff;
+    color: #343a40;
+    overflow: hidden;
 }
 
 .country-card:hover {
@@ -34,6 +48,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #007bff;
 }
 
 .country-info p {
@@ -41,8 +56,22 @@ body {
     margin-bottom: 10px;
 }
 
+.country-info p strong {
+    color: #007bff;
+}
+
+.country-map {
+    text-align: center;
+}
+
 .map-link {
     transition: background-color 0.3s;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .map-link:hover {
@@ -58,14 +87,24 @@ body {
     align-items: center;
 }
 
-.bi-heart {
+.bi {
     color: red;
     font-size: 1.5rem;
+}
+
+.bi:hover {
     cursor: pointer;
 }
 
 .back-button {
     transition: background-color 0.3s;
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .back-button:hover {

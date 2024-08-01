@@ -1,18 +1,19 @@
 import { countriesCopy, search, reset } from "./countries.js";
 
+// the container for all the cards of the countries
+const cardsList = document.getElementById("cardsList");
+
 // the search bar
 const searchInput = document.querySelector("#search");
 searchInput.addEventListener("keydown", (event) => {
     reset();
-    cardsList.innerHTML = "";
+    cardsList.innerHTML = ""; // cardsList is now defined before use
     search(event.target.value.trim());
     createCardList();
 })
+
 // getting the favorietsList value and if there is no value create one as empty array
 let favorietsList = JSON.parse(localStorage.getItem('favorietsList')) || [];
-
-// the container for all the cards of the countries
-const cardsList = document.getElementById("cardsList");
 
 const createCard = (country) => {
     // the card container
@@ -39,26 +40,29 @@ const createCard = (country) => {
     const cardCapital = document.createElement("h6");
     cardCapital.className = "card-title";
     // accessing the country capital name from api
-    if (Object.values(country.capital).length == 0) { // dealing with situation where the country doesnt have a capital
-
+    if (Object.values(country.capital).length === 0) { // dealing with situation where the country doesn't have a capital
         cardCapital.textContent = "The Country Has No Capital";
     } else {
-        cardCapital.textContent = `Capital: ${Object.values(country.capital).join(", ")}`; // accessing the values of capital and seperating with comma
+        cardCapital.textContent = `Capital: ${Object.values(country.capital).join(", ")}`; // accessing the values of capital and separating with comma
     }
 
     // the card paragraph for languages
     const cardLanguage = document.createElement("p");
     cardLanguage.className = "card-text";
     // accessing the country languages from api
-    cardLanguage.textContent = Object.values(country.languages).join(", "); // takes the values from the object and then join them  into a single string with each language name seperated by a comma and space
+    cardLanguage.textContent = Object.values(country.languages).join(", "); // takes the values from the object and then joins them into a single string with each language name separated by a comma and space
 
     // the card button to view more details on country
     const cardInfo = document.createElement("a");
     cardInfo.className = "btn bg-primary text-white";
     cardInfo.textContent = "More Details";
     cardInfo.href = "./pages/details.html";
+    // storing the country of selected card for usage in the details file
+    cardInfo.addEventListener("click", () => {
+        localStorage.setItem("countryName", JSON.stringify(country.name.common));
+    })
 
-    // the card footer for adding the country to favorits using localstorage
+    // the card footer for adding the country to favorites using localStorage
     const cardFooter = document.createElement("div");
     cardFooter.className = "card-footer d-flex justify-content-between";
     const heart = document.createElement("i");
@@ -72,7 +76,7 @@ const createCard = (country) => {
             localStorage.setItem('favorietsList', JSON.stringify(favorietsList));
         } else {
             heart.className = "bi bi-heart";
-            // remove the country name from array in localstorage when removing like on the card
+            // remove the country name from array in localStorage when removing like on the card
             let itemIndex = favorietsList.indexOf(cardTitle.textContent);
             if (itemIndex !== -1) {
                 favorietsList.splice(itemIndex, 1);
@@ -81,7 +85,14 @@ const createCard = (country) => {
         }
     })
 
-    // appending the elements to stravture the card
+    // checking if the country has already been added to favoriets
+    if (favorietsList.includes(country.name.common)) {
+        heart.className = "bi bi-heart-fill";
+    } else {
+        heart.className = "bi bi-heart";
+    }
+
+    // appending the elements to structure the card
     cardsList.appendChild(card);
     card.appendChild(cardImage);
     card.appendChild(cardBody);
