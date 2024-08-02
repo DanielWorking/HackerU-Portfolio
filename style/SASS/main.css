@@ -276,7 +276,7 @@
   text-transform: uppercase;
 }
 .play-center-container .container-description {
-  width: 30%;
+  max-width: 50%;
   margin: 0 auto 4rem;
   font: normal normal 500 1rem/1.23em "Heebo", sans-serif;
   color: #3A3A3A;
