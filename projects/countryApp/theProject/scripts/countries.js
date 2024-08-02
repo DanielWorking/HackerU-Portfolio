@@ -1,6 +1,6 @@
 // fetching the data from the api
 // perhaps its best to create the function as a variable insted of needing to call the function
-async function getCountriesApiData() {
+async function fetchCountries() {
     const response = await fetch("https://restcountries.com/v3.1/all");
     const data = await response.json();
     return data;
@@ -8,7 +8,7 @@ async function getCountriesApiData() {
 
 
 // creating a deep copy of the data from api to guard the original data from any unwanted changes
-const fullCountriesData = await getCountriesApiData();
+const fullCountriesData = await fetchCountries();
 let countriesCopy = JSON.parse(JSON.stringify(fullCountriesData));
 
 
@@ -27,4 +27,4 @@ const reset = () => {
 
 
 
-export { countriesCopy, getCountriesApiData, search, reset };
+export { countriesCopy, fetchCountries, search, reset };

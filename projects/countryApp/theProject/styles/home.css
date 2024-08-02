@@ -1,96 +1,96 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f2f5;
 }
 
-/* Card container */
+.bg-primary {
+    background-color: #3498db !important;
+}
+
 .card {
-    border-radius: 10px;
+    border: none;
+    border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Card image */
 .card-img-top {
-    height: 150px;
+    height: 200px;
     object-fit: cover;
-    border-bottom: 2px solid #007bff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .card-body {
-    padding: 15px;
+    padding: 20px;
 }
 
 .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50; 
 
-.card-title:nth-child(2) {
-    font-weight: normal;
+    &:nth-child(2) {
+        font-weight: normal;
+    }
 }
 
 .card-text {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    color: #7f8c8d;
 }
 
-/* Card button */
-.btn {
+.btn-primary {
+    background-color: #3498db;
+    border: none;
     transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.btn-primary:hover {
+    background-color: #2980b9;
 }
 
 .card-footer {
     background-color: #f8f9fa;
-    border-top: 1px solid #e9ecef;
-    padding: 10px;
+    border-top: 1px solid #ecf0f1;
+    padding: 15px;
 }
 
-/* Heart icon */
-.bi {
-    margin: auto 0;
-    color: red;
+.bi-heart, .bi-heart-fill {
+    font-size: 1.2rem;
+    color: #e74c3c;
 }
 
-.bi:hover {
-    cursor: pointer;
-}
-
-/* Search input */
 #search {
-    border-radius: 5px;
-    border: 2px solid #007bff;
-    padding: 10px;
-    width: calc(100% - 150px);
-    transition: border-color 0.3s;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: box-shadow 0.3s;
 }
 
 #search:focus {
-    border-color: #0056b3;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    outline: none;
 }
 
-/* Favorites button */
+.btn-success {
+    height: 3.5em;
+    padding: 0;
+    align-self: center;
+}
+
 .favorites-btn {
-    margin: auto;
-    height: 40px;
-    white-space: nowrap;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 25px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .favorites-btn:hover {
-    background-color: #218838;
+    background-color: #27ae60;
     transform: scale(1.05);
 }

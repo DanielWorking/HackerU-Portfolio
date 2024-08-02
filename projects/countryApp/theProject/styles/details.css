@@ -1,112 +1,87 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #343a40;
-    color: #f8f9fa;
-    padding: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #2c3e50;
 }
 
-header {
-    background-color: #007bff;
-}
-
-header h1 {
-    margin: 0;
+.bg-primary {
+    background-color: #3498db !important;
 }
 
 .country-card {
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     max-width: 600px;
     margin: 0 auto;
-    background-color: #ffffff;
-    color: #343a40;
-    overflow: hidden;
-}
-
-.country-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .country-flag {
-    height: 300px;
+    width: 100%;
     object-fit: cover;
-    border-bottom: 2px solid #007bff;
+    display: block;
 }
 
 .card-body {
-    padding: 20px;
+    padding: 30px;
 }
 
 .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3498db;
     margin-bottom: 20px;
-    color: #007bff;
 }
 
 .country-info p {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 .country-info p strong {
-    color: #007bff;
-}
-
-.country-map {
-    text-align: center;
+    color: #34495e;
 }
 
 .map-link {
-    transition: background-color 0.3s;
-    color: #ffffff;
-    background-color: #007bff;
+    background-color: #3498db;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .map-link:hover {
-    background-color: #0056b3;
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
 
 .card-footer {
     background-color: #f8f9fa;
-    border-top: 1px solid #e9ecef;
-    padding: 15px;
+    border-top: 1px solid #ecf0f1;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.bi {
-    color: red;
+.bi-heart, .bi-heart-fill {
     font-size: 1.5rem;
-}
-
-.bi:hover {
-    cursor: pointer;
+    color: #e74c3c;
 }
 
 .back-button {
-    transition: background-color 0.3s;
-    background-color: #6c757d;
-    color: #ffffff;
+    background-color: #95a5a6;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .back-button:hover {
-    background-color: #5a6268;
+    background-color: #7f8c8d;
+    transform: scale(1.05);
 }
