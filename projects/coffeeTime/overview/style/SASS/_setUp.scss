@@ -1,9 +1,14 @@
-* { // effects the web page
+* {
+    // effects the web page
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body { // effects the page
+html,
+body {
+    // effects the page
     height: 100%; // getting the full height of the page
+    display: flex;
+    flex-direction: column;
 }

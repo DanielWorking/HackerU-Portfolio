@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     padding: 5em 0;
+    flex-grow: 1;
+    justify-content: center;
 
     img {
         width: 61.93%;
@@ -12,13 +14,17 @@
     }
 }
 
-@media (min-width: 600px) { // tablet screen size
+@media (min-width: 600px) {
+
+    // tablet screen size
     .overview-container {
         padding-bottom: 8em;
     }
 }
 
-@media (min-width:900px) { // desktop screen size
+@media (min-width:900px) {
+
+    // desktop screen size
     .overview-container {
         padding-bottom: 11.5em;
     }

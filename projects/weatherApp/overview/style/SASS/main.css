@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .px-5 {
@@ -57,7 +60,7 @@ html, body {
 }
 .technologies-container {
   width: 100%;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   padding: 0.5em;
 }
@@ -66,9 +69,11 @@ html, body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .technologies-container .technologies img {
   min-width: 45px;
+  max-width: 55px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -88,6 +93,8 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
+  justify-content: center;
 }
 .overview-container .image-container {
   width: 60%;
@@ -139,20 +146,19 @@ html, body {
 }
 @media (min-width: 900px) {
   .overview-container {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 11.5em 2em;
     gap: 2em;
   }
   .overview-container .image-container {
     flex: 1;
     max-width: 50%;
-    margin-bottom: 0;
-    margin-left: 7em;
+    margin: 0 auto;
   }
   .overview-container .content-container {
-    flex: 1;
+    flex: 2;
     align-self: center;
     max-width: 50%;
     text-align: left;
@@ -171,6 +177,25 @@ html, body {
     font-size: 0.88rem;
   }
 }
+@media (min-width: 1200px) {
+  .overview-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 11.5em 2em;
+    gap: 2em;
+  }
+  .overview-container .image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  .overview-container .content-container {
+    flex: 1;
+    align-self: center;
+    max-width: 50%;
+    text-align: left;
+  }
+}
 .copyright-section {
   width: 100%;
   background: #000000 0% 0% no-repeat padding-box;
@@ -178,6 +203,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.35em solid #1AE0EC;
+  margin-top: auto;
 }
 .copyright-section p {
   color: #1AE0EC;

@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.35em solid #1AE0EC;
+    margin-top: auto;
 
     p {
         color: #1AE0EC;
@@ -22,7 +23,9 @@
     }
 }
 
-@media (min-width: 600px) { // works both for tablet and desktop screen size
+@media (min-width: 600px) {
+
+    // works both for tablet and desktop screen size
     .copyright-section {
         border-bottom-width: .4em;
 
