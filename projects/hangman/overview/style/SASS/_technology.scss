@@ -1,0 +1,35 @@
+.technologies-container {
+    // the page element
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding: .5em;
+
+    .technologies {
+        // the container of the technologies images
+        width: 68.2%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        img {
+            min-width: 45px;
+            max-width: 55px;
+            object-fit: cover;
+        }
+
+        img+img {
+            // create a space between each image, effecting from the second image and so on
+            margin-left: .6em;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+
+    // responsive for all screen sizes except mobile
+    .technologies {
+        max-width: 465px;
+    }
+}
