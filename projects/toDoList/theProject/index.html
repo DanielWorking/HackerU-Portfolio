@@ -4,39 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <title>Todo</title>
 </head>
 
 <body>
-    <input type="text" id="newTaskInput" placeholder="new task">
-    <button id="addTaskBtn">add</button>
-
-
-    <table class="todo-table">
-        <thead>
-            <tr>
-                <th class="todo-header">Is Complete</th>
-                <th class="todo-header">ID</th>
-                <th class="todo-header">Description</th>
-                <th class="todo-header">Creation Time</th>
-                <th class="todo-header">Edit</th>
-                <th class="todo-header">Delete</th>
-            </tr>
-        </thead>
-        <tbody id="todoListBody">
-            <tr class="todo-row">
-                <td class="todo-cell">false</td>
-                <td class="todo-cell">1</td>
-                <td class="todo-cell">doing laundry</td>
-                <td class="todo-cell">1/1/2020</td>
-                <td class="todo-cell">click to edit</td>
-                <td class="todo-cell">click to delete</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <script src="./scripts/toDoList.js"></script>
+    <main class="todo">
+        <h2>To-do list</h2>
+        <div class="input">
+            <input type="text" class="input-field" id="todoInput" placeholder="Add a new todo" />
+            <input type="button" value="Add" class="btn">
+        </div>
+        <ul class="scroll">
+            <li id="todoList"></li>
+        </ul>
+        <div>
+            <hr class="counter" />
+            <div class="counter-container">
+                <p><span id="todoCount">0</span> items total</p>
+                <button id="deleteButton">Delete All</button>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/main.js" type="module"></script>
 </body>
 
 </html>
