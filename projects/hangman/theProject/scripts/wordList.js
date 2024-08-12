@@ -1,3 +1,4 @@
+// the words and hints list for the game
 export const wordList = [
     {
         word: "guitar",

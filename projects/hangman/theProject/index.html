@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Hangman Game</title>
 </head>
 
 <body>
+    <!-- the game over message section -->
     <div class="game-modal">
         <div class="content">
             <img src="#" alt="gif">
@@ -17,11 +21,13 @@
             <button class="play-again">Play Again</button>
         </div>
     </div>
+    <!-- the hangman image section -->
     <div class="container">
         <div class="hangman-box">
             <img src="#" draggable="false" alt="hangman-img">
             <h1>Hangman Game</h1>
         </div>
+        <!-- the game section -->
         <div class="game-box">
             <ul class="word-display"></ul>
             <h4 class="hint-text">Hint: <b></b></h4>
