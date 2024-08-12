@@ -19,5 +19,29 @@ In this project i leveraged a variety of technologies and languages:
 - CSS - styling
 - Bootstrap - framework for implementing a responsive web design
 - SaaS - organize the files
+- JavaScript - 
+- ES6 - 
+- OOP - 
+- API - 
 
 ![img-HTML](https://github.com/DanielWorking/DanielReiferProject/assets/134011193/6acda546-e8b4-4e38-9699-39ff6f2e0873) ![img-CSS](https://github.com/DanielWorking/DanielReiferProject/assets/134011193/4c7cfb4c-d3b3-4b1b-a45a-3a0301e43335) ![img-Bootstrap](https://github.com/DanielWorking/DanielReiferProject/assets/134011193/6dcee4f7-21ba-40bd-8588-13939a3b84c7) ![img-SASS](https://github.com/DanielWorking/DanielReiferProject/assets/134011193/554c91fe-ca99-4681-b9fb-3179dcfb06cd)
+
+
+Project Breakdown
+1. Projects Gallery
+This section features six mini-projects where I designed various landing pages. Technologies used include HTML, CSS, SASS, and Bootstrap.
+
+2. Play Center
+In this section, I created:
+
+Games: Hangman, Math Game, Tic Tac Toe
+API Apps: Country Explorer, Weather App
+To-Do List: Demonstrating Object-Oriented Programming (OOP)
+Technologies used include JavaScript, ES6, OOP, and various APIs.
+
+Getting Started
+To view or run the project locally:
+
+Clone this repository: git clone https://github.com/DanielWorking/DanielReiferProject.git
+Navigate to the project directory: cd DanielReiferProject
+Open index.html in your browser to view the portfolio.
