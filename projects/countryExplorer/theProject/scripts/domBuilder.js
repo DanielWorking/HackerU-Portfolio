@@ -14,8 +14,8 @@ if (searchInput) {
     });
 }
 
-// getting the favorietsList value and if there is no value create one as empty array
-let favorietsList = JSON.parse(localStorage.getItem('favorietsList')) || [];
+// getting the favoritesList value and if there is no value, create one as an empty array
+let favoritesList = JSON.parse(localStorage.getItem('favoritesList')) || [];
 
 const createCard = (country) => {
     // the card container
@@ -41,7 +41,7 @@ const createCard = (country) => {
     // the card second title = country capital
     const cardCapital = document.createElement("h6");
     cardCapital.className = "card-title";
-    // Check if `country.capital` exists and is an object before using it
+    // check if `country.capital` exists and is an object before using it
     if (country.capital && Object.values(country.capital).length > 0) {
         cardCapital.textContent = `Capital: ${Object.values(country.capital).join(", ")}`;
     } else {
@@ -50,7 +50,7 @@ const createCard = (country) => {
 
     const cardLanguage = document.createElement("p");
     cardLanguage.className = "card-text";
-    // Check if `country.languages` exists and is an object before using it
+    // check if `country.languages` exists and is an object before using it
     if (country.languages && Object.values(country.languages).length > 0) {
         cardLanguage.textContent = Object.values(country.languages).join(", ");
     } else {
@@ -65,7 +65,7 @@ const createCard = (country) => {
     // storing the country of selected card for usage in the details file
     cardInfo.addEventListener("click", () => {
         localStorage.setItem("countryName", JSON.stringify(country.name.common));
-    })
+    });
 
     // the card footer for adding the country to favorites using localStorage
     const cardFooter = document.createElement("div");
@@ -80,21 +80,21 @@ const createCard = (country) => {
         // to make sure only the heart class is changed in case more classes will be added
         if (heart.classList.contains("bi-heart")) {
             heart.classList.replace("bi-heart", "bi-heart-fill");
-            // pushing the country name to the array of favorietsList key in localStorage
-            favorietsList.push(cardTitle.textContent);
+            // pushing the country name to the array of favoritesList key in localStorage
+            favoritesList.push(cardTitle.textContent);
         } else {
             heart.classList.replace("bi-heart-fill", "bi-heart");
             // remove the country name from array in localStorage when removing like on the card
-            let itemIndex = favorietsList.indexOf(cardTitle.textContent);
+            let itemIndex = favoritesList.indexOf(cardTitle.textContent);
             if (itemIndex !== -1) {
-                favorietsList.splice(itemIndex, 1);
+                favoritesList.splice(itemIndex, 1);
             }
         }
-        localStorage.setItem('favorietsList', JSON.stringify(favorietsList));
-    })
+        localStorage.setItem('favoritesList', JSON.stringify(favoritesList));
+    });
 
-    // checking if the country has already been added to favoriets
-    if (favorietsList.includes(country.name.common)) {
+    // checking if the country has already been added to favorites
+    if (favoritesList.includes(country.name.common)) {
         heart.classList.replace("bi-heart", "bi-heart-fill");
     }
 
@@ -117,4 +117,4 @@ const createCardList = () => {
     }
 };
 
-export { createCard, createCardList, favorietsList };
+export { createCard, createCardList, favoritesList };

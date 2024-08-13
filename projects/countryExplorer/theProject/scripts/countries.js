@@ -6,11 +6,9 @@ async function fetchCountries() {
     return data;
 }
 
-
 // creating a deep copy of the data from api to guard the original data from any unwanted changes
 const fullCountriesData = await fetchCountries();
 let countriesCopy = JSON.parse(JSON.stringify(fullCountriesData));
-
 
 // when typing text in the search bar, only the card that include the text will appear
 const search = (text) => {
@@ -24,7 +22,5 @@ const search = (text) => {
 const reset = () => {
     countriesCopy = JSON.parse(JSON.stringify(fullCountriesData));
 }
-
-
 
 export { countriesCopy, fetchCountries, search, reset };

@@ -1,19 +1,17 @@
 // importing the function for creating the mini-cards
-import { createCard, favorietsList } from "./domBuilder.js";
+import { createCard, favoritesList } from "./domBuilder.js";
 // importing the copy of the API data
 import { countriesCopy } from "./countries.js";
 
 // creating mini-cards only for countries the user clicked the heart symbol (heart-fill)
 for (const country of countriesCopy) {
-    for (const favoriteCountry of favorietsList) {
-        if (country.name.common === favoriteCountry) {
-            createCard(country);
-            // updating the href property in the "more details" button of the mini-cards to match the current location of the user
-            const cardInfoLinks = document.querySelectorAll(".card-footer a");
-            cardInfoLinks.forEach((link) => {
-                link.href = "./details.html";
-            })
-        }
+    if (favoritesList.includes(country.name.common)) {
+        createCard(country);
+        // updating the href property in the "more details" button of the mini-cards to match the current location of the user
+        const cardInfoLinks = document.querySelectorAll(".card-footer a");
+        cardInfoLinks.forEach((link) => {
+            link.href = "../pages/details.html";
+        });
     }
 }
 
@@ -35,12 +33,10 @@ hearts.forEach(heart => {
                 heart.classList.replace("bi-heart-fill", "bi-heart");
             }
 
-            // removing the country name of selected card from favorietsList key in localstorage
-            let favorietsList = JSON.parse(localStorage.getItem("favorietsList")) || [];
-            if (heart.classList.contains("bi-heart")) {
-                favorietsList = favorietsList.filter(favCountry => favCountry !== countryNameOfCard);
-            }
-            localStorage.setItem("favorietsList", JSON.stringify(favorietsList));
+            // removing the country name of selected card from favoritesList key in localstorage
+            let updatedFavoritesList = JSON.parse(localStorage.getItem("favoritesList")) || [];
+            updatedFavoritesList = updatedFavoritesList.filter(favCountry => favCountry !== countryNameOfCard);
+            localStorage.setItem("favoritesList", JSON.stringify(updatedFavoritesList));
 
             // remove the disliked card from the DOM
             card.remove();
