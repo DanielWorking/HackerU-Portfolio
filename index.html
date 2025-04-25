@@ -1,337 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Daniel Reifer" />
+        <meta
+            name="description"
+            content="Daniel Reifer's portfolio website showcasing web development projects and skills."
+        />
+        <meta
+            name="keywords"
+            content="Daniel Reifer, portfolio, web development, projects, skills, HTML, CSS, JavaScript,
+        React, Node.js"
+        />
+        <title>Daniel Reifer Portfolio</title>
+        <!-- bootstrap link -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Reifer Project</title>
-    <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!-- heebo font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- heebo font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Satisfy font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Satisfy font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <!-- alternative Helvetica Neue font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- alternative Helvetica Neue font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <!-- saas folder link -->
+        <link rel="stylesheet" href="./style/SASS/main.css" />
+    </head>
 
-    <!-- saas folder link -->
-    <link rel="stylesheet" href="./style/SASS/main.css">
-</head>
+    <body>
+        <!-- header -->
+        <nav
+            class="navbar navbar-expand-sm bg-white border-top border-info-subtle border-3 sticky-top"
+        >
+            <div class="container-fluid px-5">
+                <a class="navbar-brand d-flex align-items-center">
+                    <img
+                        src="./images/profilePicture.jpg"
+                        alt="profile image"
+                        title="Daniel Reifer"
+                        class="rounded-circle"
+                        width="40"
+                        height="40"
+                    />
+                    <span class="fs-4 ms-1 d-none d-md-block"
+                        >Daniel Reifer</span
+                    >
+                </a>
 
-<body>
-    <!-- new navbar -->
-    <nav class="navbar navbar-expand-sm bg-white border-top border-info-subtle border-3 sticky-top">
-        <div class="container-fluid px-5">
-            <a class="navbar-brand d-flex align-items-center">
-                <img src="./images/profilePicture.jpg" alt="profile image" class="rounded-circle" width="40"
-                    height="40">
-                <span class="fs-4 ms-1 d-none d-md-block">Daniel Reifer</span> </a>
+                <button
+                    class="navbar-toggler border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#myNavbar"
+                >
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
 
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-                <span class="navbar-toggler-icon">&#9776;</span>
-            </button>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="myNavbar"
+                >
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#main" id="main-btn"
+                                >Main</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-color" href="#about"
+                                >About</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-color" href="#services"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#contact"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#main" id="main-btn">Main</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hover-color" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hover-color" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-info" href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <!-- main -->
+        <div id="main" class="header-container">
+            <div class="text-container">
+                <h1>portfolio</h1>
+                <p>
+                    Explore my digital portfolio—a showcase where code meets
+                    creativity, forming immersive and engaging web experiences.
+                </p>
             </div>
         </div>
-    </nav>
+        <!-- technologies knowledge -->
+        <div class="technologies-container">
+            <div class="technologies">
+                <img src="./images/img-HTML.png" alt="html icon" title="HTML" />
+                <img src="./images/img-CSS.png" alt="css icon" title="CSS" />
+                <img
+                    src="./images/img-Bootstrap.png"
+                    alt="Bootstrap icon"
+                    title="Bootstrap"
+                />
+                <img src="./images/img-SASS.png" alt="SASS icon" title="SASS" />
+                <img
+                    src="./images/img-JS.png"
+                    alt="JavaScript icon"
+                    title="JavaScript"
+                />
+                <img src="./images/img-OOP.png" alt="oop icon" title="OOP" />
+                <img src="./images/img-ES6.png" alt="ES6 icon" title="ES6" />
+                <img
+                    src="./images/img-TypeScript.png"
+                    alt="TypeScript icon"
+                    title="TypeScript"
+                />
+                <img src="./images/img-API.png" alt="API icon" title="API" />
+                <img
+                    src="./images/img-React.png"
+                    alt="React icon"
+                    title="React"
+                />
+                <img
+                    src="./images/img-NodeJS.png"
+                    alt="nodeJS icon"
+                    title="NodeJS"
+                />
+            </div>
+        </div>
+        <!-- about me -->
+        <div id="about" class="aboutme-container">
+            <div class="aboutme-display">
+                <img
+                    src="./images/profilePicture.jpg"
+                    alt="daniel reifer picture"
+                    title="Daniel Reifer"
+                    class="rounded-circle"
+                />
+                <section class="aboutme-section">
+                    <h4>about me</h4>
+                    <p>
+                        Hello! I'm Daniel Reifer, an IDF Network Manager from
+                        Givat Shmuel. With experience in critical infrastructure
+                        and network maintenance, I'm ready to transition into
+                        web development. Proficient in Python, AWS, Google
+                        Cloud, Windows, Linux, and more, I'm eager to craft
+                        seamless web experiences. Combining military precision
+                        and technical expertise, I'm committed to enhancing web
+                        development teams and ensuring top-tier performance and
+                        quality in every project.
+                    </p>
+                    <div class="resume">
+                        <a
+                            href="./images/resume/DanielReiferResume.pdf"
+                            download="DanielReiferResume.pdf"
+                        >
+                            download resume</a
+                        >
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- projects gallery -->
+        <div id="services" class="page-container">
+            <div class="content-container">
+                <h4>projects gallery</h4>
+                <p>
+                    Discover my web development prowess through an array of
+                    diverse and innovative projects.
+                </p>
+                <!-- projects cards -->
+                <div class="gallery-container">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="./images/landingPage1.jpg"
+                            alt="landing page 1"
+                            title="landing page 1"
+                        />
+                        <div class="all-content">
+                            <div class="content-no-btn">
+                                <h5 class="card-title">improve</h5>
+                                <p class="card-text">
+                                    Enhancing an existing system or application
+                                    to optimize performance and usability.
+                                </p>
+                                <div class="project-technology-container">
+                                    <img
+                                        src="./images/img-HTML.png"
+                                        alt="html icon"
+                                        title="HTML"
+                                    />
+                                    <img
+                                        src="./images/img-CSS.png"
+                                        alt="css icon"
+                                        title="CSS"
+                                    />
+                                    <img
+                                        src="./images/img-Bootstrap.png"
+                                        alt="Bootstrap icon"
+                                        title="Bootstrap"
+                                    />
+                                    <img
+                                        src="./images/img-SASS.png"
+                                        alt="SASS icon"
+                                        title="SASS"
+                                    />
+                                </div>
+                            </div>
+                            <a
+                                href="./projects/improve/overview/index.html"
+                                class="btn btn-info mx-auto rounded-pill"
+                            >
+                                project page &#8811;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="./images/landingPage2.jpg"
+                            alt="landing page 2"
+                            title="landing page 2"
+                        />
+                        <div class="all-content">
+                            <div class="content-no-btn">
+                                <h5 class="card-title">gifts</h5>
+                                <p class="card-text">
+                                    Developing an e-commerce platform for buying
+                                    and sending personalized gifts.
+                                </p>
+                                <div class="project-technology-container">
+                                    <img
+                                        src="./images/img-HTML.png"
+                                        alt="html icon"
+                                        title="HTML"
+                                    />
+                                    <img
+                                        src="./images/img-CSS.png"
+                                        alt="css icon"
+                                        title="CSS"
+                                    />
+                                    <img
+                                        src="./images/img-Bootstrap.png"
+                                        alt="Bootstrap icon"
+                                        title="Bootstrap"
+                                    />
+                                    <img
+                                        src="./images/img-SASS.png"
+                                        alt="SASS icon"
+                                        title="SASS"
+                                    />
+                                </div>
+                            </div>
+                            <a
+                                href="./projects/gifts/overview/index.html"
+                                class="btn btn-info mx-auto rounded-pill"
+                            >
+                                project page &#8811;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="./images/landingPage3.jpg"
+                            alt="landing page 3"
+                            title="landing page 3"
+                        />
+                        <div class="all-content">
+                            <div class="content-no-btn">
+                                <h5 class="card-title">coffee time</h5>
+                                <p class="card-text">
+                                    Designing a web application to help users
+                                    discover and rate local coffee shops.
+                                </p>
+                                <div class="project-technology-container">
+                                    <img
+                                        src="./images/img-HTML.png"
+                                        alt="html icon"
+                                        title="HTML"
+                                    />
+                                    <img
+                                        src="./images/img-CSS.png"
+                                        alt="css icon"
+                                        title="CSS"
+                                    />
+                                    <img
+                                        src="./images/img-Bootstrap.png"
+                                        alt="Bootstrap icon"
+                                        title="Bootstrap"
+                                    />
+                                    <img
+                                        src="./images/img-SASS.png"
+                                        alt="SASS icon"
+                                        title="SASS"
+                                    />
+                                </div>
+                            </div>
+                            <a
+                                href="./projects/coffeeTime/overview/index.html"
+                                class="btn btn-info mx-auto rounded-pill"
+                            >
+                                project page &#8811;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="./images/landingPage4.png"
+                            alt="landing page 4"
+                            title="landing page 4"
+                        />
+                        <div class="all-content">
+                            <div class="content-no-btn">
+                                <h5 class="card-title">your turn</h5>
+                                <p class="card-text">
+                                    Creating an interactive and engaging game or
+                                    activity for users to enjoy.
+                                </p>
+                                <div class="project-technology-container">
+                                    <img
+                                        src="./images/img-HTML.png"
+                                        alt="html icon"
+                                        title="HTML"
+                                    />
+                                    <img
+                                        src="./images/img-CSS.png"
+                                        alt="css icon"
+                                        title="CSS"
+                                    />
+                                    <img
+                                        src="./images/img-Bootstrap.png"
+                                        alt="Bootstrap icon"
+                                        title="Bootstrap"
+                                    />
+                                    <img
+                                        src="./images/img-SASS.png"
+                                        alt="SASS icon"
+                                        title="SASS"
+                                    />
+                                </div>
+                            </div>
+                            <a
+                                href="./projects/yourTurn/overview/index.html"
+                                class="btn btn-info mx-auto rounded-pill"
+                            >
+                                project page &#8811;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="./images/landingPage5.png"
+                            alt="landing page 5"
+                            title="landing page 5"
+                        />
+                        <div class="all-content">
+                            <div class="content-no-btn">
+                                <h5 class="card-title">trips</h5>
+                                <p class="card-text">
+                                    Building a platform for planning and
+                                    organizing personalized travel itineraries.
+                                </p>
+                                <div class="project-technology-container">
+                                    <img
+                                        src="./images/img-HTML.png"
+                                        alt="html icon"
+                                        title="HTML"
+                                    />
+                                    <img
+                                        src="./images/img-CSS.png"
+                                        alt="css icon"
+                                        title="CSS"
+                                    />
+                                    <img
+                                        src="./images/img-Bootstrap.png"
+                                        alt="Bootstrap icon"
+                                        title="Bootstrap"
+                                    />
+                                    <img
+                                        src="./images/img-SASS.png"
+                                        alt="SASS icon"
+                                        title="SASS"
+                                    />
+                                </div>
+                            </div>
+                            <a
+                                href="./projects/trips/overview/index.html"
+                                class="btn btn-info mx-auto rounded-pill"
+                            >
+                                project page &#8811;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="./images/landingPage6.png"
+                            alt="landing page 6"
+                            title="landing page 6"
+                        />
+                        <div class="all-content">
+                            <div class="content-no-btn">
+                                <h5 class="card-title">consultation</h5>
+                                <p class="card-text">
+                                    Developing a web application to connect
+                                    users with experts for professional advice.
+                                </p>
+                                <div class="project-technology-container">
+                                    <img
+                                        src="./images/img-HTML.png"
+                                        alt="html icon"
+                                        title="HTML"
+                                    />
+                                    <img
+                                        src="./images/img-CSS.png"
+                                        alt="css icon"
+                                        title="CSS"
+                                    />
+                                    <img
+                                        src="./images/img-Bootstrap.png"
+                                        alt="Bootstrap icon"
+                                        title="Bootstrap"
+                                    />
+                                    <img
+                                        src="./images/img-SASS.png"
+                                        alt="SASS icon"
+                                        title="SASS"
+                                    />
+                                </div>
+                            </div>
+                            <a
+                                href="./projects/consultation/overview/index.html"
+                                class="btn btn-info mx-auto rounded-pill"
+                            >
+                                project page &#8811;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- the openning section -->
-    <div id="main" class="header-container">
-        <div class="text-container">
-            <h1>portfolio</h1>
-            <p>Explore my digital portfolio—a showcase where code meets creativity, forming immersive and engaging web
-                experiences.
+        <!-- play center section -->
+        <div class="play-center-container">
+            <h2 class="container-headline">PLAY CENTER</h2>
+            <p class="container-description">
+                These projects demonstrate my application of JavaScript skills
+                in creating interactive game logic and dynamic user interfaces.
             </p>
+            <div class="cards-grid">
+                <a
+                    href="./projects/weatherApp/overview/index.html"
+                    class="game-card"
+                >
+                    <img
+                        src="./images/weather.jpg"
+                        alt="Whether App Image"
+                        title="weather app"
+                    />
+                    <h3 class="card-title">Weather App</h3>
+                </a>
+                <a
+                    href="./projects/toDoList/overview/index.html"
+                    class="game-card"
+                >
+                    <img
+                        src="./images/toDoList.png"
+                        alt="To Do List Image"
+                        title="to do list"
+                    />
+                    <h3 class="card-title">To Do List</h3>
+                </a>
+                <a
+                    href="./projects/mathGame/overview/index.html"
+                    class="game-card card-img-top"
+                >
+                    <img
+                        src="./images/mathGameImg.png"
+                        alt="Learn Math Quiz Image"
+                        title="learn math"
+                    />
+                    <h3 class="card-title">Learn Math</h3>
+                </a>
+                <a
+                    href="./projects/countryExplorer/overview/index.html"
+                    class="game-card"
+                >
+                    <img
+                        src="./images/world.jpg"
+                        alt="Country Info App"
+                        title="country info"
+                    />
+                    <h3 class="card-title">Country Explorer</h3>
+                </a>
+                <a
+                    href="./projects/hangman/overview/index.html"
+                    class="game-card"
+                >
+                    <img
+                        src="./images/final-hangman.svg"
+                        alt="Hangman Game Image"
+                        title="hangman game"
+                    />
+                    <h3 class="card-title">Hangman Game</h3>
+                </a>
+                <a
+                    href="./projects/ticTacToe/overview/index.html"
+                    class="game-card"
+                >
+                    <img
+                        src="./images/ticTacToeImg.png"
+                        alt="Tic Tac Toe Game Image"
+                        title="tic tac toe game"
+                    />
+                    <h3 class="card-title">Tic Tac Toe</h3>
+                </a>
+            </div>
         </div>
-    </div>
-    <!-- the technologies knowledge part -->
-    <div class="technologies-container">
-        <div class="technologies">
-            <img src="./images/img-HTML.png" alt="html icon">
-            <img src="./images/img-CSS.png" alt="css icon">
-            <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
-            <img src="./images/img-SASS.png" alt="SASS icon">
-            <img src="./images/img-JS.png" alt="JavaScript icon">
-            <img src="./images/img-OOP.png" alt="oop icon">
-            <img src="./images/img-ES6.png" alt="ES6 icon">
-            <img src="./images/img-TypeScript.png" alt="TypeScript icon">
-            <img src="./images/img-API.png" alt="API icon">
-            <img src="./images/img-React.png" alt="React icon">
-            <img src="./images/img-NodeJS.png" alt="nodeJS icon">
+
+        <!-- the contact section -->
+        <div id="contact" class="contact-us-container">
+            <form>
+                <h4>contact</h4>
+                <p>
+                    Feel free to reach out to me with any inquiries,
+                    opportunities, or collaboration proposals.
+                </p>
+                <div class="field-section">
+                    <label for="full_name" class="headline">full name</label>
+                    <input
+                        type="text"
+                        id="full_name"
+                        name="full_name"
+                        class="text"
+                    />
+                    <label for="email" class="headline">email</label>
+                    <input type="email" id="email" name="email" class="text" />
+                    <label for="phone_number" class="headline">phone</label>
+                    <input
+                        type="number"
+                        id="phone_number"
+                        name="phone_number"
+                        class="text"
+                    />
+                    <label for="text" class="headline">message content</label>
+                    <textarea id="text" name="text" class="text"></textarea>
+                </div>
+                <input type="button" value="submit" id="submit" />
+            </form>
+            <img
+                src="./images/letter.png"
+                alt="image of envelope"
+                title="envelope"
+            />
         </div>
-    </div>
-    <!-- the about section -->
-    <div id="about" class="aboutme-container">
-        <div class="aboutme-display">
-            <img src="./images/profilePicture.jpg" alt="daniel reifer picture" class="rounded-circle">
-            <section class="aboutme-section">
-                <h4>about me</h4>
-                <p>Hello! I'm Daniel Reifer, an IDF Network Manager from Givat Shmuel. With experience in
-                    critical infrastructure
-                    and network maintenance, I'm ready to transition into web development. Proficient in Python, AWS,
-                    Google Cloud, Windows,
-                    Linux, and more, I'm eager to craft seamless web experiences. Combining military precision and
-                    technical expertise, I'm
-                    committed to enhancing web development teams and ensuring top-tier performance and quality in every
-                    project.</p>
-                <div class="resume">
-                    <a href="./images/resume/DanielReiferResume.pdf" download="DanielReiferResume.pdf">
-                        download
-                        resume</a>
+
+        <!-- the footer section -->
+        <div class="section-container">
+            <div class="social-container">
+                <div class="content-box">
+                    <img
+                        src="./images/Icon-material-location-on.svg"
+                        alt="location icon"
+                        title="location icon"
+                    />
+                    <p>yoni netanyahu 26, givat shmuel</p>
                 </div>
-            </section>
-        </div>
-    </div>
-    <!-- the projects gallery section -->
-    <div id="services" class="page-container">
-        <div class="content-container">
-            <h4>projects gallery</h4>
-            <p>Discover my web development prowess through an array of diverse and innovative projects.</p>
-            <!-- projects cards -->
-            <div class="gallery-container">
-                <div class="card">
-                    <img src="./images/landingPage1.jpg" class="card-img-top" alt="landing page 1">
-                    <div class="all-content">
-                        <div class="content-no-btn">
-                            <h5 class="card-title">improve</h5>
-                            <p class="card-text">Enhancing an existing system or application to optimize performance
-                                and usability.
-                            </p>
-                            <div class="project-technology-container">
-                                <img src="./images/img-HTML.png" alt="html icon">
-                                <img src="./images/img-CSS.png" alt="css icon">
-                                <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
-                                <img src="./images/img-SASS.png" alt="SASS icon">
-                            </div>
-                        </div>
-                        <a href="./projects/improve/overview/index.html" class="btn btn-info mx-auto rounded-pill">
-                            project page &#8811;
-                        </a>
-                    </div>
+                <div class="content-box">
+                    <img
+                        src="./images/Icon-simple-email.svg"
+                        alt="email icon"
+                        title="email icon"
+                    />
+                    <p>daniel.reifer17@gmail.com</p>
                 </div>
-                <div class="card">
-                    <img src="./images/landingPage2.jpg" class="card-img-top" alt="landing page 2">
-                    <div class="all-content">
-                        <div class="content-no-btn">
-                            <h5 class="card-title">gifts</h5>
-                            <p class="card-text">Developing an e-commerce platform for buying and sending
-                                personalized gifts.
-                            </p>
-                            <div class="project-technology-container">
-                                <img src="./images/img-HTML.png" alt="html icon">
-                                <img src="./images/img-CSS.png" alt="css icon">
-                                <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
-                                <img src="./images/img-SASS.png" alt="SASS icon">
-                            </div>
-                        </div>
-                        <a href="./projects/gifts/overview/index.html" class="btn btn-info mx-auto rounded-pill">
-                            project page &#8811;
-                        </a>
-                    </div>
+                <div class="content-box">
+                    <img
+                        src="./images/Icon-simple-whatsapp.svg"
+                        alt="whatsapp icon"
+                        title="whatsapp icon"
+                    />
+                    <p>058.434.1233</p>
                 </div>
-                <div class="card">
-                    <img src="./images/landingPage3.jpg" class="card-img-top" alt="landing page 3">
-                    <div class="all-content">
-                        <div class="content-no-btn">
-                            <h5 class="card-title">coffee time</h5>
-                            <p class="card-text">Designing a web application to help users discover and rate local
-                                coffee shops.
-                            </p>
-                            <div class="project-technology-container">
-                                <img src="./images/img-HTML.png" alt="html icon">
-                                <img src="./images/img-CSS.png" alt="css icon">
-                                <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
-                                <img src="./images/img-SASS.png" alt="SASS icon">
-                            </div>
-                        </div>
-                        <a href="./projects/coffeeTime/overview/index.html" class="btn btn-info mx-auto rounded-pill">
-                            project page &#8811;
-                        </a>
-                    </div>
+                <div class="content-box">
+                    <img
+                        src="./images/Icon-simple-phone.svg"
+                        alt="phone icon"
+                        title="phone icon"
+                    />
+                    <p class="hel-font">058.434.1233</p>
                 </div>
-                <div class="card">
-                    <img src="./images/landingPage4.png" class="card-img-top" alt="landing page 4">
-                    <div class="all-content">
-                        <div class="content-no-btn">
-                            <h5 class="card-title">your turn</h5>
-                            <p class="card-text">Creating an interactive and engaging game or activity for users to
-                                enjoy.
-                            </p>
-                            <div class="project-technology-container">
-                                <img src="./images/img-HTML.png" alt="html icon">
-                                <img src="./images/img-CSS.png" alt="css icon">
-                                <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
-                                <img src="./images/img-SASS.png" alt="SASS icon">
-                            </div>
-                        </div>
-                        <a href="./projects/yourTurn/overview/index.html" class="btn btn-info mx-auto rounded-pill">
-                            project page &#8811;
-                        </a>
-                    </div>
+                <div class="content-box">
+                    <img
+                        src="./images/Icon-awesome-linkedin-in.svg"
+                        alt="linkedin icon"
+                        title="linkedin icon"
+                    />
+                    <p>danielreifer</p>
                 </div>
-                <div class="card">
-                    <img src="./images/landingPage5.png" class="card-img-top" alt="landing page 5">
-                    <div class="all-content">
-                        <div class="content-no-btn">
-                            <h5 class="card-title">trips</h5>
-                            <p class="card-text">Building a platform for planning and organizing personalized travel
-                                itineraries.
-                            </p>
-                            <div class="project-technology-container">
-                                <img src="./images/img-HTML.png" alt="html icon">
-                                <img src="./images/img-CSS.png" alt="css icon">
-                                <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
-                                <img src="./images/img-SASS.png" alt="SASS icon">
-                            </div>
-                        </div>
-                        <a href="./projects/trips/overview/index.html" class="btn btn-info mx-auto rounded-pill">
-                            project page &#8811;
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/landingPage6.png" class="card-img-top" alt="landing page 6">
-                    <div class="all-content">
-                        <div class="content-no-btn">
-                            <h5 class="card-title">consultation</h5>
-                            <p class="card-text">Developing a web application to connect users with experts for
-                                professional advice.
-                            </p>
-                            <div class="project-technology-container">
-                                <img src="./images/img-HTML.png" alt="html icon">
-                                <img src="./images/img-CSS.png" alt="css icon">
-                                <img src="./images/img-Bootstrap.png" alt="Bootstrap icon">
-                                <img src="./images/img-SASS.png" alt="SASS icon">
-                            </div>
-                        </div>
-                        <a href="./projects/consultation/overview/index.html" class="btn btn-info mx-auto rounded-pill">
-                            project page &#8811;
-                        </a>
-                    </div>
+                <div class="content-box">
+                    <img
+                        src="./images/Icon-awesome-facebook-f.svg"
+                        alt="facebook icon"
+                        title="facebook icon"
+                    />
+                    <p class="hel-font">#ISRAEL_ISRAELI</p>
+                    <!-- dont really have facebook -->
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- play center section -->
-    <div class="play-center-container">
-        <h2 class="container-headline">PLAY CENTER</h2>
-        <p class="container-description">These projects demonstrate my application of JavaScript skills in creating
-            interactive game logic and dynamic user
-            interfaces.</p>
-        <div class="cards-grid">
-            <a href="./projects/weatherApp/overview/index.html" class="game-card">
-                <img src="./images/weather.jpg" alt="Whether App Image">
-                <h3 class="card-title">Weather App</h3>
-            </a>
-            <a href="./projects/toDoList/overview/index.html" class="game-card">
-                <img src="./images/toDoList.png" alt="To Do List Image">
-                <h3 class="card-title">To Do List</h3>
-            </a>
-            <a href="./projects/mathGame/overview/index.html" class="game-card card-img-top">
-                <img src="./images/mathGameImg.png" alt="Learn Math Quiz Image">
-                <h3 class="card-title">Learn Math</h3>
-            </a>
-            <a href="./projects/countryExplorer/overview/index.html" class="game-card">
-                <img src="./images/world.jpg" alt="Country Info App">
-                <h3 class="card-title">Country Explorer</h3>
-            </a>
-            <a href="./projects/hangman/overview/index.html" class="game-card">
-                <img src="./images/final-hangman.svg" alt="Hangman Game Image">
-                <h3 class="card-title">Hangman Game</h3>
-            </a>
-            <a href="./projects/ticTacToe/overview/index.html" class="game-card">
-                <img src="./images/ticTacToeImg.png" alt="Tic Tac Toe Game Image">
-                <h3 class="card-title">Tic Tac Toe</h3>
-            </a>
+        <!-- the copyrights section -->
+        <div class="copyright-section">
+            <p id="copy">Crafted with Passion</p>
+            <p id="name">Daniel Reifer</p>
         </div>
-    </div>
 
-    <!-- the contact section -->
-    <div id="contact" class="contact-us-container">
-        <form>
-            <h4>contact</h4>
-            <p>Feel free to reach out to me with any inquiries, opportunities, or collaboration proposals.</p>
-            <div class="field-section">
-                <label for="full_name" class="headline">full name</label>
-                <input type="text" id="full_name" name="full_name" class="text">
-                <label for="email" class="headline">email</label>
-                <input type="email" id="email" name="email" class="text">
-                <label for="phone_number" class="headline">phone</label>
-                <input type="number" id="phone_number" name="phone_number" class="text">
-                <label for="text" class="headline">message content</label>
-                <textarea id="text" name="text" class="text"></textarea>
-            </div>
-            <input type="button" value="submit" id="submit">
-        </form>
-        <img src="./images/letter.png" alt="image of envelope">
-    </div>
-
-    <!-- the footer section -->
-    <div class="section-container">
-        <div class="social-container">
-            <div class="content-box">
-                <img src="./images/Icon material-location-on.svg" alt="location icon">
-                <p>yoni netanyahu 26, givat shmuel</p>
-            </div>
-            <div class="content-box">
-                <img src="./images/Icon simple-email.svg" alt="email icon">
-                <p>daniel.reifer17@gmail.com</p>
-            </div>
-            <div class="content-box">
-                <img src="./images/Icon simple-whatsapp.svg" alt="whatsup icon">
-                <p>058.434.1233</p>
-            </div>
-            <div class="content-box">
-                <img src="./images/Icon simple-whatsapp (1).svg" alt="phone icon">
-                <p class="hel-font">058.434.1233</p>
-            </div>
-            <div class="content-box">
-                <img src="./images/Icon awesome-linkedin-in.svg" alt="linkedin icon">
-                <p>danielreifer</p>
-            </div>
-            <div class="content-box">
-                <img src="./images/Icon awesome-facebook-f.svg" alt="facebook icon">
-                <p class="hel-font">#ISRAEL_ISRAELI</p> <!-- dont really have facebook -->
-            </div>
-        </div>
-    </div>
-
-    <!-- the copyrights section -->
-    <div class="copyright-section">
-        <p id="copy">Crafted with Passion</p>
-        <p id="name">Daniel Reifer</p>
-    </div>
-
-    <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-</body>
-
+        <!-- bootstrap script -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
