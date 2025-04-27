@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Daniel Reifer" />
+        <meta
+            name="description"
+            content="Tic Tac Toe game board—classic two-player grid game with win detection and responsive styling."
+        />
+        <meta
+            name="keywords"
+            content="tic tac toe, game board, JavaScript, HTML, CSS, responsive"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe - Two Players</title>
-    <link rel="stylesheet" href="../styles/game.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+        <title>Tic Tac Toe - Two Players</title>
+        <link rel="stylesheet" href="../styles/game.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<body>
-    <div class="container">
-        <h1>Tic Tac Toe</h1>
-        <h2>Two Players Mode</h2>
-        <div id="game-board">
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
+    <body>
+        <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <h2>Two Players Mode</h2>
+            <div id="game-board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <button class="restart-button">Restart Game</button>
+            <a href="../index.html" class="back-button">Back To Home</a>
         </div>
-        <button class="restart-button">Restart Game</button>
-        <a href="../index.html" class="back-button">Back To Home</a>
-    </div>
 
-    <script src="../scripts/game.js"></script>
-</body>
-
+        <script src="../scripts/game.js"></script>
+    </body>
 </html>

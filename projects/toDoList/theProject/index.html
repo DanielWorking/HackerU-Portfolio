@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Daniel Reifer" />
+        <meta
+            name="description"
+            content="To-Do List project—interactive task tracker, add/delete tasks with persistent storage and styled UI using CSS and SASS."
+        />
+        <meta
+            name="keywords"
+            content="to-do list, JavaScript, persistent storage, CSS, SASS"
+        />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Todo</title>
-</head>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Todo</title>
+    </head>
 
-<body>
-    <main class="todo">
-        <h2>To-do list</h2>
-        <div class="input">
-            <input type="text" class="input-field" id="todoInput" placeholder="Add a new todo" />
-            <input type="button" value="Add" class="btn">
-        </div>
-        <ul class="scroll">
-            <li id="todoList"></li>
-        </ul>
-        <div>
-            <hr class="counter" />
-            <div class="counter-container">
-                <p><span id="todoCount">0</span> items total</p>
-                <button id="deleteButton">Delete All</button>
+    <body>
+        <main class="todo">
+            <h2>To-do list</h2>
+            <div class="input">
+                <input
+                    type="text"
+                    class="input-field"
+                    id="todoInput"
+                    placeholder="Add a new todo"
+                />
+                <input type="button" value="Add" class="btn" />
             </div>
-        </div>
-    </main>
-    <script src="./scripts/main.js" type="module"></script>
-</body>
-
+            <ul class="scroll">
+                <li id="todoList"></li>
+            </ul>
+            <div>
+                <hr class="counter" />
+                <div class="counter-container">
+                    <p><span id="todoCount">0</span> items total</p>
+                    <button id="deleteButton">Delete All</button>
+                </div>
+            </div>
+        </main>
+        <script src="./scripts/main.js" type="module"></script>
+    </body>
 </html>

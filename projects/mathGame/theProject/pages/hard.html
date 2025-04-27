@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Daniel Reifer" />
+        <meta
+            name="description"
+            content="Hard level math quiz—challenge yourself with mixed operations and timed questions in a dynamic UI."
+        />
+        <meta
+            name="keywords"
+            content="math game, hard level, mixed operations, timed quiz, JavaScript, HTML, CSS"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/hard.css">
-    <title>Hard Level Game</title>
-</head>
+        <link rel="stylesheet" href="../styles/hard.css" />
+        <title>Hard Level Game</title>
+    </head>
 
-<body>
-    <!-- the game -->
-    <div class="container">
-        <h1>Hard Level Game</h1>
-        <!-- contain all the elements of the equation -->
-        <div class="equation">
-            <div id="num1"></div>
-            <div id="operator"></div>
-            <div id="num2"></div>
-            <div>=</div>
+    <body>
+        <!-- the game -->
+        <div class="container">
+            <h1>Hard Level Game</h1>
+            <!-- contain all the elements of the equation -->
+            <div class="equation">
+                <div id="num1"></div>
+                <div id="operator"></div>
+                <div id="num2"></div>
+                <div>=</div>
+            </div>
+            <!-- the line for the user to his answer -->
+            <input type="number" id="userAnswer" placeholder="enter result" />
+            <!-- message from the game -->
+            <div id="rightOrWrongMsg"></div>
+            <!-- checking the user answer -->
+            <button id="checkBtn">Check Answer</button>
+            <!-- contain home page link and creating new exercise button -->
+            <div id="moreOptions">
+                <a href="../index.html" class="home-link">Back To Home</a>
+                <button id="newExerciseBtn">New Exercise</button>
+            </div>
         </div>
-        <!-- the line for the user to his answer -->
-        <input type="number" id="userAnswer" placeholder="enter result">
-        <!-- message from the game -->
-        <div id="rightOrWrongMsg"></div>
-        <!-- checking the user answer -->
-        <button id="checkBtn">Check Answer</button>
-        <!-- contain home page link and creating new exercise button -->
-        <div id="moreOptions">
-            <a href="../index.html" class="home-link">Back To Home</a>
-            <button id="newExerciseBtn">New Exercise</button>
-        </div>
-    </div>
-    <script src="../scripts/hard.js"></script>
-</body>
-
+        <script src="../scripts/hard.js"></script>
+    </body>
 </html>

@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Daniel Reifer" />
+        <meta
+            name="description"
+            content="Scoreboard for Tic Tac Toe—track wins, losses, and ties with persistent storage and dynamic updates."
+        />
+        <meta
+            name="keywords"
+            content="tic tac toe, scoreboard, wins, losses, ties, JavaScript, HTML, CSS"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe - Scoreboard</title>
-    <link rel="stylesheet" href="../styles/scoreboard.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+        <title>Tic Tac Toe - Scoreboard</title>
+        <link rel="stylesheet" href="../styles/scoreboard.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<body>
-    <div class="container">
-        <h1>Tic Tac Toe</h1>
-        <h2>Scoreboard</h2>
-        <table class="scoreboard">
-            <thead>
-                <tr>
-                    <th>Player</th>
-                    <th>Win Date</th>
-                </tr>
-            </thead>
-        </table>
-        <div class="dates-table-wrapper">
+    <body>
+        <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <h2>Scoreboard</h2>
             <table class="scoreboard">
-                <tbody id="datesTable">
-                </tbody>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Win Date</th>
+                    </tr>
+                </thead>
             </table>
+            <div class="dates-table-wrapper">
+                <table class="scoreboard">
+                    <tbody id="datesTable"></tbody>
+                </table>
+            </div>
+            <table class="scoreboard">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Wins</th>
+                    </tr>
+                </thead>
+                <tbody id="winsTable"></tbody>
+            </table>
+            <a href="../index.html" class="back-button">Back To Home</a>
         </div>
-        <table class="scoreboard">
-            <thead>
-                <tr>
-                    <th>Player</th>
-                    <th>Wins</th>
-                </tr>
-            </thead>
-            <tbody id="winsTable">
-            </tbody>
-        </table>
-        <a href="../index.html" class="back-button">Back To Home</a>
-    </div>
-    <script src="../scripts/scoreboard.js"></script>
-</body>
-
+        <script src="../scripts/scoreboard.js"></script>
+    </body>
 </html>

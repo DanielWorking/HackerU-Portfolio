@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Daniel Reifer" />
+        <meta
+            name="description"
+            content="Weather App project—search city weather, view current conditions and forecast, built with Fetch API, JS, and styled with CSS/SASS."
+        />
+        <meta
+            name="keywords"
+            content="weather app, fetch API, JavaScript, CSS, SASS, forecast"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
 
-<body>
-    <form>
-        <h1 id="title">Weather App</h1>
-        <h5 id="subtitle">Search City For Weather Information</h5>
-        <div id="input-container">
-            <img src="./images/search.svg" alt="search icon" id="search-icon">
-            <input type="text" id="search-input" placeholder="Search City" value="">
+    <body>
+        <form>
+            <h1 id="title">Weather App</h1>
+            <h5 id="subtitle">Search City For Weather Information</h5>
+            <div id="input-container">
+                <img
+                    src="./images/search.svg"
+                    alt="search icon"
+                    id="search-icon"
+                />
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search City"
+                    value=""
+                />
+            </div>
+            <input type="button" value="Search" id="search-btn" />
+        </form>
+        <span id="error-handling"></span>
+        <div id="weather-container">
+            <div id="card">
+                <img
+                    src="#"
+                    alt="current weather description icon"
+                    id="main-icon"
+                />
+                <p id="main-description"></p>
+                <div id="temperature"></div>
+                <h2 id="city-name"></h2>
+            </div>
+            <div class="grid">
+                <div class="box">
+                    <img
+                        src="./images/thermometer.png"
+                        alt="thermometer icon"
+                    />
+                    <span>feels like</span>
+                    <div id="feels-like"></div>
+                </div>
+                <div class="box">
+                    <img src="./images/wind.png" alt="wind icon" />
+                    <span>wind speed</span>
+                    <div id="wind-speed"></div>
+                </div>
+                <div class="box">
+                    <img src="./images/drop-of-water.png" alt="drop icon" />
+                    <span>humidity</span>
+                    <div id="humidity"></div>
+                </div>
+                <div class="box">
+                    <img src="./images/cloud.png" alt="cloud icon" />
+                    <span>clouds</span>
+                    <div id="clouds"></div>
+                </div>
+                <div class="box">
+                    <img src="./images/eye.png" alt="eye icon" />
+                    <span>visibility</span>
+                    <div id="visibility"></div>
+                </div>
+                <div class="box">
+                    <img
+                        src="./images/air-pressure.png"
+                        alt="air pressure icon"
+                    />
+                    <span>pressure</span>
+                    <div id="pressure"></div>
+                </div>
+                <div class="box">
+                    <img src="./images/sunrise.png" alt="sunrise icon" />
+                    <span>sunsrise</span>
+                    <div id="sunsrise"></div>
+                </div>
+                <div class="box">
+                    <img src="./images/sunset.png" alt="sunset icon" />
+                    <span>sunset</span>
+                    <div id="sunset"></div>
+                </div>
+            </div>
         </div>
-        <input type="button" value="Search" id="search-btn">
-    </form>
-    <span id="error-handling"></span>
-    <div id="weather-container">
-        <div id="card">
-            <img src="#" alt="current weather description icon" id="main-icon">
-            <p id="main-description"></p>
-            <div id="temperature"></div>
-            <h2 id="city-name"></h2>
-        </div>
-        <div class="grid">
-            <div class="box">
-                <img src="./images/thermometer.png" alt="thermometer icon">
-                <span>feels like</span>
-                <div id="feels-like"></div>
-            </div>
-            <div class="box">
-                <img src="./images/wind.png" alt="wind icon">
-                <span>wind speed</span>
-                <div id="wind-speed"></div>
-            </div>
-            <div class="box">
-                <img src="./images/drop-of-water.png" alt="drop icon">
-                <span>humidity</span>
-                <div id="humidity"></div>
-            </div>
-            <div class="box">
-                <img src="./images/cloud.png" alt="cloud icon">
-                <span>clouds</span>
-                <div id="clouds"></div>
-            </div>
-            <div class="box">
-                <img src="./images/eye.png" alt="eye icon">
-                <span>visibility</span>
-                <div id="visibility"></div>
-            </div>
-            <div class="box">
-                <img src="./images/air-pressure.png" alt="air pressure icon">
-                <span>pressure</span>
-                <div id="pressure"></div>
-            </div>
-            <div class="box">
-                <img src="./images/sunrise.png" alt="sunrise icon">
-                <span>sunsrise</span>
-                <div id="sunsrise"></div>
-            </div>
-            <div class="box">
-                <img src="./images/sunset.png" alt="sunset icon">
-                <span>sunset</span>
-                <div id="sunset"></div>
-            </div>
-        </div>
-    </div>
 
-    <script src="./scripts/main.js" type="module"></script>
-</body>
-
+        <script src="./scripts/main.js" type="module"></script>
+    </body>
 </html>
