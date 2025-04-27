@@ -5,16 +5,17 @@
   text-align: center;
 }
 
-.px-5 {
+header .px-5 {
   padding: 0 1em !important;
 }
-.px-5 .visilbe {
-  display: none !important;
+header .px-5 a img {
+  width: 40px;
+  height: 40px;
 }
-.px-5 .fs-4 {
+header .px-5 .fs-4 {
   font: normal normal 400 1.56em/1.5 "Satisfy", cursive;
 }
-.px-5 .navbar-toggler-icon {
+header .px-5 .navbar-toggler-icon {
   width: 1.9em;
   background-image: none;
   color: #1AE0EC;
@@ -23,35 +24,32 @@
   align-items: center;
   font-size: 1.5em;
 }
-.px-5 .nav-item {
+header .px-5 .nav-item {
   margin: 0 auto !important;
 }
-.px-5 .nav-item .hover-color:hover {
+header .px-5 .nav-item .hover-color:hover {
   color: #1AE0EC;
 }
-.px-5 .nav-item .nav-link {
+header .px-5 .nav-item .nav-link {
   font: normal normal normal 1rem/0.84em "Heebo", sans-serif;
-}
-.px-5 .nav-item .bold-font {
-  font-weight: bold;
 }
 
 @media (min-width: 767px) {
-  .px-5 {
+  header .px-5 {
     padding: 0 1em !important;
   }
-  .px-5 .nav-item + .nav-item {
+  header .px-5 .nav-item + .nav-item {
     margin-left: 2em;
   }
-  .px-5 .nav-link {
+  header .px-5 .nav-link {
     font-size: 1.35rem !important;
   }
 }
 @media (min-width: 1200px) {
-  .px-5 {
+  header .px-5 {
     padding: 0 7em !important;
   }
-  .px-5 .nav-link {
+  header .px-5 .nav-link {
     font-size: 1.56rem !important;
   }
 }
@@ -327,42 +325,44 @@
 }
 .contact-us-container form {
   width: min(80%, 548px);
-  color: #FFFFFF;
   order: 2;
-  text-align: left;
-  margin: 0 auto 5.25em;
+  color: #FFFFFF;
+  margin: 0 auto 2.5em auto;
 }
-.contact-us-container form h4 {
+.contact-us-container form fieldset {
+  text-align: left;
+}
+.contact-us-container form fieldset legend {
   font: normal normal 900 1.563rem/1.48em "Heebo", sans-serif;
   text-align: left;
 }
-.contact-us-container form p {
+.contact-us-container form fieldset p {
   font: normal normal normal 0.938rem/1.47em "Heebo", sans-serif;
   text-align: left;
 }
-.contact-us-container form .field-section {
+.contact-us-container form fieldset .field-section {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.contact-us-container form .field-section .headline {
+.contact-us-container form fieldset .field-section .headline {
   text-align: left;
   font: normal normal bold 0.75rem/1.5em "Heebo", sans-serif;
 }
-.contact-us-container form .field-section .text {
+.contact-us-container form fieldset .field-section .text {
   width: 100%;
   min-height: 28px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: #FFFFFF;
   border-bottom: 2px solid #1AE0EC;
 }
-.contact-us-container form .field-section textarea.text {
+.contact-us-container form fieldset .field-section textarea.text {
   min-height: 57px;
 }
-.contact-us-container form .field-section .text + .headline {
+.contact-us-container form fieldset .field-section .text + .headline {
   margin-top: 0.35em;
 }
-.contact-us-container form #submit {
+.contact-us-container form fieldset #submit {
   width: min(100%, 94px);
   background: #1AE0EC 0% 0% no-repeat padding-box;
   font: normal normal bold 0.75rem/1.33em "Heebo", sans-serif;
@@ -374,8 +374,8 @@
 }
 .contact-us-container img {
   width: clamp(185px, 40%, 770px);
-  order: 1;
   margin: 0 0.7em 0 auto;
+  order: 1;
 }
 
 @media (min-width: 1200px) {
@@ -386,25 +386,25 @@
     order: 1;
     margin: 10.06em auto 9.44em 15em;
   }
-  .contact-us-container form h4 {
+  .contact-us-container form fieldset legend {
     font: normal normal 900 2.25rem/1.47em "Heebo", sans-serif;
   }
-  .contact-us-container form p {
+  .contact-us-container form fieldset p {
     font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
   }
-  .contact-us-container form .field-section .headline {
+  .contact-us-container form fieldset .field-section .headline {
     font: normal normal bold 1rem/1.5em "Heebo", sans-serif;
   }
-  .contact-us-container form .field-section .text {
+  .contact-us-container form fieldset .field-section .text {
     min-height: 50px;
   }
-  .contact-us-container form .field-section textarea.text {
+  .contact-us-container form fieldset .field-section textarea.text {
     min-height: 100px;
   }
-  .contact-us-container form .field-section .text + .headline {
+  .contact-us-container form fieldset .field-section .text + .headline {
     margin-top: 0.94em;
   }
-  .contact-us-container form #submit {
+  .contact-us-container form fieldset #submit {
     width: min(100%, 166px);
     font: normal normal bold 1.375rem/1.36em "Heebo", sans-serif;
     letter-spacing: 0.33px;

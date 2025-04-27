@@ -6,67 +6,71 @@
 
     form {
         width: min(80%, 548px);
-        color: #FFFFFF;
         order: 2;
-        text-align: left;
-        margin: 0 auto 5.25em;
+        color: #FFFFFF;
+        margin: 0 auto 2.5em auto;
 
-        h4 {
-            font: normal normal 900 1.563rem/1.48em "Heebo", sans-serif;
+        fieldset {
             text-align: left;
-        }
 
-        p {
-            font: normal normal normal .938rem/1.47em "Heebo", sans-serif;
-            text-align: left;
-        }
-
-        .field-section {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-
-            .headline {
+            legend {
+                font: normal normal 900 1.563rem/1.48em "Heebo", sans-serif;
                 text-align: left;
-                font: normal normal bold .75rem/1.5em "Heebo", sans-serif;
             }
 
-            .text {
+            p {
+                font: normal normal normal .938rem/1.47em "Heebo", sans-serif;
+                text-align: left;
+            }
+
+            .field-section {
                 width: 100%;
-                min-height: 28px;
-                background: #FFFFFF 0% 0% no-repeat padding-box;
-                border: #FFFFFF;
-                border-bottom: 2px solid #1AE0EC;
+                display: flex;
+                flex-direction: column;
+
+                .headline {
+                    text-align: left;
+                    font: normal normal bold .75rem/1.5em "Heebo", sans-serif;
+                }
+
+                .text {
+                    width: 100%;
+                    min-height: 28px;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: #FFFFFF;
+                    border-bottom: 2px solid #1AE0EC;
+                }
+
+                textarea.text {
+                    min-height: 57px;
+                }
+
+                .text+.headline {
+                    margin-top: .35em;
+                }
             }
 
-            textarea.text {
-                min-height: 57px;
+            #submit {
+                width: min(100%, 94px);
+                background: #1AE0EC 0% 0% no-repeat padding-box;
+                font: normal normal bold .75rem/1.33em "Heebo", sans-serif;
+                letter-spacing: 0.18px;
+                color: #2C2C2C;
+                border: #1AE0EC;
+                border-radius: 1.1rem;
+                margin-top: 1.34em;
             }
-
-            .text + .headline {
-                margin-top: .35em;
-            }
-        }
-
-        #submit {
-            width: min(100%, 94px);
-            background: #1AE0EC 0% 0% no-repeat padding-box;
-            font: normal normal bold .75rem/1.33em "Heebo", sans-serif;
-            letter-spacing: 0.18px;
-            color: #2C2C2C;
-            border: #1AE0EC;
-            border-radius: 1.1rem;
-            margin-top: 1.34em;
         }
     }
 
     img {
         width: clamp(185px, 40%, 770px);
-        order: 1;
         margin: 0 .7em 0 auto;
+        order: 1;
     }
 }
 
+// desktop size style
 @media (min-width: 1200px) {
     .contact-us-container {
         flex-direction: row;
@@ -75,36 +79,38 @@
             order: 1;
             margin: 10.06em auto 9.44em 15em;
 
-            h4 {
-                font: normal normal 900 2.25rem/1.47em "Heebo", sans-serif;
-            }
-
-            p {
-                font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
-            }
-
-            .field-section {
-                .headline {
-                    font: normal normal bold 1rem/1.5em "Heebo", sans-serif;
+            fieldset {
+                legend {
+                    font: normal normal 900 2.25rem/1.47em "Heebo", sans-serif;
                 }
 
-                .text {
-                    min-height: 50px;
+                p {
+                    font: normal normal normal 1.25rem/1.45em "Heebo", sans-serif;
                 }
 
-                textarea.text {
-                    min-height: 100px;
+                .field-section {
+                    .headline {
+                        font: normal normal bold 1rem/1.5em "Heebo", sans-serif;
+                    }
+
+                    .text {
+                        min-height: 50px;
+                    }
+
+                    textarea.text {
+                        min-height: 100px;
+                    }
+
+                    .text+.headline {
+                        margin-top: .94em;
+                    }
                 }
 
-                .text + .headline {
-                    margin-top: .94em;
+                #submit {
+                    width: min(100%, 166px);
+                    font: normal normal bold 1.375rem/1.36em "Heebo", sans-serif;
+                    letter-spacing: 0.33px;
                 }
-            }
-
-            #submit {
-                width: min(100%, 166px);
-                font: normal normal bold 1.375rem/1.36em "Heebo", sans-serif;
-                letter-spacing: 0.33px;
             }
         }
 

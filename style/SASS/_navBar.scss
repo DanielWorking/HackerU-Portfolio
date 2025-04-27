@@ -1,61 +1,68 @@
-.px-5 {
-    padding: 0 1em !important;
-
-    .visilbe { // Hide name span on smaller screens
-        display: none !important;
-    }
-
-    .fs-4 {
-        font: normal normal 400 1.56em/1.5 "Satisfy", cursive;
-    }
-
-    .navbar-toggler-icon {
-        width: 1.9em;
-        background-image: none;
-        color: #1AE0EC;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5em;
-    }
-
-    .nav-item {
-        margin: 0 auto !important;
-
-        .hover-color:hover {
-            color: #1AE0EC;
-        }
-
-        .nav-link {
-            font: normal normal normal 1rem/0.84em "Heebo", sans-serif;
-        }
-
-        .bold-font {
-            font-weight: bold;
-        }
-    }
-}
-
-@media (min-width: 767px) { // tablet screen size
+header {
     .px-5 {
         padding: 0 1em !important;
 
-        .nav-item + .nav-item {
-            margin-left: 2em;
+        a {
+            img {
+                width: 40px;
+                height: 40px;
+            }
         }
 
-        .nav-link {
-            font-size: 1.35rem !important;
+        .fs-4 {
+            font: normal normal 400 1.56em/1.5 "Satisfy", cursive;
+        }
+
+        .navbar-toggler-icon {
+            width: 1.9em;
+            background-image: none;
+            color: #1AE0EC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .nav-item {
+            margin: 0 auto !important;
+
+            .hover-color:hover {
+                color: #1AE0EC;
+            }
+
+            .nav-link {
+                font: normal normal normal 1rem/0.84em "Heebo", sans-serif;
+            }
         }
     }
 }
 
-@media (min-width: 1200px) { // desktop screen size
-    .px-5 {
-        padding: 0 7em !important;
+// tablet size style
+@media (min-width: 767px) {
+    header {
+        .px-5 {
+            padding: 0 1em !important;
 
-        .nav-link {
-            font-size: 1.56rem !important;
+            .nav-item+.nav-item {
+                margin-left: 2em;
+            }
+
+            .nav-link {
+                font-size: 1.35rem !important;
+            }
+        }
+    }
+}
+
+// desktop size style
+@media (min-width: 1200px) {
+    header {
+        .px-5 {
+            padding: 0 7em !important;
+
+            .nav-link {
+                font-size: 1.56rem !important;
+            }
         }
     }
 }
