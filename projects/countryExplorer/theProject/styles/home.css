@@ -1,5 +1,5 @@
-body {
-    font-family: 'Roboto', Arial, sans-serif;
+main {
+    font-family: "Roboto", Arial, sans-serif;
     background-color: #f0f2f5;
 }
 
@@ -33,7 +33,7 @@ body {
 .card-title {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #2c3e50; 
+    color: #2c3e50;
 
     &:nth-child(2) {
         font-weight: normal;
@@ -60,7 +60,8 @@ body {
     padding: 15px;
 }
 
-.bi-heart, .bi-heart-fill {
+.bi-heart,
+.bi-heart-fill {
     font-size: 1.2rem;
     color: #e74c3c;
 }

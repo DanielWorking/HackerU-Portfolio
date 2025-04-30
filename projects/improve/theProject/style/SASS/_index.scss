@@ -31,19 +31,22 @@
                 margin-top: .85em;
             }
 
-            .field-section { // container of the headline and text elements in the form
+            .field-section {
+                // container of the headline and text elements in the form
                 width: 100%;
                 text-align: left;
                 margin-top: 1.4em;
                 display: flex;
                 flex-direction: column;
                 color: #FFFFFF;
+                border: 0;
 
                 .headline {
                     font: normal normal 900 .88rem/1.49em "Heebo", sans-serif;
                 }
 
-                .text + .headline { // create a spacec between the sets of headline and text in the form
+                .text+.headline {
+                    // create a spacec between the sets of headline and text in the form
                     margin-top: 1.77em;
                 }
 
@@ -67,7 +70,9 @@
     }
 }
 
-@media (min-width: 900px) { // responsive big tablet and desktop screen size
+@media (min-width: 900px) {
+
+    // responsive big tablet and desktop screen size
     .project-container {
         background-size: 100% 55%;
 
@@ -90,7 +95,7 @@
                         font: normal normal 900 1rem/1.5em "Heebo", sans-serif;
                     }
 
-                    .text + .headline {
+                    .text+.headline {
                         margin-top: 1.13em;
                     }
 

@@ -22,33 +22,35 @@
     </head>
 
     <body>
-        <div class="container">
-            <h1>Tic Tac Toe</h1>
-            <h2>Scoreboard</h2>
-            <table class="scoreboard">
-                <thead>
-                    <tr>
-                        <th>Player</th>
-                        <th>Win Date</th>
-                    </tr>
-                </thead>
-            </table>
-            <div class="dates-table-wrapper">
+        <main>
+            <section class="container">
+                <h1>Tic Tac Toe</h1>
+                <h2>Scoreboard</h2>
                 <table class="scoreboard">
-                    <tbody id="datesTable"></tbody>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Win Date</th>
+                        </tr>
+                    </thead>
                 </table>
-            </div>
-            <table class="scoreboard">
-                <thead>
-                    <tr>
-                        <th>Player</th>
-                        <th>Wins</th>
-                    </tr>
-                </thead>
-                <tbody id="winsTable"></tbody>
-            </table>
-            <a href="../index.html" class="back-button">Back To Home</a>
-        </div>
+                <div class="dates-table-wrapper">
+                    <table class="scoreboard">
+                        <tbody id="datesTable"></tbody>
+                    </table>
+                </div>
+                <table class="scoreboard">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Wins</th>
+                        </tr>
+                    </thead>
+                    <tbody id="winsTable"></tbody>
+                </table>
+                <a href="../index.html" class="back-button">Back To Home</a>
+            </section>
+        </main>
         <script src="../scripts/scoreboard.js"></script>
     </body>
 </html>

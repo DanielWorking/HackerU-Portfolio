@@ -46,6 +46,7 @@ html, body {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
+  border: 0;
 }
 .project-container form .content .field-section .headline {
   font: normal normal 900 0.88rem/1.49em "Heebo", sans-serif;

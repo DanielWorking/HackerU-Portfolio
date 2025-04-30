@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-body {
+main {
     display: flex;
     padding: 0 10px;
     align-items: center;
@@ -25,14 +25,14 @@ body {
     border-radius: 15px;
     align-items: flex-end;
     justify-content: space-between;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* hangman image section */
 .hangman-box img {
     user-select: none;
     max-width: 260px;
-    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
 }
 
 .hangman-box h1 {
@@ -133,7 +133,7 @@ body {
     height: 100%;
     opacity: 0;
     pointer-events: none;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +155,7 @@ body {
     border-radius: 15px;
     background: #ecf0f1;
     text-align: center;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .game-modal img {

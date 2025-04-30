@@ -45,6 +45,7 @@
 
             .wrapper {
                 width: 100%;
+                border: 0;
 
                 .headline {
                     width: inherit;
@@ -82,7 +83,9 @@
     }
 }
 
-@media (min-width: 900px) { // responsive for tablet and desktop screen size
+@media (min-width: 900px) {
+
+    // responsive for tablet and desktop screen size
     .project-container {
         .content {
             margin: auto;
@@ -132,7 +135,8 @@
                         min-height: 50px;
                     }
 
-                    &:nth-of-type(2) {// eliminate the margin on the second text element
+                    &:nth-of-type(2) {
+                        // eliminate the margin on the second text element
                         margin: 0;
                     }
                 }
@@ -148,7 +152,9 @@
     }
 }
 
-@media (min-width: 1200px) { // responsive for desktop screen size
+@media (min-width: 1200px) {
+
+    // responsive for desktop screen size
     .wrapper {
         width: 50% !important;
     }

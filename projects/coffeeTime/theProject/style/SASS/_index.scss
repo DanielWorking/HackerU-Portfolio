@@ -36,43 +36,55 @@
             display: flex;
             flex-direction: column;
 
-            .headline { // the label of the text input
-                font-size: .63rem;
-                line-height: 1.5em;
-                color: $clr-dark;
-            }
+            fieldset {
+                border: none;
+                padding: 0;
+                margin: 0;
 
-            .text { // the text input
-                width: 100%;
-                max-width: 418px;
-                min-height: 34px;
-                background: $clr-light-blue 0% 0% no-repeat padding-box;
-                border: $clr-light-blue;
-                border-bottom: .1875em solid $clr-blue;
-            }
+                .headline {
+                    // the label of the text input
+                    font-size: .63rem;
+                    line-height: 1.5em;
+                    color: $clr-dark;
+                }
 
-            .text + .headline { // creating a space between text and headline element, effects the second headline element and so on
-                margin-top: 1.63em;
-            }
+                .text {
+                    // the text input
+                    width: 100%;
+                    max-width: 418px;
+                    min-height: 34px;
+                    background: $clr-light-blue 0% 0% no-repeat padding-box;
+                    border: $clr-light-blue;
+                    border-bottom: .1875em solid $clr-blue;
+                }
 
-            #submit { // the submit button
-                width: 100%;
-                max-width: 418px;
-                min-height: 34px;
-                background: $clr-blue 0% 0% no-repeat padding-box;
-                text-align: center;
-                font-size: .875rem;
-                font-weight: $fw-bold;
-                line-height: 1.357em;
-                letter-spacing: .015em;
-                color: $clr-white;
-                margin-top: 1.6em;
+                .text+.headline {
+                    // creating a space between text and headline element, effects the second headline element and so on
+                    margin-top: 1.63em;
+                }
+
+                #submit {
+                    // the submit button
+                    width: 100%;
+                    max-width: 418px;
+                    min-height: 34px;
+                    background: $clr-blue 0% 0% no-repeat padding-box;
+                    text-align: center;
+                    font-size: .875rem;
+                    font-weight: $fw-bold;
+                    line-height: 1.357em;
+                    letter-spacing: .015em;
+                    color: $clr-white;
+                    margin-top: 1.6em;
+                }
             }
         }
     }
 }
 
-@media (min-width: 900px) { // responsive for big tablets and desktop
+@media (min-width: 900px) {
+
+    // responsive for big tablets and desktop
     .project-container {
         display: flex;
 

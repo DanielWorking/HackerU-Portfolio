@@ -1,5 +1,5 @@
-body {
-    font-family: 'Roboto', Arial, sans-serif;
+main {
+    font-family: "Roboto", Arial, sans-serif;
     margin: 0;
     padding: 20px;
     min-height: 100vh;
@@ -62,12 +62,25 @@ h2 {
     background-color: rgba(37, 117, 252, 0.1);
 }
 
-.cell:first-child, .cell:nth-child(2), .cell:nth-child(3) { border-top: none; }
-.cell:nth-child(3n + 1) { border-left: none; }
-.cell:nth-child(3n + 3) { border-right: none; }
-.cell:last-child, .cell:nth-child(8), .cell:nth-child(7) { border-bottom: none; }
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+.cell:last-child,
+.cell:nth-child(8),
+.cell:nth-child(7) {
+    border-bottom: none;
+}
 
-.restart-button, .back-button {
+.restart-button,
+.back-button {
     display: inline-block;
     margin-top: 1rem;
     font-size: 1.1rem;
@@ -84,13 +97,15 @@ h2 {
     font-weight: bold;
 }
 
-.restart-button:hover, .back-button:hover {
+.restart-button:hover,
+.back-button:hover {
     background-color: #2575fc;
     transform: translateY(-3px);
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
 }
 
-.restart-button:active, .back-button:active {
+.restart-button:active,
+.back-button:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -127,7 +142,8 @@ h2 {
         font-size: 36px;
     }
 
-    .restart-button, .back-button {
+    .restart-button,
+    .back-button {
         font-size: 1rem;
         padding: 0.75rem 1.5rem;
         margin: 1rem auto 0;

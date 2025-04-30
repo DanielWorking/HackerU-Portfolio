@@ -1,5 +1,5 @@
-body {
-    font-family: 'Roboto', Arial, sans-serif;
+main {
+    font-family: "Roboto", Arial, sans-serif;
     margin: 0;
     padding: 20px;
     min-height: 100vh;
@@ -46,7 +46,8 @@ h2 {
     border-spacing: 0 10px;
 }
 
-.scoreboard th, .scoreboard td {
+.scoreboard th,
+.scoreboard td {
     padding: 0.75rem;
     text-align: center;
     vertical-align: middle;
@@ -134,7 +135,8 @@ tbody tr td {
         font-size: 1.2rem;
     }
 
-    .scoreboard th, .scoreboard td {
+    .scoreboard th,
+    .scoreboard td {
         padding: 0.5rem;
     }
 

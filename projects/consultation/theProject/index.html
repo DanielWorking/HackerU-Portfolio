@@ -28,92 +28,104 @@
     </head>
 
     <body>
-        <!-- the project -->
-        <div class="project-container">
-            <div class="top-page-style"></div>
-            <div class="solo-bg-icon">
-                <img
-                    src="../theProject/images/Icon awesome-whatsapp.svg"
-                    alt="whatsapp icon"
-                />
-            </div>
-            <div class="content-container">
-                <div class="contact-container">
-                    <h1>Free Consult</h1>
-                    <h6>
-                        Unlocking Strategic Insights for Optimal Business
-                        Decisions and Success.
-                    </h6>
-                    <form>
-                        <!-- not sure if wrapper-container is needed -->
-                        <div class="wrapper-container">
+        <main>
+            <!-- the project -->
+            <div class="project-container">
+                <div class="top-page-style"></div>
+                <figure class="solo-bg-icon">
+                    <img
+                        src="../theProject/images/Icon-awesome-whatsapp.svg"
+                        alt="whatsapp icon"
+                        title="whatsapp icon"
+                    />
+                </figure>
+                <div class="content-container">
+                    <section class="contact-container">
+                        <h1>Free Consult</h1>
+                        <p>
+                            Unlocking Strategic Insights for Optimal Business
+                            Decisions and Success.
+                        </p>
+                        <form>
+                            <fieldset class="wrapper-container">
+                                <div class="wrapper">
+                                    <label for="full_name" class="headline"
+                                        >full name</label
+                                    >
+                                    <input
+                                        class="text"
+                                        type="text"
+                                        id="full_name"
+                                        name="full_name"
+                                    />
+                                </div>
+                                <div class="wrapper">
+                                    <label for="email" class="headline"
+                                        >email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="text"
+                                    />
+                                </div>
+                            </fieldset>
                             <div class="wrapper">
-                                <label for="full_name" class="headline"
+                                <label for="text" class="headline"
                                     >full name</label
                                 >
-                                <input
-                                    type="text"
-                                    id="full_name"
-                                    name="full_name"
+                                <textarea
+                                    id="text"
+                                    name="text"
                                     class="text"
-                                />
+                                ></textarea>
                             </div>
-                            <div class="wrapper">
-                                <label for="email" class="headline"
-                                    >email</label
-                                >
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    class="text"
-                                />
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <label for="text" class="headline">full name</label>
-                            <textarea
-                                id="text"
-                                name="text"
-                                class="text"
-                            ></textarea>
-                        </div>
-                        <input type="submit" value="submit" id="submit" />
-                    </form>
+                            <input type="submit" value="submit" id="submit" />
+                        </form>
+                    </section>
+                    <img
+                        src="../theProject/images/Image 1.png"
+                        alt="SMS chat"
+                        title="SMS chat"
+                    />
                 </div>
-                <img src="../theProject/images/Image 1.png" alt="SMS chat" />
+                <div class="icons-set">
+                    <a class="bg-icon" target="_blank" href="#">
+                        <img
+                            src="../theProject/images/Icon-awesome-facebook-f.svg"
+                            alt="facebook icon"
+                            title="facebook icon"
+                        />
+                    </a>
+                    <a class="bg-icon" target="_blank" href="#">
+                        <img
+                            src="../theProject/images/instagram-icon.png"
+                            alt="instagram icon"
+                            title="instagram icon"
+                        />
+                    </a>
+                    <a
+                        class="bg-icon"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/danielreifer/"
+                    >
+                        <img
+                            src="../theProject/images/Icon-awesome-linkedin-in.svg"
+                            alt="linkedin icon"
+                            title="linkedin icon"
+                        />
+                    </a>
+                    <a class="bg-icon" target="_blank" href="tel:+972584341233">
+                        <img
+                            src="../theProject/images/Icon-simple-phone.svg"
+                            alt="phone icon"
+                            title="phone icon"
+                        />
+                    </a>
+                </div>
+                <div class="bottom-page-style"></div>
             </div>
-            <div class="icons-set">
-                <a class="bg-icon" target="_blank" href="#">
-                    <img
-                        src="../theProject/images/Icon awesome-facebook-f.svg"
-                        alt="facebook icon"
-                    />
-                </a>
-                <a class="bg-icon" target="_blank" href="#">
-                    <img
-                        src="../theProject/images/instagram-icon.png"
-                        alt="instagram icon"
-                    />
-                </a>
-                <a
-                    class="bg-icon"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/danielreifer/"
-                >
-                    <img
-                        src="../theProject/images/Icon awesome-linkedin-in.svg"
-                        alt="linkedin icon"
-                    />
-                </a>
-                <a class="bg-icon" target="_blank" href="tel:+972584341233">
-                    <img
-                        src="../theProject/images/Icon simple-whatsapp (1).svg"
-                        alt="phone icon"
-                    />
-                </a>
-            </div>
-            <div class="bottom-page-style"></div>
-        </div>
+        </main>
     </body>
 </html>

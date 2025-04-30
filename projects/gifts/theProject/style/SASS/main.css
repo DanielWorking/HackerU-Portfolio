@@ -55,6 +55,7 @@ html, body {
 }
 .project-container .content form .wrapper {
   width: 100%;
+  border: 0;
 }
 .project-container .content form .wrapper .headline {
   width: inherit;

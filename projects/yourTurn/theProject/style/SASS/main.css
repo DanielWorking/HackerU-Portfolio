@@ -29,7 +29,7 @@ label {
   line-height: 1.33em;
   margin: 2.5em auto 0.8em;
 }
-.project-container h6 {
+.project-container p {
   max-width: 286px;
   font-weight: normal;
   color: #ffffff;
@@ -39,12 +39,13 @@ label {
 }
 .project-container form {
   max-width: 286px;
-  margin: 0 auto;
+  margin: 20em auto auto;
 }
 .project-container form .wrapper {
   width: clamp(286px, 90%, 418px);
   display: flex;
   flex-direction: column;
+  border: 0;
 }
 .project-container form .wrapper .headline {
   text-align: left;
@@ -92,7 +93,7 @@ label {
   .project-container form {
     max-width: 1100px;
     display: flex;
-    margin: 0 1em 4em;
+    margin: 15em auto auto;
   }
   .project-container form .wrapper {
     justify-content: flex-end;

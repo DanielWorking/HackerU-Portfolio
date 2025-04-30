@@ -43,126 +43,143 @@
     </head>
 
     <body>
-        <!-- new navbar -->
-        <nav
-            class="navbar navbar-expand-sm bg-white border-top border-info-subtle border-3 sticky-top"
-        >
-            <div class="container-fluid px-5">
-                <a class="navbar-brand d-flex align-items-center">
-                    <img
-                        src="./images/profilePicture.jpg"
-                        alt="profile image"
-                        class="rounded-circle"
-                        width="40"
-                        height="40"
-                    />
-                    <span class="fs-4 ms-1 d-none d-md-block"
-                        >Daniel Reifer</span
+        <!-- header-->
+        <header>
+            <nav
+                class="navbar navbar-expand-sm bg-white border-top border-info-subtle border-3 sticky-top"
+            >
+                <div class="container-fluid px-5">
+                    <a class="navbar-brand d-flex align-items-center">
+                        <img
+                            src="./images/profilePicture.jpg"
+                            alt="profile image"
+                            title="Daniel Reifer"
+                            class="rounded-circle"
+                        />
+                        <span class="fs-4 ms-1 d-none d-md-block"
+                            >Daniel Reifer</span
+                        >
+                    </a>
+
+                    <button
+                        class="navbar-toggler border-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#myNavbar"
                     >
-                </a>
+                        <span class="navbar-toggler-icon">&#9776;</span>
+                    </button>
 
-                <button
-                    class="navbar-toggler border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#myNavbar"
-                >
-                    <span class="navbar-toggler-icon">&#9776;</span>
-                </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="myNavbar"
+                    >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../../../index.html#main"
+                                    id="main-btn"
+                                    >Main</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link hover-color"
+                                    href="../../../index.html#about"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link hover-color"
+                                    href="../../../index.html#services"
+                                    >Services</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-info"
+                                    href="../../../index.html#contact"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-                <div
-                    class="collapse navbar-collapse justify-content-end"
-                    id="myNavbar"
-                >
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="../../../index.html#main"
-                                id="main-btn"
-                                >Main</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link hover-color"
-                                href="../../../index.html#about"
-                                >About</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link hover-color"
-                                href="../../../index.html#services"
-                                >Services</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link text-info"
-                                href="../../../index.html#contact"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
+        <!-- openning -->
+        <main>
+            <div id="main" class="header-container">
+                <section class="text-container">
+                    <h1>Gifts</h1>
+                    <p>
+                        Developing an e-commerce platform for buying and sending
+                        personalized gifts.
+                    </p>
+                </section>
+                <div class="links-container">
+                    <a
+                        class="btn btn-info rounded-pill"
+                        href="../theProject/index.html"
+                        role="button"
+                    >
+                        watch project &#8811;
+                    </a>
+                    <a
+                        class="btn btn-info rounded-pill"
+                        href="../theProject/gifts_zip.zip"
+                        download="gifts"
+                        role="button"
+                    >
+                        download project &#8811;
+                    </a>
                 </div>
             </div>
-        </nav>
 
-        <!-- the openning section -->
-        <div id="main" class="header-container">
-            <div class="text-container">
-                <h1>Gifts</h1>
-                <p>
-                    Developing an e-commerce platform for buying and sending
-                    personalized gifts.
-                </p>
+            <!-- technologies knowledge -->
+            <div class="technologies-container">
+                <div class="technologies">
+                    <img
+                        src="../overview/images/img-HTML.png"
+                        alt="html icon"
+                        title="HTML icon"
+                    />
+                    <img
+                        src="../overview/images/img-CSS.png"
+                        alt="css icon"
+                        title="CSS icon"
+                    />
+                    <img
+                        src="../overview/images/img-Bootstrap.png"
+                        alt="Bootstrap icon"
+                        title="Bootstrap icon"
+                    />
+                    <img
+                        src="../overview/images/img-SASS.png"
+                        alt="SASS icon"
+                        title="SASS icon"
+                    />
+                </div>
             </div>
-            <div class="links-container">
-                <a
-                    class="btn btn-info rounded-pill"
-                    href="../theProject/index.html"
-                    role="button"
-                >
-                    watch project &#8811;
-                </a>
-                <a
-                    class="btn btn-info rounded-pill"
-                    href="../theProject/gifts_zip.zip"
-                    download="gifts"
-                    role="button"
-                >
-                    download project &#8811;
-                </a>
-            </div>
-        </div>
 
-        <!-- the technologies knowledge part -->
-        <div class="technologies-container">
-            <div class="technologies">
-                <img src="../overview/images/img-HTML.png" alt="html icon" />
-                <img src="../overview/images/img-CSS.png" alt="css icon" />
+            <!-- the project -->
+            <figure class="overview-container">
                 <img
-                    src="../overview/images/img-Bootstrap.png"
-                    alt="Bootstrap icon"
+                    src="../overview/images/landingPage2.jpg"
+                    alt="project 2 image"
+                    title="project 2 image"
                 />
-                <img src="../overview/images/img-SASS.png" alt="SASS icon" />
-            </div>
-        </div>
+            </figure>
+        </main>
 
-        <!-- the project section -->
-        <div class="overview-container">
-            <img
-                src="../overview/images/landingPage2.jpg"
-                alt="project 2 image"
-            />
-        </div>
-
-        <!-- the copyrights section -->
-        <div class="copyright-section">
+        <!-- copyrights -->
+        <footer class="copyright-section">
             <p id="copy">Crafted with Passion</p>
             <p id="name">Daniel Reifer</p>
-        </div>
+        </footer>
 
         <!-- bootstrap script -->
         <script

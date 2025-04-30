@@ -47,17 +47,20 @@ html, body {
   color: #FDBD03;
   margin: 0 auto 0.23em;
 }
-.project-container .content-container .contact-container h6 {
+.project-container .content-container .contact-container p {
   max-width: 385px;
   font-size: 0.938rem;
   line-height: 1.47em;
   font-weight: 400;
   color: #020253;
-  margin: 0 auto 2.29em;
+  margin: 0 auto 1em 0;
 }
 .project-container .content-container .contact-container form {
   max-width: 855px;
   margin: 0 auto 7em;
+}
+.project-container .content-container .contact-container form .wrapper-container {
+  border: 0;
 }
 .project-container .content-container .contact-container form .wrapper-container .wrapper {
   display: flex;

@@ -5,18 +5,21 @@
     display: flex;
     flex-direction: column;
 
-    .top-page-style { // the line at the top of the page
+    .top-page-style {
+        // the line at the top of the page
         width: 90%;
         min-height: 10px;
         background: $clr-yellow;
         margin: 0 0 2em auto;
     }
 
-    .solo-bg-icon { // the isolated icon at the top
+    .solo-bg-icon {
+        // the isolated icon at the top
         display: none;
     }
 
-    .content-container { // containing the phone image and the entire form in the page
+    .content-container {
+        // containing the phone image and the entire form in the page
         display: flex;
         flex-direction: column;
 
@@ -26,7 +29,8 @@
             order: 1;
         }
 
-        .contact-container { // the form with headlines
+        .contact-container {
+            // the form with headlines
             width: 85%;
             margin: 3em auto 0;
             text-align: center;
@@ -40,20 +44,21 @@
                 margin: 0 auto .23em;
             }
 
-            h6 {
+            p {
                 max-width: 385px;
                 font-size: .938rem;
                 line-height: 1.47em;
                 font-weight: $fw-regular;
                 color: $clr-blue;
-                margin: 0 auto 2.29em;
+                margin: 0 auto 1em 0;
             }
 
             form {
                 max-width: 855px;
                 margin: 0 auto 7em;
 
-                .wrapper-container { // containing all the headlines and input texts
+                .wrapper-container {
+                    border: 0;
 
                     .wrapper {
                         @include wrapper; // takes all the properties from the wrapper element
@@ -67,12 +72,15 @@
                         }
                     }
 
-                    .wrapper + .wrapper { // create a space between the wrapper element, effects from the second wrapper
+                    .wrapper+.wrapper {
+                        // create a space between the wrapper element, effects from the second wrapper
                         margin: .96em 0 .98em 0;
                     }
+
                 }
 
-                .wrapper { // for the third wrapper element in the form
+                .wrapper {
+                    // for the third wrapper element in the form
                     @include wrapper;
 
                     .headline {
@@ -100,14 +108,16 @@
         }
     }
 
-    .icons-set { // the container of the icons
+    .icons-set {
+        // the container of the icons
         max-width: 236px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin: auto auto 1.63em;
 
-        .bg-icon { // the container of each icon
+        .bg-icon {
+            // the container of each icon
             min-width: 46px;
             min-height: 46px;
             background: $clr-yellow 0% 0% no-repeat padding-box;
@@ -124,7 +134,8 @@
         }
     }
 
-    .bottom-page-style { // the line at the bottom of the page
+    .bottom-page-style {
+        // the line at the bottom of the page
         width: 100%;
         min-height: 10px;
         background: $clr-yellow;
@@ -132,7 +143,9 @@
     }
 }
 
-@media (min-width: 900px) { // responsive for big tablets and desktop
+@media (min-width: 900px) {
+
+    // responsive for big tablets and desktop
     .project-container {
 
         .top-page-style {
@@ -194,7 +207,7 @@
                         display: flex;
                         margin-bottom: .9375em;
 
-                        .wrapper + .wrapper {
+                        .wrapper+.wrapper {
                             margin: 0 0 0 1.22em;
                         }
 
@@ -260,7 +273,9 @@
     }
 }
 
-@media (min-width: 1500px) { // responsive for big desktop screen size
+@media (min-width: 1500px) {
+
+    // responsive for big desktop screen size
     .project-container {
         .content-container {
             img[alt="SMS chat"] {

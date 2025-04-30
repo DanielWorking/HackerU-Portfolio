@@ -43,104 +43,130 @@
     </head>
 
     <body>
-        <!-- new navbar -->
-        <nav
-            class="navbar navbar-expand-sm bg-white border-top border-info-subtle border-3 sticky-top"
-        >
-            <div class="container-fluid px-5">
-                <a
-                    class="navbar-brand d-flex align-items-center"
-                    href="../../../index.html"
-                >
-                    <img
-                        src="./images/profilePicture.jpg"
-                        alt="profile image"
-                        class="rounded-circle"
-                        width="40"
-                        height="40"
-                    />
-                    <span class="fs-4 ms-1 d-none d-md-block"
-                        >Daniel Reifer</span
+        <!-- header -->
+        <header>
+            <nav
+                class="navbar navbar-expand-sm bg-white border-top border-info-subtle border-3 sticky-top"
+            >
+                <div class="container-fluid px-5">
+                    <a
+                        class="navbar-brand d-flex align-items-center"
+                        href="../../../index.html"
                     >
-                </a>
+                        <img
+                            src="./images/profilePicture.jpg"
+                            alt="profile image"
+                            title="Daniel Reifer"
+                            class="rounded-circle"
+                        />
+                        <span class="fs-4 ms-1 d-none d-md-block"
+                            >Daniel Reifer</span
+                        >
+                    </a>
 
-                <button
-                    class="navbar-toggler border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#myNavbar"
-                >
-                    <span class="navbar-toggler-icon">&#9776;</span>
-                </button>
+                    <button
+                        class="navbar-toggler border-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#myNavbar"
+                    >
+                        <span class="navbar-toggler-icon">&#9776;</span>
+                    </button>
 
-                <div
-                    class="collapse navbar-collapse justify-content-end"
-                    id="myNavbar"
-                >
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="../../../index.html#main"
-                                id="main-btn"
-                                >Main</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link hover-color"
-                                href="../../../index.html#about"
-                                >About</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link hover-color"
-                                href="../../../index.html#services"
-                                >Services</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link text-info"
-                                href="../../../index.html#contact"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="myNavbar"
+                    >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../../../index.html#main"
+                                    id="main-btn"
+                                    >Main</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link hover-color"
+                                    href="../../../index.html#about"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link hover-color"
+                                    href="../../../index.html#services"
+                                    >Services</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-info"
+                                    href="../../../index.html#contact"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <!-- the technologies knowledge part -->
         <div class="technologies-container">
             <div class="technologies">
-                <img src="./images/img-HTML.png" alt="html icon" />
-                <img src="./images/img-CSS.png" alt="css icon" />
-                <img src="./images/img-Bootstrap.png" alt="Bootstrap icon" />
-                <img src="./images/img-SASS.png" alt="SASS icon" />
-                <img src="./images/img-JS.png" alt="JavaScript icon" />
-                <img src="./images/img-ES6.png" alt="ES6 icon" />
+                <img
+                    src="./images/img-HTML.png"
+                    alt="html icon"
+                    title="HTML icon"
+                />
+                <img
+                    src="./images/img-CSS.png"
+                    alt="css icon"
+                    title="CSS icon"
+                />
+                <img
+                    src="./images/img-Bootstrap.png"
+                    alt="Bootstrap icon"
+                    title="Bootstrap icon"
+                />
+                <img
+                    src="./images/img-SASS.png"
+                    alt="SASS icon"
+                    title="SASS icon"
+                />
+                <img
+                    src="./images/img-JS.png"
+                    alt="JavaScript icon"
+                    title="JavaScript icon"
+                />
+                <img
+                    src="./images/img-ES6.png"
+                    alt="ES6 icon"
+                    title="ES6 icon"
+                />
             </div>
         </div>
 
-        <!-- the project section -->
-        <div class="overview-container">
-            <div class="image-container">
+        <!-- the project -->
+        <main class="overview-container">
+            <figure class="image-container">
                 <img
                     src="./images/toDoList.png"
                     alt="The Game Home Page Image"
+                    title="To Do List"
                 />
-            </div>
+            </figure>
             <div class="content-container">
-                <div class="text-container">
+                <section class="text-container">
                     <h1>To Do List</h1>
                     <p>
                         Stay organized with our intuitive To-Do List app! Easily
                         manage your tasks, set priorities, and keep track of
                         your progress with a sleek, user-friendly interface.
                     </p>
-                </div>
+                </section>
                 <div class="links-container">
                     <a
                         class="btn btn-info rounded-pill"
@@ -159,13 +185,13 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </main>
 
-        <!-- the copyrights section -->
-        <div class="copyright-section">
+        <!-- copyrights -->
+        <footer class="copyright-section">
             <p id="copy">Crafted with Passion</p>
             <p id="name">Daniel Reifer</p>
-        </div>
+        </footer>
 
         <!-- bootstrap script -->
         <script

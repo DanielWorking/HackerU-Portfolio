@@ -1,6 +1,13 @@
 .px-5 {
     padding: 0 1em !important;
 
+    a {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     .fs-4 {
         font: normal normal 400 1.56em/1.5 "Satisfy", cursive;
     }
@@ -32,11 +39,13 @@
     }
 }
 
-@media (min-width: 767px) { // responsive for tablet screen size
+@media (min-width: 767px) {
+
+    // responsive for tablet screen size
     .px-5 {
         padding: 0 1em !important;
 
-        .nav-item + .nav-item {
+        .nav-item+.nav-item {
             margin-left: 2em;
         }
 
@@ -46,7 +55,9 @@
     }
 }
 
-@media (min-width: 1200px) { // responsive for desktop screen size
+@media (min-width: 1200px) {
+
+    // responsive for desktop screen size
     .px-5 {
         padding: 0 7em !important;
 

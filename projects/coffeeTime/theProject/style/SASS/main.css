@@ -46,12 +46,17 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-.project-container .content form .headline {
+.project-container .content form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.project-container .content form fieldset .headline {
   font-size: 0.63rem;
   line-height: 1.5em;
   color: #2C2C2C;
 }
-.project-container .content form .text {
+.project-container .content form fieldset .text {
   width: 100%;
   max-width: 418px;
   min-height: 34px;
@@ -59,10 +64,10 @@ html, body {
   border: #E5EEFF;
   border-bottom: 0.1875em solid #020253;
 }
-.project-container .content form .text + .headline {
+.project-container .content form fieldset .text + .headline {
   margin-top: 1.63em;
 }
-.project-container .content form #submit {
+.project-container .content form fieldset #submit {
   width: 100%;
   max-width: 418px;
   min-height: 34px;

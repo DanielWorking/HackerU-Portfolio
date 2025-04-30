@@ -1,11 +1,21 @@
-.px-5 { // padding in bootstrap
+.px-5 {
+    // padding in bootstrap
     padding: 0 1em !important;
 
-    .fs-4 { // font size in bootstrap
+    a {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .fs-4 {
+        // font size in bootstrap
         font: normal normal 400 1.56em/1.5 "Satisfy", cursive;
     }
 
-    .navbar-toggler-icon { // the hamburger icon in mobile mode
+    .navbar-toggler-icon {
+        // the hamburger icon in mobile mode
         width: 1.9em;
         background-image: none;
         color: #1AE0EC;
@@ -15,28 +25,35 @@
         font-size: 1.5em;
     }
 
-    .nav-item { // the link container for sections in the home page
+    .nav-item {
+        // the link container for sections in the home page
         margin: 0 auto !important;
 
-        .hover-color:hover { // adding an hover effect on the links
+        .hover-color:hover {
+            // adding an hover effect on the links
             color: #1AE0EC;
         }
 
-        .nav-link { // the link element
+        .nav-link {
+            // the link element
             font: normal normal normal 1rem/0.84em "Heebo", sans-serif;
         }
 
-        .bold-font { // different font weight for few of the links
+        .bold-font {
+            // different font weight for few of the links
             font-weight: bold;
         }
     }
 }
 
-@media (min-width: 767px) { // tablet screen size
+@media (min-width: 767px) {
+
+    // tablet screen size
     .px-5 {
         padding: 0 1em !important;
 
-        .nav-item + .nav-item { // creating a space between eeach nav-item element, effects from the second nav-item
+        .nav-item+.nav-item {
+            // creating a space between eeach nav-item element, effects from the second nav-item
             margin-left: 2em;
         }
 
@@ -46,7 +63,9 @@
     }
 }
 
-@media (min-width: 1200px) { // desktop screen size
+@media (min-width: 1200px) {
+
+    // desktop screen size
     .px-5 {
         padding: 0 7em !important;
 

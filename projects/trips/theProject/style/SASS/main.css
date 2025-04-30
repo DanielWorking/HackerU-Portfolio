@@ -42,7 +42,7 @@ html, body {
   font-weight: bold;
   color: #0EE1DA;
 }
-.project-container .content-container .first-view h6 {
+.project-container .content-container .first-view p {
   width: 90%;
   font-family: "Assistant", sans-serif;
   font-size: 1.25rem;
