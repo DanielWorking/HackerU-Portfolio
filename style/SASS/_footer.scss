@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background: #1AE0EC 0% 0% no-repeat padding-box;
-    
+
     .social-container {
         width: 80%;
         padding: 3.5em 0;
@@ -10,19 +10,20 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    
+
         .content-box {
             max-width: 100px;
+            min-width: 90px;
             display: flex;
             flex-direction: column;
-        
+
             img {
                 // width: min(40px, 100%);
                 max-width: 45px;
                 max-height: 45px;
                 margin: 0 auto 1.3em;
             }
-            
+
             p {
                 width: 100%;
                 margin: 0 auto;

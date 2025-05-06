@@ -429,6 +429,7 @@ header .px-5 .nav-item .nav-link {
 }
 .section-container .social-container .content-box {
   max-width: 100px;
+  min-width: 90px;
   display: flex;
   flex-direction: column;
 }
